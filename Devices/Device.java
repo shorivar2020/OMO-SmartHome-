@@ -12,6 +12,10 @@ public abstract class Device{
     private List<User> users = new ArrayList<>();
     //Musim vyresit
 
+    //zmena workability
+    //fix device
+
+
     public String getDeviceName(){
         return device;
     }
