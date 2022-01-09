@@ -31,7 +31,7 @@ Nefunkční požadavky
 Vhodné design patterny
 ⦁	State machine
 ⦁	Iterator
-⦁	Factory/Factory method
+⦁	Factory/Factory method --> Factory device
 ⦁	Decorator/Composite
 ⦁	Singleton
 ⦁	Visitor/Observer/Listener
