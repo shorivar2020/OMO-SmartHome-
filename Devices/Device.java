@@ -33,14 +33,6 @@ public abstract class Device{
     public void work();
     public void stop();
 
-    void On(){
-        this.deviceState = 1;
-    }
-
-    void Off(){
-        this.deviceState = 0;
-    }
-
     public int getDeviceState() {
         return deviceState;
     }

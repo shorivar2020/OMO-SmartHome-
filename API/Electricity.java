@@ -11,8 +11,6 @@ public class Electricity {
     int totalFridge = 0;
     int consumptionHeater = 90;
     int totalHeater = 0;
-    int consumptionHousehold = 10;
-    int totalHousehold = 0;
     int consumptionIllumination = 40;
     int totalIllumination = 0;
     int consumptionMicrovawe = 50;
@@ -40,10 +38,6 @@ public class Electricity {
 
     public int getConsumptionHeater() {
         return totalHeater += consumptionHeater;
-    }
-
-    public int getConsumptionHousehold() {
-        return totalHousehold += consumptionHousehold;
     }
 
     public int getConsumptionIllumination() {
