@@ -1,7 +1,7 @@
 package Devices;
 
 public class Heater extends Device{
-    int deviceState = 0;
+    boolean deviceState = 0;
     static int count = 0;
 
     public useHeater(int electricity, int documentation, int functionallity){
@@ -14,11 +14,11 @@ public class Heater extends Device{
         if(this.deviceState == 0){
             this.On();
         }
-        this.deviceState = 2;
+        this.deviceState = 1;
     }
 
     public void stop(){//how wait aaaaaaaaaaaa???
-        if(this.deviceState == 2){
+        if(this.deviceState == 1){
             this.Off();
         }
         this.deviceState = 0;

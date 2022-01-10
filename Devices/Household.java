@@ -1,7 +1,7 @@
 package Devices;
 
 public class Household extends Device{
-    int deviceState = 0;
+    boolean deviceState = 0;
     public useMicrovawe(int electricity, int documentation, int functionallity, int water){
         count++;
         this.electricity = electricity;
@@ -13,11 +13,11 @@ public class Household extends Device{
         if(this.deviceState == 0){
             this.On();
         }
-        this.deviceState = 2;
+        this.deviceState = 1;
     }
 
     public void stop(){//how wait aaaaaaaaaaaa???
-        if(this.deviceState == 2){
+        if(this.deviceState == 1){
             this.Off();
         }
         this.deviceState = 0;

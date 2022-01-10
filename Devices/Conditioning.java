@@ -1,7 +1,7 @@
 package Devices;
 
 public class Conditioning extends Device{
-    int deviceState = 0;
+    boolean deviceState = 0;
     static int count = 0;
 
     public useConditioning(int electricity, int documentation, int functionallity){

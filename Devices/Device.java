@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Device{
 
-    private boolean deviceState; //0-off 2 - on
+    private boolean deviceState; //0-off 1 - on
     private int electricity = 0; //1-...
     private int water = 0; //1-...
     private int documentation = 0; //??
@@ -34,10 +34,6 @@ public abstract class Device{
     public void stop();
 
     void On(){
-        this.deviceState = 2;
-    }
-
-    void Wait(){
         this.deviceState = 1;
     }
 
