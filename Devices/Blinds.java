@@ -14,6 +14,7 @@ public class Blinds extends Device{
             return 1;
         }
         else{
+            BrokenDevice(Blinds);
             return 0;
         }
     }

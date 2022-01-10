@@ -1,5 +1,5 @@
 package Devices;
-
+import API.*;
 public class Conditioning extends Device{
     boolean deviceState = 0;
     static int count = 0;
@@ -10,18 +10,18 @@ public class Conditioning extends Device{
         this.documentation = documentation;
         this.functionallity = functionallity - count;
     }
-    public void work(){//how wait aaaaaaaaaaaa???
-        if(this.deviceState == 0){
-            this.On();
+    public boolean work(){
+        if(this.functionallity != 0){
+            Electricity.getConsumptionConditioning();
+            return 1;
         }
-        this.deviceState = 2;
+        else{
+            return 0;
+        }
     }
 
-    public void stop(){//how wait aaaaaaaaaaaa???
-        if(this.deviceState == 2){
-            this.Off();
-        }
-        this.deviceState = 0;
+    public boolean stop(){
+        return 0;
     }
 
     public String getDeviceName(){

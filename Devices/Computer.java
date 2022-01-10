@@ -7,7 +7,7 @@ public class Computer extends Device{
     List<Something> somethingIn = new ArrayList<>();
 
     public useComputer(int electricity, int documentation, int functionallity){
-        count++;
+
         this.electricity = electricity;
         this.documentation = documentation;
         this.functionallity = functionallity - count;
