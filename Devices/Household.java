@@ -1,11 +1,28 @@
 package Devices;
 
 public class Household extends Device{
-    static int Count = 0;
-
-    public Household(){
-        Count++;
+    int deviceState = 0;
+    public Microvawe(int electricity, int documentation, int functionallity, int water){
+        count++;
+        this.electricity = electricity;
+        this.documentation = documentation;
+        this.functionallity-count = functionallity;
+        this.water = water;
     }
+    public void work(){//how wait aaaaaaaaaaaa???
+        if(this.deviceState == 0){
+            this.On();
+        }
+        this.deviceState = 2;
+    }
+
+    public void stop(){//how wait aaaaaaaaaaaa???
+        if(this.deviceState == 2){
+            this.Off();
+        }
+        this.deviceState = 0;
+    }
+
     public String getDeviceName(){
         device = "household";
     }

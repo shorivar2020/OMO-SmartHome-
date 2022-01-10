@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Human {
     Room In;
+    InHome;
     private List<Device> useDevices = new ArrayList<>();
     private List<Pet> usePets = new ArrayList<>();
     private List<Transport> useTransports = new ArrayList<>();
     private List<API> getNotifikated = new ArrayList<>();
+
 
     public Room getIn() {
         return In;

@@ -16,30 +16,30 @@ public class DeviceFactory {
 
         switch (type){
             case BLINDS:
-                device = new Blinds();
+                device = new Blinds(electricity, documentation, functionallity);
                 break;
             case COMPUTER:
-                device = new Computer();
+                device = new Computer(electricity, documentation, functionallity);
                 break;
             case CONDITIONING:
-                device = new Conditioning();
+                device = new Conditioning(electricity, documentation, functionallity);
             case FRIDGE:
-                device = new Fridge();
+                device = new Fridge(electricity, documentation, functionallity);
                 break;
             case HEATER:
-                device = new Heater();
+                device = new Heater(electricity, documentation, functionallity);
                 break;
             case ILLUMINATION:
-                device = new Illumination();
+                device = new Illumination(electricity, documentation, functionallity);
                 break;
             case MICROVAWE:
-                device = new microvawe();
+                device = new microvawe(electricity, documentation, functionallity);
                 break;
             case PLATE:
-                device = new plate();
+                device = new plate(electricity, documentation, functionallity);
                 break;
             case TEAPOT:
-                device = new teapot();
+                device = new teapot(electricity, documentation, functionallity, water);
                 break;
         }
         return device;

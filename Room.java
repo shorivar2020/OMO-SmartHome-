@@ -6,6 +6,7 @@ public class Room {
     private List<Device> devices = new ArrayList<>();
     private List<Person> people = new ArrayList<>();
     private List<Pet> pets = new ArrayList<>();
+    private List<Transport> transports = new ArrayList<>();
 
     public List<Person> getPeople() {
         return people;
@@ -17,6 +18,10 @@ public class Room {
 
     public List<Device> getDevices() {
         return devices;
+    }
+
+    public List<Transport> getTransports() {
+        return transports;
     }
 
     public Room addPerson(Person person){
