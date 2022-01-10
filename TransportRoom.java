@@ -10,6 +10,7 @@ public class TransportRoom extends Room{
     public TransportRoom(){
         transports.add(new Car());
         transports.add(new Bicycle());
+        transports.add(new Ski());
     }
 
     public List<Transport> getTransports() {
