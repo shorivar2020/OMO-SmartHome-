@@ -5,7 +5,7 @@ public class Fridge extends Device{
     static int count = 0;
     List<Something> somethingIn = new ArrayList<>();
 
-    public Fridge(int electricity, int documentation, int functionallity){
+    public useFridge(int electricity, int documentation, int functionallity){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;

@@ -16,30 +16,30 @@ public class DeviceFactory {
 
         switch (type){
             case BLINDS:
-                device = new Blinds(electricity, documentation, functionallity);
+                device = new useBlinds(electricity, documentation, functionallity);
                 break;
             case COMPUTER:
-                device = new Computer(electricity, documentation, functionallity);
+                device = new useComputer(electricity, documentation, functionallity);
                 break;
             case CONDITIONING:
-                device = new Conditioning(electricity, documentation, functionallity);
+                device = new useConditioning(electricity, documentation, functionallity);
             case FRIDGE:
-                device = new Fridge(electricity, documentation, functionallity);
+                device = new useFridge(electricity, documentation, functionallity);
                 break;
             case HEATER:
-                device = new Heater(electricity, documentation, functionallity);
+                device = new useHeater(electricity, documentation, functionallity);
                 break;
             case ILLUMINATION:
-                device = new Illumination(electricity, documentation, functionallity);
+                device = new useIllumination(electricity, documentation, functionallity);
                 break;
             case MICROVAWE:
-                device = new microvawe(electricity, documentation, functionallity);
+                device = new useMicrovawe(electricity, documentation, functionallity);
                 break;
             case PLATE:
-                device = new plate(electricity, documentation, functionallity);
+                device = new usePlate(electricity, documentation, functionallity);
                 break;
             case TEAPOT:
-                device = new teapot(electricity, documentation, functionallity, water);
+                device = new useTeapot(electricity, documentation, functionallity, water);
                 break;
         }
         return device;

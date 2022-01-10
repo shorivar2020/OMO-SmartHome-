@@ -4,7 +4,7 @@ public class Blinds extends Device{
     int deviceState = 0;
     static int count = 0;
 
-    public Blinds(int electricity, int documentation, int functionallity){
+    public useBlinds(int electricity, int documentation, int functionallity){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;

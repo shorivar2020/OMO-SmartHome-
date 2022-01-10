@@ -5,7 +5,7 @@ public class Plate extends Device{
     static int count = 0;
     List<Something> somethingIn = new ArrayList<>();
 
-    public Plate(int electricity, int documentation, int functionallity){
+    public usePlate(int electricity, int documentation, int functionallity){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;

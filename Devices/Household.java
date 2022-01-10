@@ -2,7 +2,7 @@ package Devices;
 
 public class Household extends Device{
     int deviceState = 0;
-    public Microvawe(int electricity, int documentation, int functionallity, int water){
+    public useMicrovawe(int electricity, int documentation, int functionallity, int water){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;

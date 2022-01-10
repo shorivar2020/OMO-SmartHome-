@@ -5,7 +5,7 @@ public class Microvawe extends Device{
     static int count = 0;
     List<Something> somethingIn = new ArrayList<>();
 
-    public Microvawe(int electricity, int documentation, int functionallity){
+    public useMicrovawe(int electricity, int documentation, int functionallity){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;

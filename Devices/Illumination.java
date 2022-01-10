@@ -3,7 +3,7 @@ package Devices;
 public class Illumination extends Device{
     int deviceState = 0;
     static int Count = 0;
-    public Illumination(int electricity, int documentation, int functionallity){
+    public useIllumination(int electricity, int documentation, int functionallity){
         count++;
         this.electricity = electricity;
         this.documentation = documentation;
