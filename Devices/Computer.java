@@ -3,6 +3,7 @@ package Devices;
 public class Computer extends Device{
     int deviceState = 0;
     static int count = 0;
+
     List<Something> somethingIn = new ArrayList<>();
 
     public useComputer(int electricity, int documentation, int functionallity){
@@ -11,6 +12,7 @@ public class Computer extends Device{
         this.documentation = documentation;
         this.functionallity-count = functionallity;
     }
+
     public void work(){//how wait aaaaaaaaaaaa???
         if(this.deviceState == 0){
             this.On();
