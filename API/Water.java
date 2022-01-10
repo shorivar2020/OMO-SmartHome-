@@ -12,4 +12,8 @@ public class Electricity {
     public int getConsumptionHousehold() {
         return totalHousehold += consumptionHousehold;
     }
+
+    public int TotalWater(){
+        return totalHousehold+totalTeapot;
+    }
 }

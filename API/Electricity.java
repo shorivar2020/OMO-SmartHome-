@@ -55,4 +55,8 @@ public class Electricity {
     public int getConsumptionTeapot() {
         return totalTeapot += consumptionTeapot;
     }
+
+    public int TotalElectricity(){
+        return totalBlinds+totalComputer+totalFridge+totalHeater+totalIllumination+totalMicrowave+totalPlate+totalTeapot;
+    }
 }

@@ -1,4 +1,3 @@
-//when fix by new -1000 money
 import Devices.*;
 public class Finance{
     int totalConsume;
@@ -56,3 +55,12 @@ public class Finance{
     public int payConsumptionTeapot() {
         return totalTeapot += consumptionTeapot;
     }
+
+    public int getConsumptionHousehold() {
+        return totalHousehold += consumptionHousehold;
+    }
+
+    public int TotalFinance(){
+        return totalHousehold+totalBlinds+totalComputer+totalFridge+totalHeater+totalIllumination+totalMicrowave+totalPlate+totalTeapot;
+    }
+}
