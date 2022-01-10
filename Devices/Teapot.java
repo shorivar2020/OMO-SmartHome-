@@ -8,7 +8,7 @@ public class Teapot extends Device{
         count++;
         this.electricity = electricity;
         this.documentation = documentation;
-        this.functionallity-count = functionallity;
+        this.functionallity = functionallity - count;
         this.water = water;
     }
     public void work(){//how wait aaaaaaaaaaaa???

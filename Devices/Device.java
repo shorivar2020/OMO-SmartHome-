@@ -5,13 +5,12 @@ import java.util.List;
 
 public abstract class Device{
 
-    private int deviceState; //0-off 1-wait 2 - on
+    private boolean deviceState; //0-off 2 - on
     private int electricity = 0; //1-...
     private int water = 0; //1-...
     private int documentation = 0; //??
     private int emloyed = 0; //was used
-    private int workable = 100;
-    private int functionallity; //0-100%
+    private int functionallity = 100; //0-100%
     private int somethingIn; //0-no 1-yes
     private List<User> users = new ArrayList<>();
 

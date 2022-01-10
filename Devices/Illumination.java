@@ -7,7 +7,7 @@ public class Illumination extends Device{
         count++;
         this.electricity = electricity;
         this.documentation = documentation;
-        this.functionallity-count = functionallity;
+        this.functionallity = functionallity - count;
     }
     public void work(){//how wait aaaaaaaaaaaa???
         if(this.deviceState == 0){
