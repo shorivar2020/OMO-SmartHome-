@@ -1,8 +1,7 @@
 
 Funkční požadavky
 +F1	Entity se kterými pracujeme - Home -- Room -- Devices -- Transport (Without window and floor)
-F2	Jednotlivá zařízení v domu mají API na ovládání. Zařízení mají stav, který lze měnit pomocí API na jeho ovládání.
-    Akce z API jsou použitelné podle stavu zařízení. somethingIn;
+F2	work()/stop() somethingIn;
 F3	State int - 0/1/2
 F4	electricity, functionallity, water (without gas)
 F5	Jednotlivé osoby a zvířata mohou provádět aktivity(akce), které mají nějaký efekt na zařízení nebo jinou osobu.
@@ -20,9 +19,7 @@ F8	Vygenerování reportů:
 -	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
 -	ActivityAndUsageReport: Report akcí (aktivit) jednotlivých osob a zvířat, kolikrát které osoby použily které zařízení.
 -	ConsumptionReport: Kolik jednotlivé spotřebiče spotřebovaly elektřiny, plynu, vody. Včetně finančního vyčíslení.
-F9	Při rozbití zařízení musí obyvatel domu prozkoumat dokumentaci k zařízení - najít záruční list, projít manuál na opravu a provést nápravnou akcí (např. Oprava svépomocí, koupě nového atd.).
-    Manuály zabírají mnoho místa a trvá dlouho než je najdete.
-    Hint: Modelujte jako jednoduché akce ...dokumentace je přístupná jako proměnná přímo v zařízení, nicméně se dotahuje až, když je potřeba.
+F9	Fix()
 F10	Rodina je aktivní a volný čas tráví zhruba v poměru (50% používání spotřebičů v domě a 50% sport kdy používá sportovní náčiní kolo nebo lyže).
  Když není volné zařízení nebo sportovní náčiní, tak osoba čeká.
 
