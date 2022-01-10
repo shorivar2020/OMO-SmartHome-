@@ -3,6 +3,7 @@ package Devices;
 public class Fridge extends Device{
     int deviceState = 2;
     static int count = 0;
+    List<Something> somethingIn = new ArrayList<>();
 
     public Fridge(int electricity, int documentation, int functionallity){
         count++;
@@ -26,6 +27,14 @@ public class Fridge extends Device{
 
     public int getSomethingIn() {
         return somethingIn;
+    }
+
+    public int addSomethingIn(SomethingIn somethingIn) {
+        this.somethingIn.add(somethingIn);
+    }
+
+    public int removeSomethingIn(SomethingIn somethingIn) {
+        this.somethingIn.remove(somethingIn);
     }
 
     public String getDeviceName(){
