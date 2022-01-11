@@ -18,14 +18,17 @@ public class Fridge{
     }
     public boolean work(){
         if(this.functionality != 0){
+            deviceState = true;
             return true;
         }
         else{
+            deviceState = false;
             return false;
         }
     }
 
     public boolean stop(){
+        deviceState = false;
         return false;
     }
 
