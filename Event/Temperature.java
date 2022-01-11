@@ -1,17 +1,17 @@
 package Event;
 
-import java.util.ArrayList;
-import java.util.List;
+import Devices.Conditioning;
+import Devices.Heater;
 
 public class Temperature {
-    public ArrayList<String> DoColder(){
-        ArrayList<String> cold = new ArrayList<>();
-        //System.out.println("Hot temperature");
-        return cold;
+    Conditioning c = new Conditioning();
+    Heater h = new Heater();
+    public void DoColder(){
+        c.work();
+        h.stop();
     }
-    public ArrayList<String> DoHotter(){
-        ArrayList<String> hot = new ArrayList<>();
-        //System.out.println("Cold temperature");
-        return hot;
+    public void DoHotter(){
+        h.work();
+        c.stop();
     }
 }

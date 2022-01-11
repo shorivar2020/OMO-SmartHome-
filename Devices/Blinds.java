@@ -1,30 +1,32 @@
-//package Devices;
-//
-//public class Blinds extends Device{
-//    static int count = 0;
-//
-//    public useBlinds(int electricity, int documentation, int functionallity){
-//        count++;
-//        this.electricity = electricity;
-//        this.documentation = documentation;
-//        this.functionallity = functionallity - count;
-//    }
-//    public boolean work(){
-//        if(this.functionallity != 0){
-//            return 1;
-//        }
-//        else{
-//            BrokenDevice(Blinds);
-//            return 0;
-//        }
-//    }
-//
-//    public boolean stop(){
-//        return 0;
-//    }
-//
-//
-//    public String getDeviceName(){
-//        device = "blinds";
-//    }
-//}
+package Devices;
+
+public class Blinds {
+    private int electricity = 0;
+    private int documentation = 0;
+    private int functionality = 100;
+    boolean deviceState = true;
+    static int count = 0;
+
+    public Blinds(){
+        count++;
+        this.electricity = electricity + count;
+        this.documentation = documentation;
+        this.functionality = functionality - count;
+    }
+    public boolean work(){
+        if(this.functionality != 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean stop(){
+        return false;
+    }
+
+    public String getDeviceName(){
+        return "Blinds";
+    }
+}

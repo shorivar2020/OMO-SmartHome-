@@ -1,6 +1,8 @@
 package Event;
 
+import Devices.Blinds;
 import Devices.Computer;
+import Devices.Illumination;
 import Devices.Teapot;
 
 import java.util.ArrayList;
@@ -9,14 +11,25 @@ import java.util.Random;
 
 public class DoingSomething{
     Random rand = new Random();
+    Illumination i = new Illumination();
+    Blinds b = new Blinds();
+    public void Night() {
+        //System.out.println("Night");
+        i.work();
+        b.work();
+    }
     public ArrayList<String> Work(){
         ArrayList<String> work = new ArrayList<>();
+        i.stop();
+        b.stop();
         //System.out.println("Work");
         return work;
     }
     public ArrayList<String> Chill(){
         ArrayList<String> chill = new ArrayList<>();
         //System.out.println("Chill");
+        i.stop();
+        b.stop();
 
         switch (rand.nextInt(4)) {
             case 0:
@@ -52,12 +65,4 @@ public class DoingSomething{
         }
         return chill;
     }
-    //System.out.println("Work");
-    //rand
-    //work computer
-    //use Car
-
-    //System.out.println("Chill");
-    //int flag = 0;
-    //random (4)
 }
