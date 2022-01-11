@@ -4,7 +4,7 @@ import Devices.Fridge;
 import Devices.Microwave;
 import Devices.Plate;
 
-class Eating {
+public class Eating {
     String meal;
     Fridge f = new Fridge();
     public void Fast() {
