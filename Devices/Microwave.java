@@ -2,7 +2,7 @@ package Devices;
 
 import java.util.ArrayList;
 
-public class Fridge{
+public class Microwave {
     private int electricity = 0;
     private int documentation = 0;
     private int functionality = 100;
@@ -10,7 +10,7 @@ public class Fridge{
     static int count = 0;
     ArrayList<String> somethingIn = new ArrayList<>();
 
-    public Fridge(){
+    public Microwave(){
         count++;
         this.electricity = electricity + count;
         this.documentation = documentation;
@@ -35,7 +35,7 @@ public class Fridge{
 
     public String addSomethingIn(String somethingIn) {
         this.somethingIn.add(somethingIn);
-        //System.out.println("In fridge "+somethingIn);
+        //System.out.println("In microwave "+somethingIn);
         return somethingIn;
     }
 
@@ -46,6 +46,6 @@ public class Fridge{
     }
 
     public String getDeviceName(){
-        return "Fridge";
+        return "Microwave";
     }
 }
