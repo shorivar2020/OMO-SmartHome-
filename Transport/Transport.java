@@ -1,7 +1,8 @@
-//package Transport;
-//
-//public abstract class Transport{
-//    public String getTransport(){
-//        return transport;
-//    }
-//}
+package Transport;
+
+public abstract class Transport{
+    String transport;
+    public String getTransport(){
+        return transport;
+    }
+}
