@@ -1,6 +1,7 @@
 package API;
 import Event.Temperature;
 import Event.DoingSomething;
+import Event.Night;
 
 import java.util.Random;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ public class DATETIME{
         ArrayList<String> events = new ArrayList<>();
         Temperature tem = new Temperature();
         DoingSomething doing = new DoingSomething();
+        Night night = new Night();
         if(temperature.equals("HOT")){
             tem.DoColder();
             events.add("HotTemperature");
@@ -35,7 +37,7 @@ public class DATETIME{
             }
         }
         else{
-            //Night();
+            night.Night();
             events.add("Night");
         }
         return events;
@@ -44,5 +46,5 @@ public class DATETIME{
     //if Hot -> Event HotTemperature
     //If Cold -> Event ColdTemperature
     //if night -> Event Night + chill
-    //if day -> chill/work randome
+    //if day -> chill/work random
 }
