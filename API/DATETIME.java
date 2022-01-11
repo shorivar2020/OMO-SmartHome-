@@ -1,5 +1,6 @@
 package API;
 import Event.Temperature;
+import Event.DoingSomething;
 
 import java.util.Random;
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ public class DATETIME{
     public ArrayList<String> ListEvents(String temperature, int clock){
         ArrayList<String> events = new ArrayList<>();
         Temperature tem = new Temperature();
+        DoingSomething doing = new DoingSomething();
         if(temperature.equals("HOT")){
             tem.DoColder();
             events.add("HotTemperature");
@@ -20,15 +22,15 @@ public class DATETIME{
         if(9<clock && clock<18){
             switch (rand.nextInt(2)) {
                 case 0:
-                        //Chill();
+                    doing.Chill();
                     events.add("Chill");
                     break;
                 case 1:
-                        //Work();
+                    doing.Work();
                     events.add("Work");
                     break;
                 default:
-                    events.add("Chill");
+                    events.add("Error");
                     break;
             }
         }

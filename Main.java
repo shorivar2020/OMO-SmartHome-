@@ -31,7 +31,7 @@ public class Main {
             }
             Events.add(ListEvent);
         }
-        System.out.println("The List is "+Events);
+        System.out.println("Report about Events "+Events);
         //Make house + take DATETIME
         //DO Event
     }
