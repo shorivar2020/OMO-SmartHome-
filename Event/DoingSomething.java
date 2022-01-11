@@ -8,13 +8,13 @@ public class DoingSomething{
     Random rand = new Random();
     public ArrayList<String> Work(){
         ArrayList<String> work = new ArrayList<>();
-        System.out.println("Work");
+        //System.out.println("Work");
         return work;
     }
     public ArrayList<String> Chill(){
         ArrayList<String> chill = new ArrayList<>();
-        System.out.println("Chill");
-        Eating eat = new Eating();
+        //System.out.println("Chill");
+
         switch (rand.nextInt(4)) {
             case 0:
                 chill.add("Ski/Bicycle");
@@ -30,6 +30,7 @@ public class DoingSomething{
                 break;
             case 3:
                 chill.add("Eating");
+                Eating eat = new Eating();
                 switch(rand.nextInt(2)){
                     case 0:
                         eat.Fast();
@@ -38,7 +39,6 @@ public class DoingSomething{
                         eat.Slow();
                         break;
                 }
-                // case Cooking (Plate, Fridge) Event Eating
                 break;
         }
         return chill;
@@ -51,8 +51,4 @@ public class DoingSomething{
     //System.out.println("Chill");
     //int flag = 0;
     //random (4)
-
-
-
-
 }
