@@ -1,32 +1,42 @@
-import omo-smart-home.Event.HotTempeture;
+package API;
+
 import java.util.Random;
-public class DATETIME(String temperature, int clock) {
-    public ArrayList<String> EventList = new ArrayList<String>();
-    if(temperature == "HOT"){
-        //HotTempeture();
-        EventList.add("HotTempeture");
-    }
-    else{
-        //ColdTemperature();
-        EventList.add("ColdTempeture");
-    }
-    if(clock == "DAY"){
-        switch (rand.nextInt(1)){
-            case 0:
-                //Chil();
-                EventList.add("Chill");
-                break;
-            case 1:
-                //Work();
-                EventList.add("Work");
-                break;
+import java.util.ArrayList;
+public class DATETIME{
+
+    Random rand = new Random();
+    public ArrayList<String> ListEvents(String temperature, int clock){
+        ArrayList<String> events = new ArrayList<>();
+        if(temperature.equals("HOT")){
+            //HotTemperature();
+            events.add("HotTemperature");
         }
+        else{
+            //ColdTemperature();
+            events.add("ColdTemperature");
+        }
+        if(9<clock && clock<18){
+            switch (rand.nextInt(2)) {
+                case 0:
+                        //Chill();
+                    events.add("Chill");
+                    break;
+                case 1:
+                        //Work();
+                    events.add("Work");
+                    break;
+                default:
+                    events.add("Chill");
+                    break;
+            }
+        }
+        else{
+            //Night();
+            events.add("Night");
+        }
+        return events;
     }
-    else{
-        //Night();
-        this.EventList.add("Night");
-    }
-    return (EventList);
+
     //if Hot -> Event HotTemperature
     //If Cold -> Event ColdTemperature
     //if night -> Event Night + chill

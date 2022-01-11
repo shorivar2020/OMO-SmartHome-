@@ -1,7 +1,7 @@
-package Transport;
-
-public class Bicycle extends Transport{
-    public Bicycle(){
-        transport = "bicycle";
-    }
-}
+//package Transport;
+//
+//public class Bicycle extends Transport{
+//    public Bicycle(){
+//        transport = "bicycle";
+//    }
+//}

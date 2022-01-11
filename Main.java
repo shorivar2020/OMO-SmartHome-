@@ -1,30 +1,44 @@
+import API.DATETIME;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.List;
 public class Main {
-    public static void main(){
-        //private List<Event> EventList = new ArrayList<>();
+    public static void main(String[] args)
+    {
         System.out.println("AAA");
-        DATETIME day;
+        Random rand = new Random();
+        ArrayList<List<String>> Events = new ArrayList<>();
+        List<String> ListEvent;
+        DATETIME day = new DATETIME();
         for(int i = 0; i<=10; i++){
-            switch (rand.nextInt(3)){
+            switch (rand.nextInt(3)) {
                 case 0:
-                    day = new DATETIME("HOT", "DAY");
-                    System.out.println("HD");
+                    ListEvent = day.ListEvents("HOT", 12);
+                    //System.out.println("HD");
                     break;
                 case 1:
-                    day = new DATETIME("HOT", "NIGHT");
-                    System.out.println("HN");
+                    ListEvent = day.ListEvents("HOT", 0);
+                    //System.out.println("HN");
                     break;
+
                 case 2:
-                    day = new DATETIME("COLD", "DAY");
-                    System.out.println("CD");
+                    ListEvent = day.ListEvents("COLD", 15);
+                    //System.out.println("CD");
                     break;
                 case 3:
-                    day = new DATETIME("COLD", "NIGHT");
-                    System.out.println("CN");
+                    ListEvent = day.ListEvents("COLD", 21);
+                    //System.out.println("CN");
                     break;
+                default:
+                    ListEvent = day.ListEvents("HOT", 12);
+                    System.out.println("default");
+
             }
-            List ListEvent = day.EventList();
-            System.out.println("The List is "+ListEvent);
+            Events.add(ListEvent);
+
         }
+        System.out.println("The List is "+Events);
         //Make house + take DATETIME
         //DO Event
     }

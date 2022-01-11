@@ -1,7 +1,7 @@
-package Transport;
-
-public class Bicycle extends Transport{
-    public Car(){
-        transport = "Car";
-    }
-}
+//package Transport;
+//
+//public class Car extends Transport{
+//    public Car(){
+//        transport = "Car";
+//    }
+//}

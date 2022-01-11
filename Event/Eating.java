@@ -1,8 +1,10 @@
+package Event;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ColdTempeture extends Event{
-    System.out.println("Eating");
+class Eating {
+   // System.out.println("Eating");
     //(has(Fast){
     // if has Plate
     //    removeSomething Fridge

@@ -1,9 +1,11 @@
+package Event;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chill extends Event {
-    System.out.println("Chill");
-    int flag = 0;
+public class Chill {
+    //System.out.println("Chill");
+    //int flag = 0;
       //random (4)
         // case Ski/Bicycle //not night
         // case DrinkTea (Teapot)
