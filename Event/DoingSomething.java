@@ -1,5 +1,8 @@
 package Event;
 
+import Devices.Computer;
+import Devices.Teapot;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -22,11 +25,17 @@ public class DoingSomething{
                 break;
             case 1:
                 chill.add("DrinkTea");
-                // case DrinkTea (Teapot)
+                Teapot t = new Teapot();
+                t.work();
+                //person drink tea
+                t.stop();
                 break;
             case 2:
                 chill.add("Computer");
-                // cas Computer games (Computer)
+                Computer c = new Computer();
+                c.work();
+                //person play computer games
+                c.stop();
                 break;
             case 3:
                 chill.add("Eating");

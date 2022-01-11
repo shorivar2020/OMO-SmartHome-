@@ -4,9 +4,6 @@ import Devices.Fridge;
 import Devices.Microwave;
 import Devices.Plate;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Eating {
     String meal;
     Fridge f = new Fridge();
@@ -29,9 +26,5 @@ class Eating {
             p.removeSomethingOn(meal);
         }
         //     eat it
-
     }
-   // System.out.println("Eating");
-    //(has(Fast){
-    // if has Plate
 }
