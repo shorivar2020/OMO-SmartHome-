@@ -1,6 +1,6 @@
 package API;
 
-class Electricity {
+class Water {
     int consumptionTeapot = 10;
     int totalTeapot = 0;
     int consumptionHousehold = 90;
