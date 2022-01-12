@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args)
     {
-        AreaMaker homeApi = new AreaMaker();
-        Area home = homeApi.newHome(6, 6, 5);
+        AreaMaker make = new AreaMaker();
+        Area home = make.newHome(6, 6, 5);
 
         /////////////////////////////////////////////////////
 //        Random rand = new Random();
