@@ -1,6 +1,6 @@
 
 Funkční požadavky
-+F1	Entity se kterými pracujeme - Home -- Room -- Devices -- Transport (Without window and floor)
++F1	Entity se kterými pracujeme - Area -- Room -- Devices -- Transport (Without window and floor)
 F2	work()/stop() somethingIn;
 F3	State int - 0/1/2
 F4	electricity, functionallity, water (without gas)

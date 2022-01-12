@@ -21,25 +21,25 @@ public abstract class Device{
 //        return deviceState;
 //    }
 
-    public int getDocumentation() {
-        return documentation;
-    }
-
-    public int getElectricity() {
-        return electricity;
-    }
-
-    public int getWater() {
-        return water;
-    }
-
-    public int getFunctionallity() {
-        return functionallity;
-    }
-
-    public int getSomethingIn() {
-        return somethingIn;
-    }
+//    public int getDocumentation() {
+//        return documentation;
+//    }
+//
+//    public int getElectricity() {
+//        return electricity;
+//    }
+//
+//    public int getWater() {
+//        return water;
+//    }
+//
+//    public int getFunctionallity() {
+//        return functionallity;
+//    }
+//
+//    public int getSomethingIn() {
+//        return somethingIn;
+//    }
 
 //    public String getDeviceName(){
 //        return device;

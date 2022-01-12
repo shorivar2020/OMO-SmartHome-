@@ -4,7 +4,7 @@ import Devices.Computer;
 
 import java.util.Random;
 
-public class LivingRoom{
+public class EventLivingRoom {
     Random rand = new Random();
     public void Chilling(){
         switch(rand.nextInt(2)){

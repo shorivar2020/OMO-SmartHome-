@@ -1,6 +1,6 @@
 package Devices;
 
-public class Illumination {
+public class Illumination extends Device {
     private int electricity = 0;
     private int documentation = 0;
     private int functionality = 100;

@@ -2,7 +2,7 @@ package Devices;
 
 import java.util.ArrayList;
 
-public class Plate {
+public class Plate extends Device {
     private int electricity = 0;
     private int documentation = 0;
     private int functionality = 100;

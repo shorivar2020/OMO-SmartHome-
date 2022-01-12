@@ -6,7 +6,7 @@ import Event.Eating;
 import java.util.Random;
 import java.util.ArrayList;
 
-public class Kitchen {
+public class EventKitchen {
     Random rand = new Random();
     Eating eat = new Eating();
     public void Eating(){

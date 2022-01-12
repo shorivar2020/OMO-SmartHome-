@@ -1,8 +1,32 @@
-//import java.util.ArrayList;
+import Devices.Device;
+import LivingBeing.Animal;
+import LivingBeing.Human;
+
+import java.util.ArrayList;
 //import java.util.List;
 //
-//public class Room {
-//    private String name;
+public class Room {
+    String name;
+    private ArrayList<Device> devices = new ArrayList<>();
+    private ArrayList<Human> humans = new ArrayList<>();
+    private ArrayList<Animal> animals = new ArrayList<>();
+
+    public void addDevice(Device device){
+        devices.add(device);
+    }
+
+    public ArrayList<Device> getDevices() {
+        return devices;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void addName(String name){
+        this.name = name;
+    }
+    //    private String name;
 //    private List<Device> devices = new ArrayList<>();
 //    private List<Person> people = new ArrayList<>();
 //    private List<Pet> pets = new ArrayList<>();
@@ -41,4 +65,4 @@
 //    public void removePet(Pet pet){
 //        pets.remove(pet);
 //    }
-//}
+}

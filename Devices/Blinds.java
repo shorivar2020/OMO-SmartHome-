@@ -1,6 +1,6 @@
 package Devices;
 
-public class Blinds {
+public class Blinds extends Device {
     private int electricity = 0;
     private int documentation = 0;
     private int functionality = 100;

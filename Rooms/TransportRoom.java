@@ -1,19 +1,27 @@
-//import Transport.Car;
-//import Transport.Bicycle;
-//
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//public class TransportRoom extends Room{
-//    List<Transport> transports = new ArrayList<>();
-//
-//    public TransportRoom(){
-//        transports.add(new Car());
-//        transports.add(new Bicycle());
-//        transports.add(new Ski());
-//    }
-//
-//    public List<Transport> getTransports() {
-//        return transports;
-//    }
-//}
+package Rooms;
+
+import Transport.Car;
+import Transport.Bicycle;
+import Transport.Ski;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TransportRoom{
+    List<String> transports = new ArrayList<>();
+
+    public TransportRoom(){
+    }
+
+    public String addSomethingIn(String transport) {
+        this.transports.add(transport);
+        //System.out.println("In fridge "+somethingIn);
+        return transport;
+    }
+
+    public String removeSomethingIn(String transport) {
+        this.transports.remove(transport);
+        //System.out.println("In out " +somethingIn);
+        return transport;
+    }
+}
