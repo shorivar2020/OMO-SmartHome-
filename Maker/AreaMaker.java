@@ -1,4 +1,4 @@
-import Rooms.TransportRoom;
+package Maker;
 
 import java.util.Random;
 
@@ -11,8 +11,8 @@ public class AreaMaker extends Area {
         House house = newHouse.newHouse(rooms);
         area.addFloor(house);
         //DO TRANSPORT ROOM
-        area.getTransportRoom(new TransportRoom());
-        System.out.println("Made Area");
+        area.getTransportRoom(new House.TransportRoom());
+        System.out.println("Made Maker.Area");
         return area;
     }
 }

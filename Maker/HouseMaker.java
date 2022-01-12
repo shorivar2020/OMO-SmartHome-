@@ -1,3 +1,5 @@
+package Maker;
+
 public class HouseMaker {
     public House newHouse(int rooms) {
         House house = new House();
@@ -5,7 +7,7 @@ public class HouseMaker {
             RoomMaker room = new RoomMaker();
             house.setRoom(room.newRoom());
         }
-        System.out.println("Made House with Rooms");
+        System.out.println("Made Maker.House with Rooms");
         return house;
     }
 }

@@ -1,3 +1,5 @@
+package Maker;
+
 import Devices.Device;
 import Devices.FabriceDevice;
 
@@ -38,7 +40,7 @@ public class RoomMaker {
             device = f.createDevice(listIterator.next());
             room.addDevice(device);
         }
-        System.out.println("Made Room");
+        System.out.println("Made Maker.Room");
         return room;
     }
 }

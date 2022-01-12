@@ -1,4 +1,4 @@
-package Rooms;
+package Event;
 
 import Devices.Computer;
 

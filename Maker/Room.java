@@ -1,3 +1,5 @@
+package Maker;
+
 import Devices.Device;
 import LivingBeing.Animal;
 import LivingBeing.Human;
@@ -48,12 +50,12 @@ public class Room {
 //        return transports;
 //    }
 //
-//    public Room addPerson(Person person){
+//    public Maker.Room addPerson(Person person){
 //        peple.add(person);
 //        return this;
 //    }
 //
-//    public Room addPet(Pet pet){
+//    public Maker.Room addPet(Pet pet){
 //        pets.add(pet);
 //        return this;
 //    }
