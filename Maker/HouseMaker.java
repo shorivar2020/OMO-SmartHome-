@@ -9,7 +9,9 @@ public class HouseMaker {
             RoomMaker room = new RoomMaker();
             house.setRoom(room.newRoom());
         }
-
+        TransportRoomMaker tr = new TransportRoomMaker();
+        house.isTransportRoomHere(true);
+        house.setTransportRoom(tr.newTransportRoom());
 
         System.out.println("Made Maker.House with Rooms");
         return house;

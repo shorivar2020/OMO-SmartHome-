@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class Area {
     ArrayList<House> area = new ArrayList<>();
-    private House.TransportRoom transportRoom;
+   // private House.TransportRoom transportRoom;
 
     public ArrayList<House> getArea() {
         return area;
     }
 
-    public void addFloor(House house) {
+    public void addHouse(House house) {
         this.area.add(house);
     }
 
-    public void getTransportRoom(House.TransportRoom transportRoom) {
-        this.transportRoom = transportRoom;
-    }
+//    public void getTransportRoom(House.TransportRoom transportRoom) {
+//        this.transportRoom = transportRoom;
+//    }
 }

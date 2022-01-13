@@ -25,19 +25,6 @@ public class HumanMaker extends Human{
         human.setInArea(true);
     }
 
-    public void setFather(Human human, Area home){
-
-        for (House f : home.getArea()){
-           // f.addHuman(human);
-            for (Room r : f.getRooms()){
-                //r.addHuman(human);
-                for(Device d : r.getDevices()){
-                    d.addUsers(human);
-                }
-            }
-        }
-    }
-
     public void inRoom(Human human, Room room){
         human.setWhatRoom(room);
     }
