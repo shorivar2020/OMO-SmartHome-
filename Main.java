@@ -42,7 +42,8 @@ public class Main {
         int Rooms_Count = 6;
         int Animals_Count = 5;
         Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count);
-        HumanMaker hm = new HumanMaker();
+        //HumanMaker hm = new HumanMaker();
+        //NOT NEED
         for (House f : home.getArea()){
            // f.addHuman(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
             for (Room r : f.getRooms()){
@@ -51,6 +52,8 @@ public class Main {
                 }
             }
         }
+        ////////////////////////////////////////////
+        //Events
         ArrayList<String> events = new ArrayList<>();
         ArrayList<String> rooms = new ArrayList<>();
         Temperature tem = new Temperature();
