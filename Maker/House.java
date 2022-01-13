@@ -1,14 +1,25 @@
 package Maker;
 
+import LivingBeing.Human;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class House {
 
-    private ArrayList<Room> house = new ArrayList<Room>();
+    private ArrayList<Room> rooms = new ArrayList<Room>();
+    private ArrayList<Human> humans = new ArrayList<>();
+
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
+
+    public void addHuman(Human human){
+        humans.add(human);
+    }
 
     public void setRoom(Room room) {
-        house.add(room);
+        rooms.add(room);
     }
 
     public static class TransportRoom{
@@ -22,6 +33,7 @@ public class House {
             //System.out.println("In fridge "+somethingIn);
             return transport;
         }
+
 
         public String removeSomethingIn(String transport) {
             this.transports.remove(transport);

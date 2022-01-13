@@ -21,6 +21,13 @@ public class Room {
         return devices;
     }
 
+    public ArrayList<Human> getHumans() {
+        return humans;
+    }
+    public void addHuman(Human human){
+        humans.add(human);
+    }
+
     public String getName() {
         return name;
     }

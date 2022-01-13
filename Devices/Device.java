@@ -1,5 +1,7 @@
 package Devices;
 
+import LivingBeing.Human;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +14,17 @@ public abstract class Device{
     private int emloyed = 0; //was used
     private int functionallity = 100; //0-100%
     private int somethingIn; //0-no 1-yes
-   // private List<User> users = new ArrayList<>();
+    private ArrayList<Human> users = new ArrayList<>();
+
+    public void addUsers(Human human){
+        users.add(human);
+    }
+
+    public ArrayList<Human> getUsers() {
+        return users;
+    }
+
+    // private List<User> users = new ArrayList<>();
 
 //    public void work();
 //    public void stop();

@@ -12,9 +12,10 @@ public class RoomMaker {
     private ArrayList<String> dev = new ArrayList<>();
     public Room newRoom(){
         Room room = new Room();
+
         FabriceDevice f = new FabriceDevice();
         switch (rand.nextInt(2)) {
-            case 1:
+            case 0:
                 room.addName("Kitchen");
                 dev.add("FRIDGE");
                 dev.add("MICROWAVE");
@@ -25,7 +26,7 @@ public class RoomMaker {
                 dev.add("CONDITIONING");
                 dev.add("BLINDS");
                 break;
-            case 2:
+            case 1:
                 room.addName("LivingRoom");
                 dev.add("COMPUTER");
                 dev.add("HEATER");
@@ -40,7 +41,11 @@ public class RoomMaker {
             device = f.createDevice(listIterator.next());
             room.addDevice(device);
         }
+//        System.out.println(room.name);
+//        System.out.println(room.getHumans());
+//        System.out.println(room.getDevices());
         System.out.println("Made Maker.Room");
+        System.out.println(room.name);
         return room;
     }
 }

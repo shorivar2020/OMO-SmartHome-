@@ -3,11 +3,15 @@ package Maker;
 import java.util.ArrayList;
 
 public class Area {
-    ArrayList<House> house = new ArrayList<>();
+    ArrayList<House> area = new ArrayList<>();
     private House.TransportRoom transportRoom;
 
+    public ArrayList<House> getArea() {
+        return area;
+    }
+
     public void addFloor(House house) {
-        this.house.add(house);
+        this.area.add(house);
     }
 
     public void getTransportRoom(House.TransportRoom transportRoom) {
