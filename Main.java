@@ -4,6 +4,9 @@ import Event.EventKitchen;
 import Event.EventLivingRoom;
 import LivingBeing.Human;
 import Maker.*;
+import Transport.Bicycle;
+import Transport.Car;
+import Transport.Ski;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -88,11 +91,44 @@ public class Main {
                     }
                 }
             }
+            int count_wait = 0;
             for(Parking tr: h.getTrRooms()){
                 System.out.println(tr.getHumans());
-                for(int i=0; i<tr.getHuman_Counter(); i++){
-                    events.add("DO SPORT");
+                if(tr.getTransport_Counter()< tr.getHuman_Counter()){
+                    count_wait = tr.getTransport_Counter() - tr.getHuman_Counter();
                 }
+                //for(int i=0; i<tr.getHuman_Counter(); i++){
+                    //events.add("DO SPORT");
+                    //for(Human human: tr.getHumans()){
+                int count_tr = 0;
+                        for(Ski s: tr.getSkis()){
+                            //System.out.println(s);
+                            tr.getHumans().get(count_tr).setUseTransport(s);
+                            events.add("Ski");
+                            count_tr +=1;
+                        }
+                        for (Bicycle b: tr.getBicycles()){
+                            //System.out.println(b);
+                            tr.getHumans().get(count_tr).setUseTransport(b);
+                            events.add("Bicycle");
+                            count_tr +=1;
+                        }
+                        for (Car c: tr.getCars()){
+                        //System.out.println("CARS" + tr.getCars().size());
+                        //for (int car=0; car<tr.getCars().size(); car++){
+                            System.out.println(c);
+                            tr.getHumans().get(count_tr).setUseTransport(c);
+                            count_tr +=1;
+                            //human.setUseTransport(tr.getCars().get(i));
+                            events.add("Car");
+                        }
+                        for(int w=0; w<count_wait; w++){
+                            tr.getHumans().get(count_tr).Waiting();
+                            events.add("Wait");
+                        }
+
+                    //}
+               // }
             }
         }
         int totalElectricity = 0;

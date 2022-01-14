@@ -1,6 +1,9 @@
 package Maker;
 
 import LivingBeing.Human;
+import Transport.Bicycle;
+import Transport.Car;
+import Transport.Ski;
 
 import java.util.Random;
 
@@ -20,7 +23,19 @@ public class AreaMaker extends Area {
         }
         for (int i = 0; i < people/2; i++){//v  komanatu transporta
             area.getArea().get(0).getTrRooms().get(0).addHuman(new Human());
+
             //area.getArea().get(0).getRooms().get(i).getHumans().get(0).setWhatRoom(area.getArea().get(0).getRooms().get(0));
+        }
+        for (int i=0; i<skis; i++){
+            area.getArea().get(0).getTrRooms().get(0).addSki(new Ski());
+        }
+        for(int i=0; i<bicycles; i++){
+            area.getArea().get(0).getTrRooms().get(0).addBicycle(new Bicycle());
+
+        }
+
+        for (int i = 0; i<cars; i++){
+            area.getArea().get(0).getTrRooms().get(0).addCar(new Car());
         }
 //        for (int i = 0; i<rooms; i++){
 //            System.out.println( "loo" + area.getArea().get(0).getRooms().get(i).getHumans());

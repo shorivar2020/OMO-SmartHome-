@@ -67,6 +67,10 @@ public class Human {
         Doings.add("EATING");
     }
 
+    public void Waiting(){
+        Doings.add("WAITING");
+    }
+
     public void DrinkTea(){
         Doings.add("DrinkTea");
     }
