@@ -6,7 +6,7 @@ public class Illumination extends Device {
     int consumptionFunctionality = 8;
     private int functionality = 100;
     private String documentation = "Documentation of Illumination";
-    boolean deviceState = true;
+    boolean deviceState = false;
     private int buying = 0;
     private int cost = 4000;
 

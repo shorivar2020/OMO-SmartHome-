@@ -9,7 +9,7 @@ public class Teapot extends Device {
     private int buying = 0;
     private int cost = 2000;
     private String documentation = "Documentation of Teapot";
-    boolean deviceState = true;
+    boolean deviceState = false;
 
     public String getDocumentation(){
         return documentation;

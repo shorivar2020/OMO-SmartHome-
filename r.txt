@@ -1,0 +1,43 @@
+
+Funkční požadavky
+F1+	Area, Home, Rooms, Parking, Device, HomeAI, Human, Animal, Car, Bicycle
+F2+	work/stop(Devices) | SomethingIn(Microwave)(Fridge)/SomethingOn(Plate) | On/Off(Devices) | functionality!=0 --> work. | addSomethingIn/removeSomethingIn(Fridge)
+F3+	boolean deviceState: false-off/ true-on
+F4+	Electricity/Functionality/Water/Cost
+F5+	Human can work/stop Device --> on/off Akce Eating in Kitchen --> Take food from fridge --> In frodge -1 food
+F6+	If Human in Kitchen -->Eating / If Human in Living Room --> Chilling/ If Human in Parking --> use Tranport
+F7+	Hot temperature --> Work Heater /Cold temperature --> Work Conditioning / 23:00 clock --> Sleeping/Illumination on
+⦁	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus money and fix
+⦁	Fridge have not food --> Human go Shoping.
+F8!	Vygenerování reportů:
+⦁	HouseConfigurationReport: veškerá konfigurační data domu zachovávající hieararchii - dům -> patro -> místnost -> okno -> žaluzie atd. Plus jací jsou obyvatelé domu.
+⦁	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
+⦁	ActivityAndUsageReport: Report akcí (aktivit) jednotlivých osob a zvířat, kolikrát které osoby použily které zařízení.
+⦁	ConsumptionReport: Kolik jednotlivé spotřebiče spotřebovaly elektřiny, plynu, vody. Včetně finančního vyčíslení.
+F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
+F10+Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait
+
+
+Nefunkční požadavky
+⦁	Není požadována autentizace ani autorizace
+⦁	Aplikace může běžet pouze v jedné JVM
+⦁	Aplikaci pište tak, aby byly dobře schované metody a proměnné, které nemají být dostupné ostatním třídám. Vygenerovný javadoc by měl mít co nejméně public metod a proměnných.
+⦁	Reporty jsou generovány do textového souboru
+⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
+
+Vhodné design patterny
+⦁	State machine
+⦁	Iterator
+⦁	Factory/Factory method
+⦁	Decorator/Composite
+⦁	Singleton
+⦁	Visitor/Observer/Listener
+⦁	Chain of responsibility
+⦁	Partially persistent data structure
+⦁	Object Pool
+⦁	Lazy Initialization
+
+Požadované výstupy
+⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
+⦁	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
+⦁	Dvě různé konfigurace domu a pro ně vygenerovány reporty za různá období. Minimální konfigurace alespoň jednoho domu je: 6 osob, 3 zvířata, 8 typů spotřebičů, 20 ks spotřebičů, 6 místností, jedny lyže, dvě kola.

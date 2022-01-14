@@ -6,7 +6,7 @@ public class Conditioning extends Device {
     int consumptionFunctionality = 14;
     private int functionality = 100;
     private String documentation = "Documentation of Conditioning";
-    boolean deviceState = true;
+    boolean deviceState = false;
     private int buying = 0;
     private int cost = 7000;
 

@@ -6,7 +6,7 @@ public class Heater extends Device {
     int consumptionFunctionality = 18;
     private int functionality = 100;
     private String documentation = "Documentation of Heater";
-    boolean deviceState = true;
+    boolean deviceState = false;
     private int buying = 0;
     private int cost = 9000;
 

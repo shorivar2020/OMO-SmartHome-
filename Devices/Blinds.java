@@ -8,7 +8,7 @@ public class Blinds extends Device {
     int consumptionFunctionality = 4;
     private int functionality = 100;
     private String documentation = "Documentation of Blinds";
-    boolean deviceState = true;
+    boolean deviceState = false;
 
     public String getDocumentation(){
         return documentation;

@@ -8,7 +8,7 @@ public class Microwave extends Device {
     int consumptionFunctionality = 105;//Very bad microwave
     private int functionality = 0;//Was using where was buying
     private String documentation = "Documentation of Microwave";
-    boolean deviceState = true;
+    boolean deviceState = false;
     private int buying = 0;
     private int cost = 500;
     ArrayList<String> somethingIn = new ArrayList<>();

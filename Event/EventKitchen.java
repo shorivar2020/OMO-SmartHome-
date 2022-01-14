@@ -17,38 +17,6 @@ public class EventKitchen {
         Plate p = (Plate) (room.getDevices().get(6));
         Teapot t = (Teapot) (room.getDevices().get(7));
 
-        //for(int i = 0; i<(room.getDevices()).size(); i++){
-
-        // f = (Fridge)(room.getDevices().get(0));
-        //System.out.println(f);
-        //for(Device d: room.getDevices()){
-
-            //System.out.println((room.getDevices().get(0)));
-            //System.out.println(d);
-            //if(room.getDevices().get(i).equals("Devices.Fridge")){
-//                f = (Fridge)d;
-
-               // System.out.println("FRODGEEEEEEEEEEEEEEE");
-            //}
-//            if(d.equals("Microwave")){
-//                if (d instanceof Microwave) {
-//                    System.out.println("MICROVWA");
-//                    m = (Microwave)d;
-//                }
-//            }
-//            if(d.equals("Plate")){
-//                System.out.println("PLATTTEE");
-//                assert d instanceof Plate;
-//                p = (Plate)d;
-//
-//            }if(d.equals("Teapot")){
-//                System.out.println("TEAAAAAAAAAAAAAAAAAAAAA");
-//                assert d instanceof Teapot;
-//                t = (Teapot)d;
-//
-//            }
-       // }
-
         for(Human h: Humans) {
             System.out.println("Eating:" + h);
             switch(rand.nextInt(3)){
@@ -58,7 +26,14 @@ public class EventKitchen {
                     }else{
                         broken.fix(f, h);
                     }
-                    meal = f.removeSomethingIn("Food");
+                    if(f.getSomethingIn().size() != 0){
+                        meal = f.removeSomethingIn("Food");
+                    }
+                    else{
+                        Shoping shop = new Shoping();
+                        shop.Shoping(f);
+                        meal = f.removeSomethingIn("Food");
+                    }
                     h.setUse(f);
                     f.addUsers(h);
                    // f.addSomethingIn("Food");
@@ -80,7 +55,14 @@ public class EventKitchen {
                     }else{
                         broken.fix(f, h);
                     }
-                    meal = f.removeSomethingIn("Food");
+                    if(f.getSomethingIn().size() != 0){
+                        meal = f.removeSomethingIn("Food");
+                    }
+                    else{
+                        Shoping shop = new Shoping();
+                        shop.Shoping(f);
+                        meal = f.removeSomethingIn("Food");
+                    }
                     h.setUse(f);
                     f.addUsers(h);
                     // f.addSomethingIn("Food");

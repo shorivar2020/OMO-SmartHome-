@@ -8,7 +8,7 @@ public class Plate extends Device {
     int consumptionFunctionality = 14;
     private int functionality = 100;
     private String documentation = "Documentation of Plate";
-    boolean deviceState = true;
+    boolean deviceState = false;
     private int buying = 0;
     private int cost = 7000;
     ArrayList<String> somethingOn = new ArrayList<>();
