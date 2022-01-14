@@ -3,22 +3,46 @@ package Devices;
 import java.util.ArrayList;
 
 public class Plate extends Device {
-    private int electricity = 0;
-    private int documentation = 0;
-    private int functionality = 100;
-    boolean deviceState = true;
     static int count = 0;
+    int consumptionElectricity = 70;
+    int consumptionFunctionality = 14;
+    private int functionality = 100;
+    private String documentation = "Documentation of Plate";
+    boolean deviceState = true;
+    private int buying = 0;
+    private int cost = 7000;
     ArrayList<String> somethingOn = new ArrayList<>();
 
-    public Plate(){
-        count++;
-        this.electricity = electricity + count;
-        this.documentation = documentation;
-        this.functionality = functionality - count;
+    public String getDocumentation(){
+        return documentation;
     }
+
+    public int getElectricity() {
+        return consumptionElectricity*count;
+    }
+
+    public int getConsumptionFunctionality() {
+        return functionality;
+    }
+
+    public void fixing(){
+        functionality = 100;
+    }
+
+    public void buyNew(){
+        functionality = 100;
+        buying++;
+    }
+
+    public int getMoney(){
+        return buying*cost;
+    }
+
     public boolean work(){
         if(this.functionality != 0){
             deviceState = true;
+            count++;
+            functionality = functionality - consumptionFunctionality*count;
             return true;
         }
         else{

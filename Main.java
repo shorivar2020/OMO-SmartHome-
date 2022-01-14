@@ -1,13 +1,11 @@
 import Devices.Device;
-import Event.DoingSomething;
+import Event.HouseAI;
 import Event.EventKitchen;
 import Event.EventLivingRoom;
-import Event.Temperature;
 import LivingBeing.Human;
 import Maker.*;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Main {
@@ -40,24 +38,26 @@ public class Main {
         }
         int Humans_Count = 6;
         int Rooms_Count = 6;
-        int Animals_Count = 5;
-        Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count);
+        int Animals_Count = 3;
+        int Ski_count = 1;
+        int Bicycle_count = 1;
+        int Car_count = 1;
+        Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
         //HumanMaker hm = new HumanMaker();
         //NOT NEED
-        for (House f : home.getArea()){
-           // f.addHuman(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
-            for (Room r : f.getRooms()){
-                for(Device d : r.getDevices()){
-                    d.addUsers(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
-                }
-            }
-        }
+//        for (House f : home.getArea()){
+//           // f.addHuman(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
+//            for (Room r : f.getRooms()){
+//                for(Device d : r.getDevices()){
+//                    d.addUsers(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
+//                }
+//            }
+//        }
         ////////////////////////////////////////////
         //Events
         ArrayList<String> events = new ArrayList<>();
         ArrayList<String> rooms = new ArrayList<>();
-        Temperature tem = new Temperature();
-        DoingSomething doing = new DoingSomething();
+        HouseAI doing = new HouseAI();
         EventKitchen ek = new EventKitchen();
         EventLivingRoom el = new EventLivingRoom();
 
@@ -66,39 +66,50 @@ public class Main {
                 System.out.println(r.getHumans());
                 if((r.getHumans()).size() == 1){
                     if(temperature.equals("HOT")){
-                        tem.DoColder();
+                        doing.DoColder(r);
                         events.add("HotTemperature");
                     }
                     else{
-                        tem.DoHotter();
+                        doing.DoHotter(r);
                         events.add("ColdTemperature");
                     }
                     if(9<clock && clock<18) {
                         if (r.getName().equals("Kitchen")) {
-                            ek.Eating();
+                            ek.Eating(r.getHumans(), r);
                             events.add("Eating");
                         } else {
-                            el.Chilling();
+                            el.Chilling(r.getHumans(), r);
                             events.add("Chilling");
                         }
                         rooms.add(r.getName());
                     }else{
-                        doing.Night();
+                        doing.Night(r);
                         events.add("Night");
                     }
                 }
             }
-            for(TransportRoom tr: h.getTrRooms()){
+            for(Parking tr: h.getTrRooms()){
                 System.out.println(tr.getHumans());
                 for(int i=0; i<tr.getHuman_Counter(); i++){
                     events.add("DO SPORT");
                 }
             }
         }
-
+        int totalElectricity = 0;
+        int totalWater = 0;
+        int totalMoney = 0;
+        for(House h: home.getArea()){
+            for (Room r: h.getRooms()){
+                for(Device d: r.getDevices()){
+                    totalElectricity += d.getElectricity();
+                    totalWater += d.getWater();
+                    totalMoney += d.getMoney();
+                }
+            }
+        }
+        System.out.println(totalElectricity);
+        System.out.println(totalWater);
+        System.out.println(totalMoney);
         System.out.println("Report about Events "+events);
-
-//        Make house + take DATETIME
-//        DO Event
     }
 }

@@ -17,22 +17,22 @@ public class RoomMaker {
         switch (rand.nextInt(2)) {
             case 0:
                 room.addName("Kitchen");
+                dev.add("ILLUMINATION");
+                dev.add("BLINDS");
+                dev.add("HEATER");
+                dev.add("CONDITIONING");
                 dev.add("FRIDGE");
                 dev.add("MICROWAVE");
                 dev.add("PLATE");
                 dev.add("TEAPOT");
-                dev.add("HEATER");
-                dev.add("ILLUMINATION");
-                dev.add("CONDITIONING");
-                dev.add("BLINDS");
                 break;
             case 1:
                 room.addName("LivingRoom");
-                dev.add("COMPUTER");
-                dev.add("HEATER");
                 dev.add("ILLUMINATION");
-                dev.add("CONDITIONING");
                 dev.add("BLINDS");
+                dev.add("HEATER");
+                dev.add("CONDITIONING");
+                dev.add("COMPUTER");
                 break;
         }
         Device device = null;

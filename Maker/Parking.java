@@ -6,7 +6,7 @@ import LivingBeing.Human;
 
 import java.util.ArrayList;
 
-public class TransportRoom {
+public class Parking {
     String name;
     private ArrayList<Device> devices = new ArrayList<>();
     private ArrayList<Human> humans = new ArrayList<>();

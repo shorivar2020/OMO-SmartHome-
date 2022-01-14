@@ -3,7 +3,6 @@ package Devices;
 import LivingBeing.Human;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Device{
 
@@ -12,8 +11,10 @@ public abstract class Device{
     private int water = 0; //1-...
     private int documentation = 0; //??
     private int emloyed = 0; //was used
-    private int functionallity = 100; //0-100%
+    private int functionality = 100; //0-100%
     private int somethingIn; //0-no 1-yes
+    private int buying = 0;
+    private int cost = 2000;
     private ArrayList<Human> users = new ArrayList<>();
 
     public void addUsers(Human human){
@@ -22,6 +23,27 @@ public abstract class Device{
 
     public ArrayList<Human> getUsers() {
         return users;
+    }
+
+    public int getElectricity() {
+        return electricity;
+    }
+
+    public int getWater() {
+        return water;
+    }
+
+    public void fixing(){
+        functionality = 100;
+    }
+
+    public void buyNew(){
+        functionality = 100;
+        buying++;
+    }
+
+    public int getMoney(){
+        return buying*cost;
     }
 
     // private List<User> users = new ArrayList<>();

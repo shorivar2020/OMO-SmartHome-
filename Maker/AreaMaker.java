@@ -5,7 +5,7 @@ import LivingBeing.Human;
 import java.util.Random;
 
 public class AreaMaker extends Area {
-    public Area newHome(int rooms, int people, int animals){
+    public Area newHome(int rooms, int people, int animals, int skis, int bicycles, int cars){
         Area area = new Area();
         HouseMaker newHouse = new HouseMaker();
         Random rand = new Random();
@@ -28,8 +28,8 @@ public class AreaMaker extends Area {
 //
 //        }
         //DO TRANSPORT ROOM
-       // area.getTransportRoom(new House.TransportRoom());
-        System.out.println("Made Maker.Area");
+        area.addParking(new Parking());
+
 
         return area;
     }

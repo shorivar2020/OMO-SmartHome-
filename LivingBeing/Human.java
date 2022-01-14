@@ -7,8 +7,10 @@ import Transport.Transport;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Human {
+    Random rand = new Random();
     Room WhatRoom;
     boolean InArea;
     private List<Device> Use = new ArrayList<>();
@@ -69,6 +71,21 @@ public class Human {
         Doings.add("DrinkTea");
     }
 
+    public boolean Find(){
+        Doings.add("FIND_DOCUMENTATION");
+        switch(rand.nextInt(3)){
+            case 0:
+                Doings.add("FIND_DOCUMENTATION");
+                return true;
+            case 1:
+                Doings.add("NOT_FIND_DOCUMENTATION");
+                return false;
+            case 2:
+                Doings.add("NOT_FIND");
+                return false;
+        }
+        return false;
+    }
     public void PlayComputerGames(){
         Doings.add("PLAY_COMPUTER_GAMES");
     }

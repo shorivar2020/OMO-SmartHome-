@@ -8,7 +8,7 @@ public class House {
 
     private ArrayList<Room> rooms = new ArrayList<Room>();
     private ArrayList<Human> humans = new ArrayList<>();
-    private ArrayList<TransportRoom> trRooms= new ArrayList<TransportRoom>();
+    private ArrayList<Parking> trRooms= new ArrayList<Parking>();
     boolean TransportRoomHere = false;
 
     public ArrayList<Room> getRooms() {
@@ -27,11 +27,11 @@ public class House {
         this.TransportRoomHere = tr;
     }
 
-    public ArrayList<TransportRoom> getTrRooms() {
+    public ArrayList<Parking> getTrRooms() {
         return trRooms;
     }
 
-    public void setTransportRoom(TransportRoom tr){ trRooms.add(tr);}
+    public void setTransportRoom(Parking tr){ trRooms.add(tr);}
 
 //    public static class TransportRoom{
 //        List<String> transports = new ArrayList<>();
