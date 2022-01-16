@@ -7,6 +7,7 @@ import Maker.*;
 import Transport.Bicycle;
 import Transport.Car;
 import Transport.Ski;
+import Transport.Transport;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -71,6 +72,7 @@ public class Main {
                         events.add("ColdTemperature");
                     }
                     if(9<clock && clock<18) {
+                        doing.Day(r.getHumans(), r);
                         if (r.getName().equals("Kitchen")) {
                             ek.Eating(r.getHumans(), r);
                             events.add("Eating");
@@ -80,7 +82,7 @@ public class Main {
                         }
                         rooms.add(r.getName());
                     }else{
-                        doing.Night(r);
+                        doing.Night(r.getHumans(), r);
                         events.add("Night");
                     }
                 }
@@ -212,6 +214,49 @@ public class Main {
 //        System.out.println(totalElectricity);
 //        System.out.println(totalWater);
   //      System.out.println(totalMoney);
-        //System.out.println("Report about Events "+events);
+       System.out.println("Report about Events "+events);
+//        for(Human p: r.getHumans()){
+//            human.write("| Human: " + p);
+//            human.append('\n');
+//                    human.write("| Device: " + p.getUse());
+//                    human.append('\n');
+//                    human.write("| Do: " + p.getDoings());
+//                    human.append('\n');
+//                    human.write("| Animal: " + p.getWithAnimal());
+//                    human.append('\n');
+//                    human.write("| Transport: " + p.getUseTransport());
+//                    human.append('\n');
+        FileWriter writHuman = new FileWriter("ActivityAndUsageReport.txt", false);
+        for(House h: home.getArea()){
+            for (Room r: h.getRooms()){
+                for(Human p:r.getHumans()){
+                    writHuman.write(String.valueOf(p));
+                    writHuman.append('\n');
+                    writHuman.write("Transport:" + String.valueOf(p.getUseTransport()));
+                    writHuman.append('\n');
+                    writHuman.write("Devices:" + String.valueOf(p.getUse()));
+                    writHuman.append('\n');
+                    writHuman.write("Do:" + String.valueOf(p.getDoings()));
+                    writHuman.append('\n');
+                    writHuman.write("Animal:" + String.valueOf(p.getWithAnimal()));
+                    writHuman.append('\n');
+                }
+            }
+            for(Parking t: h.getTrRooms()){
+                for(Human p: t.getHumans()){
+                    writHuman.write(String.valueOf(p));
+                    writHuman.append('\n');
+                    writHuman.write("Transport:" + String.valueOf(p.getUseTransport()));
+                    writHuman.append('\n');
+                    writHuman.write("Devices:" + String.valueOf(p.getUse()));
+                    writHuman.append('\n');
+                    writHuman.write("Do:" + String.valueOf(p.getDoings()));
+                    writHuman.append('\n');
+                    writHuman.write("Animal:" + String.valueOf(p.getWithAnimal()));
+                    writHuman.append('\n');
+                }
+            }
+        }
+        writHuman.flush();
     }
 }

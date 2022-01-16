@@ -4,19 +4,24 @@ import Devices.*;
 import LivingBeing.Human;
 import Maker.Room;
 
+import java.util.ArrayList;
+
 public class HouseAI {
     Human HouseAI;
 
-    public void Night(Room room) {
+    public void Night(ArrayList<Human> Humans, Room room) {
+        for(Human h: Humans) {
             Illumination i = (Illumination) (room.getDevices().get(0));
             Blinds b = (Blinds) (room.getDevices().get(1));
             i.work();
             b.work();
             i.addUsers(HouseAI);
             b.addUsers(HouseAI);
+            h.Sleeping();
+        }
     }
 
-    public void Day( Room room){
+    public void Day(ArrayList<Human> Humans, Room room){
             Illumination i = (Illumination) (room.getDevices().get(0));
             Blinds b = (Blinds) (room.getDevices().get(1));
             i.stop();

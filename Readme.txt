@@ -10,9 +10,9 @@ F7+	Hot temperature --> Work Heater /Cold temperature --> Work Conditioning / 23
 ⦁	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus money and fix
 ⦁	Fridge have not food --> Human go Shoping.
 F8!	Vygenerování reportů:
-⦁	HouseConfigurationReport: veškerá konfigurační data domu zachovávající hieararchii - dům -> patro -> místnost -> okno -> žaluzie atd. Plus jací jsou obyvatelé domu.
++	HouseConfigurationReport and HouseConfigurationReportDevice
 ⦁	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
-⦁	ActivityAndUsageReport: Report akcí (aktivit) jednotlivých osob a zvířat, kolikrát které osoby použily které zařízení.
++	ActivityAndUsageReport(ONLY PEOPLE)
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
 F10+Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait

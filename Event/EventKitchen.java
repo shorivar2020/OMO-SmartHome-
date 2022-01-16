@@ -22,7 +22,6 @@ public class EventKitchen {
             switch(rand.nextInt(3)){
                 case 0:
                     if(f.work()){
-                        continue;
                     }else{
                         broken.fix(f, h);
                     }
@@ -53,7 +52,6 @@ public class EventKitchen {
                     break;
                 case 1:
                     if(f.work()){
-                        continue;
                     }else{
                         broken.fix(f, h);
                     }
@@ -63,6 +61,7 @@ public class EventKitchen {
                     else{
                         Shoping shop = new Shoping();
                         shop.Shoping(f);
+                        h.Shopping();
                         meal = f.removeSomethingIn("Food");
                     }
                     h.setUse(f);
@@ -70,7 +69,6 @@ public class EventKitchen {
 //                    System.out.println("QQQQQ" + f.getUsers());
                     // f.addSomethingIn("Food");
                     if(p.work()){
-                        continue;
                     }else{
                         broken.fix(p, h);
                     }
@@ -84,14 +82,13 @@ public class EventKitchen {
                     break;
                 case 2:
                     if(t.work()){
-                        continue;
                     }else{
                         broken.fix(t, h);
                     }
                     h.DrinkTea();
                     h.setUse(t);
                     t.addUsers(h);
-//                    System.out.println("QQQQQ" + t.getUsers());
+                    //System.out.println("TeaTime");
                     t.stop();
                     break;
             }

@@ -73,7 +73,7 @@ public class Human {
     }
 
     public void DrinkTea(){
-        Doings.add("DrinkTea");
+        Doings.add("DRINK_TEA");
     }
 
     public boolean Find(){
