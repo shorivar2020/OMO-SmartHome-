@@ -60,7 +60,7 @@ public class Main {
 
         for(House h: home.getArea()){
             for(Room r: h.getRooms()){
-                System.out.println(r.getHumans());
+                //System.out.println(r.getHumans());
                 if((r.getHumans()).size() == 1){
                     if(temperature.equals("HOT")){
                         doing.DoColder(r);
@@ -160,6 +160,7 @@ public class Main {
         writHome.append('\n');
         writHome.write("| Area: " + home.getArea());
         writHome.append('\n');
+        int i=0;
         for (House f : home.getArea()){
             writHome.write("| House:" + f);
             writHome.append('\n');
@@ -179,19 +180,30 @@ public class Main {
                 writHome.write("| Humans: " + r.getHumans());
                 writHome.append('\n');
                 for(Device d : r.getDevices()){
+                    i++;
                     writDevices.write("| Device: " + d);
                     writDevices.append('\n');
                     writDevices.write("| Type: " + d.getDeviceName());
                     writDevices.append('\n');
-                    writDevices.write("| Users: " + d.getUsers());
+                    if(d.getUsers().contains(null)){
+                        writDevices.write("| Users: AI HOME");
+                    }
+                    else{
+                        writDevices.write("| Users: " + d.getUsers());
+                    }
+
+                    //writDevices.write("| Users: " + d.getUsers().get(i).getName());
+                    //writDevices.write(d.getHomeAI().get(0));
                     writDevices.append('\n');
-                    writDevices.write("| Electricity: " + d.getElectricity());
+                    writDevices.write(" | Electricity: " + d.getElectricity());
                     writDevices.append('\n');
                     writDevices.write("| Water: " + d.getWater());
                     writDevices.append('\n');
                     writDevices.write("| Money: " + d.getMoney());
                     writDevices.append('\n');
                     //d.addUsers(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
+                    //System.out.println("Users"+ d.getUsers());
+
                 }
             }
         }

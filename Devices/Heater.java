@@ -1,5 +1,9 @@
 package Devices;
 
+import LivingBeing.Human;
+
+import java.util.ArrayList;
+
 public class Heater extends Device {
     static int count = 0;
     int consumptionElectricity = 90;
@@ -9,6 +13,15 @@ public class Heater extends Device {
     boolean deviceState = false;
     private int buying = 0;
     private int cost = 9000;
+    private ArrayList<Human> users = new ArrayList<>();
+
+    public void addUsers(Human human){
+        users.add(human);
+    }
+
+    public ArrayList<Human> getUsers() {
+        return users;
+    }
 
     public String getDocumentation(){
         return documentation;

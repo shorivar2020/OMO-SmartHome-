@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Shoping{
     public void Shoping(Fridge fridge){
-        System.out.println("Hot temperature");
+        //System.out.println("Hot temperature");
         fridge.addSomethingIn("Food");
         fridge.addSomethingIn("Food");
         fridge.addSomethingIn("Food");

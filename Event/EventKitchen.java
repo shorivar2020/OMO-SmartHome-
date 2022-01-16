@@ -49,6 +49,7 @@ public class EventKitchen {
                     m.removeSomethingIn(meal);
                     m.stop();
                     h.Eating();
+
                     break;
                 case 1:
                     if(f.work()){
@@ -66,6 +67,7 @@ public class EventKitchen {
                     }
                     h.setUse(f);
                     f.addUsers(h);
+//                    System.out.println("QQQQQ" + f.getUsers());
                     // f.addSomethingIn("Food");
                     if(p.work()){
                         continue;
@@ -78,6 +80,7 @@ public class EventKitchen {
                     p.removeSomethingOn(meal);
                     p.stop();
                     h.Eating();
+//                    System.out.println("QQQQQ" + p.getUsers());
                     break;
                 case 2:
                     if(t.work()){
@@ -88,6 +91,7 @@ public class EventKitchen {
                     h.DrinkTea();
                     h.setUse(t);
                     t.addUsers(h);
+//                    System.out.println("QQQQQ" + t.getUsers());
                     t.stop();
                     break;
             }

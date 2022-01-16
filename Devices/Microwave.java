@@ -1,5 +1,7 @@
 package Devices;
 
+import LivingBeing.Human;
+
 import java.util.ArrayList;
 
 public class Microwave extends Device {
@@ -12,6 +14,15 @@ public class Microwave extends Device {
     private int buying = 0;
     private int cost = 5000;
     ArrayList<String> somethingIn = new ArrayList<>();
+    private ArrayList<Human> users = new ArrayList<>();
+
+    public void addUsers(Human human){
+        users.add(human);
+    }
+
+    public ArrayList<Human> getUsers() {
+        return users;
+    }
 
     public String getDocumentation(){
         return documentation;

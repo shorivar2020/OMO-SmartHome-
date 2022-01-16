@@ -1,5 +1,7 @@
 package Devices;
 
+import LivingBeing.Human;
+
 import java.util.ArrayList;
 
 public class Plate extends Device {
@@ -12,6 +14,15 @@ public class Plate extends Device {
     private int buying = 0;
     private int cost = 7000;
     ArrayList<String> somethingOn = new ArrayList<>();
+    private ArrayList<Human> users = new ArrayList<>();
+
+    public void addUsers(Human human){
+        users.add(human);
+    }
+
+    public ArrayList<Human> getUsers() {
+        return users;
+    }
 
     public String getDocumentation(){
         return documentation;

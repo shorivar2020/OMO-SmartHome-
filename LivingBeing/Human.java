@@ -12,6 +12,7 @@ import java.util.Random;
 public class Human {
     Random rand = new Random();
     Room WhatRoom;
+    String name;
     boolean InArea;
     private List<Device> Use = new ArrayList<>();
     private List<Transport> UseTransport = new ArrayList<>();

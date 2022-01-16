@@ -1,5 +1,9 @@
 package Devices;
 
+import LivingBeing.Human;
+
+import java.util.ArrayList;
+
 public class Blinds extends Device {
     static int count = 0;
     private int buying = 0;
@@ -9,6 +13,15 @@ public class Blinds extends Device {
     private int functionality = 100;
     private String documentation = "Documentation of Blinds";
     boolean deviceState = false;
+    private ArrayList<Human> users = new ArrayList<>();
+
+    public void addUsers(Human human){
+        users.add(human);
+    }
+
+    public ArrayList<Human> getUsers() {
+        return users;
+    }
 
     public String getDocumentation(){
         return documentation;

@@ -6,6 +6,7 @@ import Maker.Room;
 
 public class HouseAI {
     Human HouseAI;
+
     public void Night(Room room) {
             Illumination i = (Illumination) (room.getDevices().get(0));
             Blinds b = (Blinds) (room.getDevices().get(1));
@@ -30,7 +31,6 @@ public class HouseAI {
             c.work();
             heat.stop();
             heat.addUsers(HouseAI);
-            heat.addUsers(HouseAI);
 
     }
 
@@ -39,7 +39,6 @@ public class HouseAI {
             Heater heat = (Heater) (room.getDevices().get(2));
             heat.work();
             c.stop();
-            heat.addUsers(HouseAI);
             heat.addUsers(HouseAI);
 
     }
