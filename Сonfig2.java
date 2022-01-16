@@ -13,18 +13,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Config {
-    private static Config instance;
-        private Config(){}
-    public static Config getInstance(){
+class Config2 {
+    private static Config2 instance;
+    private Config2(){}
+    public static Config2 getInstance(){
         if(instance == null){
-            instance = new Config();
+            instance = new Config2();
         }
         return instance;
     }
-    public void config(int Rooms_Count, int Humans_Count, int Animals_Count, int Ski_count, int Bicycle_count, int Car_count) throws IOException {
+    public void config2(int Rooms_Count, int Humans_Count, int Animals_Count, int Ski_count, int Bicycle_count, int Car_count) throws IOException {
         ////////////////////////////////////////////
-
         //Events
         Random rand = new Random();
 
@@ -52,14 +51,14 @@ public class Config {
                 temperature = "";
         }
         AreaMaker make = new AreaMaker();
-        Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
+        Area home2 = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
         ArrayList<String> events = new ArrayList<>();
         ArrayList<String> rooms = new ArrayList<>();
         HouseAI doing = new HouseAI();
         EventKitchen ek = new EventKitchen();
         EventLivingRoom el = new EventLivingRoom();
 
-        for(House h: home.getArea()){
+        for(House h: home2.getArea()){
             for(Room r: h.getRooms()){
                 //System.out.println(r.getHumans());
                 if((r.getHumans()).size() == 1){
@@ -127,11 +126,11 @@ public class Config {
                 // }
             }
         }
-        FileWriter writer = new FileWriter("ConsumptionReport.txt", false);
+        FileWriter writer = new FileWriter("ConsumptionReport2.txt", false);
         int totalElectricity = 0;
         int totalWater = 0;
         int totalMoney = 0;
-        for(House h: home.getArea()){
+        for(House h: home2.getArea()){
             for (Room r: h.getRooms()){
                 for(Device d: r.getDevices()){
                     writer.write(" -" + String.valueOf(d));
@@ -156,14 +155,14 @@ public class Config {
         //writer.write(totalMoney);
         //writer.write("Report about Events "+events);
         writer.flush();
-        FileWriter writHome = new FileWriter("HouseConfigurationReport.txt", false);
-        FileWriter writDevices = new FileWriter("HouseConfigurationReportDevice.txt", false);
-        writHome.write("| Home: " + home);
+        FileWriter writHome = new FileWriter("HouseConfigurationReport2.txt", false);
+        FileWriter writDevices = new FileWriter("HouseConfigurationReportDevice2.txt", false);
+        writHome.write("| Home: " + home2);
         writHome.append('\n');
-        writHome.write("| Area: " + home.getArea());
+        writHome.write("| Area: " + home2.getArea());
         writHome.append('\n');
         int i=0;
-        for (House f : home.getArea()){
+        for (House f : home2.getArea()){
             writHome.write("| House:" + f);
             writHome.append('\n');
             writHome.write("| Transport room:" + f.getTrRooms());
@@ -214,23 +213,22 @@ public class Config {
         System.out.println(totalElectricity);
         System.out.println(totalWater);
         //      System.out.println(totalMoney);
-//        FileWriter human = new FileWriter("ActivityAndUsageReport.txt", false);
-//        System.out.println("Report about Events "+events);
-//        for(Human p: r.getHumans()){
+        System.out.println("Report about Events "+events);
+        //        for(Human p: r.getHumans()){
 //            human.write("| Human: " + p);
 //            human.append('\n');
-//            human.write("| Device: " + p.getUse());
-//            human.append('\n');
-//            human.write("| Do: " + p.getDoings());
-//            human.append('\n');
-//            human.write("| Animal: " + p.getWithAnimal());
-//            human.append('\n');
-//            human.write("| Transport: " + p.getUseTransport());
-//            human.append('\n');
-        FileWriter writHuman = new FileWriter("ActivityAndUsageReport.txt", false);
-        for(House h: home.getArea()) {
-            for (Room r : h.getRooms()) {
-                for (Human p : r.getHumans()) {
+//                    human.write("| Device: " + p.getUse());
+//                    human.append('\n');
+//                    human.write("| Do: " + p.getDoings());
+//                    human.append('\n');
+//                    human.write("| Animal: " + p.getWithAnimal());
+//                    human.append('\n');
+//                    human.write("| Transport: " + p.getUseTransport());
+//                    human.append('\n');
+        FileWriter writHuman = new FileWriter("ActivityAndUsageReport2.txt", false);
+        for(House h: home2.getArea()){
+            for (Room r: h.getRooms()){
+                for(Human p:r.getHumans()){
                     writHuman.write(String.valueOf(p));
                     writHuman.append('\n');
                     writHuman.write("Transport:" + String.valueOf(p.getUseTransport()));
@@ -243,8 +241,8 @@ public class Config {
                     writHuman.append('\n');
                 }
             }
-            for (Parking t : h.getTrRooms()) {
-                for (Human p : t.getHumans()) {
+            for(Parking t: h.getTrRooms()){
+                for(Human p: t.getHumans()){
                     writHuman.write(String.valueOf(p));
                     writHuman.append('\n');
                     writHuman.write("Transport:" + String.valueOf(p.getUseTransport()));
@@ -256,10 +254,9 @@ public class Config {
                     writHuman.write("Animal:" + String.valueOf(p.getWithAnimal()));
                     writHuman.append('\n');
                 }
-
             }
-            writHuman.flush();
         }
+        writHuman.flush();
     }
 
 }

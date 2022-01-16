@@ -26,11 +26,11 @@ Nefunkční požadavky
 ⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
 
 Vhodné design patterny
-+	State machine Devise have state: Computer, Plate... in work
+!	State machine Devise have state: Computer, Plate... in work
 +	Iterator In RoomMaker
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
--	Singleton - We have 2 configuration, cannot use that
++	Singleton - We have 2 configuration, configuration can only one
 -	Visitor/Observer/Listener
 -	Chain of responsibility
 -	Partially persistent data structure
@@ -44,4 +44,4 @@ Vhodné design patterny
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
 ⦁	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
-⦁	Dvě různé konfigurace domu a pro ně vygenerovány reporty za různá období. Minimální konfigurace alespoň jednoho domu je: 6 osob, 3 zvířata, 8 typů spotřebičů, 20 ks spotřebičů, 6 místností, jedny lyže, dvě kola.
++	Config and Config2

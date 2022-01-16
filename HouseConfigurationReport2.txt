@@ -1,0 +1,101 @@
+| Home: Maker.Area@1f17ae12
+| Area: [Maker.House@4d405ef7]
+| House:Maker.House@4d405ef7
+| Transport room:[Maker.Parking@6193b845]
+| Rooms: [Maker.Room@2e817b38, Maker.Room@c4437c4, Maker.Room@433c675d, Maker.Room@3f91beef, Maker.Room@1a6c5a9e, Maker.Room@37bba400, Maker.Room@179d3b25, Maker.Room@254989ff, Maker.Room@5d099f62, Maker.Room@37f8bb67, Maker.Room@49c2faae, Maker.Room@20ad9418, Maker.Room@31cefde0, Maker.Room@439f5b3d, Maker.Room@1d56ce6a, Maker.Room@5197848c, Maker.Room@17f052a3, Maker.Room@2e0fa5d3, Maker.Room@5010be6, Maker.Room@685f4c2e, Maker.Room@7daf6ecc, Maker.Room@2e5d6d97, Maker.Room@238e0d81, Maker.Room@31221be2]
+| Room: Maker.Room@2e817b38
+| Type: Kitchen
+| Devices: [Devices.Illumination@372f7a8d, Devices.Blinds@2f92e0f4, Devices.Heater@28a418fc, Devices.Conditioning@5305068a, Devices.Fridge@1f32e575, Devices.Microwave@279f2327, Devices.Plate@2ff4acd0, Devices.Teapot@54bedef2]
+| Humans: [LivingBeing.Human@7a81197d]
+| Room: Maker.Room@c4437c4
+| Type: LivingRoom
+| Devices: [Devices.Illumination@5caf905d, Devices.Blinds@27716f4, Devices.Heater@8efb846, Devices.Conditioning@2a84aee7, Devices.Computer@a09ee92]
+| Humans: [LivingBeing.Human@377dca04]
+| Room: Maker.Room@433c675d
+| Type: LivingRoom
+| Devices: [Devices.Illumination@30f39991, Devices.Blinds@452b3a41, Devices.Heater@4a574795, Devices.Conditioning@f6f4d33, Devices.Computer@23fc625e]
+| Humans: [LivingBeing.Human@728938a9]
+| Room: Maker.Room@3f91beef
+| Type: LivingRoom
+| Devices: [Devices.Illumination@3f99bd52, Devices.Blinds@4f023edb, Devices.Heater@3a71f4dd, Devices.Conditioning@7adf9f5f, Devices.Computer@85ede7b]
+| Humans: [LivingBeing.Human@21b8d17c]
+| Room: Maker.Room@1a6c5a9e
+| Type: Kitchen
+| Devices: [Devices.Illumination@5674cd4d, Devices.Blinds@63961c42, Devices.Heater@65b54208, Devices.Conditioning@1be6f5c3, Devices.Fridge@6b884d57, Devices.Microwave@38af3868, Devices.Plate@77459877, Devices.Teapot@5b2133b1]
+| Humans: [LivingBeing.Human@5ca881b5]
+| Room: Maker.Room@37bba400
+| Type: LivingRoom
+| Devices: [Devices.Illumination@72ea2f77, Devices.Blinds@33c7353a, Devices.Heater@681a9515, Devices.Conditioning@3af49f1c, Devices.Computer@19469ea2]
+| Humans: [LivingBeing.Human@6433a2]
+| Room: Maker.Room@179d3b25
+| Type: LivingRoom
+| Devices: [Devices.Illumination@13221655, Devices.Blinds@2f2c9b19, Devices.Heater@31befd9f, Devices.Conditioning@1c20c684, Devices.Computer@1fb3ebeb]
+| Humans: [LivingBeing.Human@5910e440]
+| Room: Maker.Room@254989ff
+| Type: Kitchen
+| Devices: [Devices.Illumination@548c4f57, Devices.Blinds@1218025c, Devices.Heater@816f27d, Devices.Conditioning@87aac27, Devices.Fridge@3e3abc88, Devices.Microwave@6ce253f1, Devices.Plate@53d8d10a, Devices.Teapot@e9e54c2]
+| Humans: [LivingBeing.Human@24d46ca6]
+| Room: Maker.Room@5d099f62
+| Type: Kitchen
+| Devices: [Devices.Illumination@65ab7765, Devices.Blinds@1b28cdfa, Devices.Heater@eed1f14, Devices.Conditioning@7229724f, Devices.Fridge@4c873330, Devices.Microwave@119d7047, Devices.Plate@776ec8df, Devices.Teapot@4eec7777]
+| Humans: [LivingBeing.Human@4517d9a3]
+| Room: Maker.Room@37f8bb67
+| Type: LivingRoom
+| Devices: [Devices.Illumination@3b07d329, Devices.Blinds@41629346, Devices.Heater@404b9385, Devices.Conditioning@6d311334, Devices.Computer@682a0b20]
+| Humans: [LivingBeing.Human@6267c3bb]
+| Room: Maker.Room@49c2faae
+| Type: LivingRoom
+| Devices: [Devices.Illumination@3d075dc0, Devices.Blinds@214c265e, Devices.Heater@448139f0, Devices.Conditioning@7cca494b, Devices.Computer@7ba4f24f]
+| Humans: [LivingBeing.Human@533ddba]
+| Room: Maker.Room@20ad9418
+| Type: LivingRoom
+| Devices: [Devices.Illumination@3b9a45b3, Devices.Blinds@7699a589, Devices.Heater@58372a00, Devices.Conditioning@4dd8dc3, Devices.Computer@6d03e736]
+| Humans: [LivingBeing.Human@246b179d]
+| Room: Maker.Room@31cefde0
+| Type: LivingRoom
+| Devices: [Devices.Illumination@568db2f2, Devices.Blinds@378bf509, Devices.Heater@5fd0d5ae, Devices.Conditioning@2d98a335, Devices.Computer@16b98e56]
+| Humans: []
+| Room: Maker.Room@439f5b3d
+| Type: LivingRoom
+| Devices: [Devices.Illumination@7ef20235, Devices.Blinds@27d6c5e0, Devices.Heater@4f3f5b24, Devices.Conditioning@15aeb7ab, Devices.Computer@7b23ec81]
+| Humans: []
+| Room: Maker.Room@1d56ce6a
+| Type: LivingRoom
+| Devices: [Devices.Illumination@6acbcfc0, Devices.Blinds@5f184fc6, Devices.Heater@3feba861, Devices.Conditioning@5b480cf9, Devices.Computer@6f496d9f]
+| Humans: []
+| Room: Maker.Room@5197848c
+| Type: LivingRoom
+| Devices: [Devices.Illumination@723279cf, Devices.Blinds@10f87f48, Devices.Heater@b4c966a, Devices.Conditioning@2f4d3709, Devices.Computer@4e50df2e]
+| Humans: []
+| Room: Maker.Room@17f052a3
+| Type: LivingRoom
+| Devices: [Devices.Illumination@1d81eb93, Devices.Blinds@7291c18f, Devices.Heater@34a245ab, Devices.Conditioning@7cc355be, Devices.Computer@6e8cf4c6]
+| Humans: []
+| Room: Maker.Room@2e0fa5d3
+| Type: LivingRoom
+| Devices: [Devices.Illumination@12edcd21, Devices.Blinds@34c45dca, Devices.Heater@52cc8049, Devices.Conditioning@5b6f7412, Devices.Computer@27973e9b]
+| Humans: []
+| Room: Maker.Room@5010be6
+| Type: Kitchen
+| Devices: [Devices.Illumination@312b1dae, Devices.Blinds@7530d0a, Devices.Heater@27bc2616, Devices.Conditioning@3941a79c, Devices.Fridge@506e1b77, Devices.Microwave@4fca772d, Devices.Plate@9807454, Devices.Teapot@3d494fbf]
+| Humans: []
+| Room: Maker.Room@685f4c2e
+| Type: Kitchen
+| Devices: [Devices.Illumination@1ddc4ec2, Devices.Blinds@133314b, Devices.Heater@b1bc7ed, Devices.Conditioning@7cd84586, Devices.Fridge@30dae81, Devices.Microwave@1b2c6ec2, Devices.Plate@4edde6e5, Devices.Teapot@70177ecd]
+| Humans: []
+| Room: Maker.Room@7daf6ecc
+| Type: LivingRoom
+| Devices: [Devices.Illumination@1e80bfe8, Devices.Blinds@66a29884, Devices.Heater@4769b07b, Devices.Conditioning@cc34f4d, Devices.Computer@17a7cec2]
+| Humans: []
+| Room: Maker.Room@2e5d6d97
+| Type: LivingRoom
+| Devices: [Devices.Illumination@65b3120a, Devices.Blinds@6f539caf, Devices.Heater@79fc0f2f, Devices.Conditioning@50040f0c, Devices.Computer@2dda6444]
+| Humans: []
+| Room: Maker.Room@238e0d81
+| Type: LivingRoom
+| Devices: [Devices.Illumination@5e9f23b4, Devices.Blinds@4783da3f, Devices.Heater@378fd1ac, Devices.Conditioning@49097b5d, Devices.Computer@6e2c634b]
+| Humans: []
+| Room: Maker.Room@31221be2
+| Type: Kitchen
+| Devices: [Devices.Illumination@37a71e93, Devices.Blinds@7e6cbb7a, Devices.Heater@7c3df479, Devices.Conditioning@7106e68e, Devices.Fridge@7eda2dbb, Devices.Microwave@6576fe71, Devices.Plate@76fb509a, Devices.Teapot@300ffa5d]
+| Humans: []

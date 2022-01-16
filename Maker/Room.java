@@ -35,6 +35,10 @@ public class Room {
     public void addName(String name){
         this.name = name;
     }
+
+    public void addAnimal(Animal animal) {
+        animals.add(animal);
+    }
     //    private String name;
 //    private List<Device> devices = new ArrayList<>();
 //    private List<Person> people = new ArrayList<>();

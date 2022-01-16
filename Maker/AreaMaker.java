@@ -1,5 +1,6 @@
 package Maker;
 
+import LivingBeing.Animal;
 import LivingBeing.Human;
 import Transport.Bicycle;
 import Transport.Car;
@@ -16,9 +17,10 @@ public class AreaMaker {
 //            instance = new Area();
 //        }
 //        return instance;
-//    }
+    //   }
     public Area newHome(int rooms, int people, int animals, int skis, int bicycles, int cars){
-        Area area = new Area();
+       // Area area = Area.getInstance();
+       Area area = new Area();
         HouseMaker newHouse = new HouseMaker();
         Random rand = new Random();
         //DO FLOOR
@@ -30,9 +32,13 @@ public class AreaMaker {
             area.getArea().get(0).getRooms().get(i).addHuman(new Human());
             //area.getArea().get(0).getRooms().get(i).getHumans().get(0).setWhatRoom(area.getArea().get(0).getRooms().get(0));
         }
+        for (int i = 0; i < animals; i++){//v odnu komanatu jeden zvere
+            area.getArea().get(0).getRooms().get(i).addAnimal(new Animal());
+            //area.getArea().get(0).getRooms().get(i).getHumans().get(0).setWhatRoom(area.getArea().get(0).getRooms().get(0));
+        }
         for (int i = 0; i < people/2; i++){//v  komanatu transporta
+            //area.getArea().get(0).getTrRooms().get(i).addHuman(new Human());
             area.getArea().get(0).getTrRooms().get(0).addHuman(new Human());
-
             //area.getArea().get(0).getRooms().get(i).getHumans().get(0).setWhatRoom(area.getArea().get(0).getRooms().get(0));
         }
         for (int i=0; i<skis; i++){

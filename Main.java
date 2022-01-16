@@ -23,12 +23,12 @@ public class Main {
         int Ski_count = 1;
         int Bicycle_count = 1;
         int Car_count = 1;
-        Config home = new Config();
-        home.config(6, 6, 3, 1, 1, 1);
+        Config h = Config.getInstance();
+        h.config(6, 6, 3, 1, 1, 1);
         //Config home2 = new Config();
-        home.config(12, 12, 6, 2, 2, 2);
         //Config home3 = new Config();
-        home.config(24, 24, 12, 4, 4, 4);
+        Config2 h2 = Config2.getInstance();
+        h2.config2(24, 24, 12, 4, 4, 4);
         //config(6, 6, 3, 1, 1, 1);
         //HumanMaker hm = new HumanMaker();
         //NOT NEED
