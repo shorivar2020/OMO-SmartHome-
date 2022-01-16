@@ -18,7 +18,7 @@ public class AreaMaker {
 //        return instance;
 //    }
     public Area newHome(int rooms, int people, int animals, int skis, int bicycles, int cars){
-        Area area = Area.getInstance();
+        Area area = new Area();
         HouseMaker newHouse = new HouseMaker();
         Random rand = new Random();
         //DO FLOOR

@@ -3,14 +3,14 @@ package Maker;
 import java.util.ArrayList;
 
 public class Area {
-    private static Area instance;
-    private Area(){}
-    public static Area getInstance(){
-        if(instance == null){
-            instance = new Area();
-        }
-        return instance;
-    }
+    //private static Area instance;
+    //private Area(){}
+//    public static Area(){
+////        if(instance == null){
+////            instance = new Area();
+////        }
+////        return instance;
+//    }
     ArrayList<House> area = new ArrayList<>();
     private Parking parking;
    // private House.TransportRoom transportRoom;
