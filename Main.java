@@ -133,7 +133,7 @@ public class Main {
         int totalMoney = 0;
         for(House h: home.getArea()){
             for (Room r: h.getRooms()){
-                for(Device d: ((RoomHouse) r).getDevices()){
+                for(Device d: r.getDevices()){
                     writer.write(" -" + String.valueOf(d));
                     writer.write("| Electricity:" + d.getElectricity());
                     writer.write("| Water:" + d.getWater());
@@ -177,11 +177,11 @@ public class Main {
                 writHome.append('\n');
                 writHome.write("| Type: " + r.getName());
                 writHome.append('\n');
-                writHome.write("| Devices: " + ((RoomHouse) r).getDevices());
+                writHome.write("| Devices: " + r.getDevices());
                 writHome.append('\n');
                 writHome.write("| Humans: " + r.getHumans());
                 writHome.append('\n');
-                for(Device d : ((RoomHouse) r).getDevices()){
+                for(Device d : r.getDevices()){
                     i++;
                     writDevices.write("| Device: " + d);
                     writDevices.append('\n');

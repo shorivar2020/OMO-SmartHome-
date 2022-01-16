@@ -36,7 +36,7 @@ Vhodné design patterny
 ⦁	Partially persistent data structure
 ⦁	Object Pool
 ⦁	Lazy Initialization
-° bilder / HouseMaker, where Room can be TRansport and can be RoomofHouse
++ bilder / Room can be TRansport and can be RoomHouse. HouseMaker can choose TrRoom, if rooms>5
 
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
