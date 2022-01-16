@@ -26,17 +26,17 @@ Nefunkční požadavky
 ⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
 
 Vhodné design patterny
-+	State machine Devise have state: Computer, Plate...
-+	Iterator
-+	Factory/Factory method
-⦁	Decorator/Composite
-+	Singleton - Area can only one
-!	Visitor/Observer/Listener
-!	Chain of responsibility
-⦁	Partially persistent data structure
-⦁	Object Pool
-⦁	Lazy Initialization
-+ bilder / Room can be TRansport and can be RoomHouse. HouseMaker can choose TrRoom, if rooms>5
++	State machine Devise have state: Computer, Plate... in work
++	Iterator In RoomMaker
++	Factory/Factory method - For make new device
++	Decorator/Composite - Composite - Home have struct of tree
++	Singleton - Area can be only one
+-	Visitor/Observer/Listener
+-	Chain of responsibility
+-	Partially persistent data structure
+-	Object Pool
+-	Lazy Initialization
+
 
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
