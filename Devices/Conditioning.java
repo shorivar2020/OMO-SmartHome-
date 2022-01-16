@@ -69,9 +69,4 @@ public class Conditioning extends Device {
     public String getDeviceName(){
         return "Conditioning";
     }
-
-    @Override
-    public int getWater() {
-        return 0;
-    }
 }

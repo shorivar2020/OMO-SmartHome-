@@ -1,47 +1,38 @@
- -Devices.Illumination@1540e19d| Electricity:0| Water:0| Money:0
- -Devices.Blinds@677327b6| Electricity:0| Water:0| Money:0
- -Devices.Heater@14ae5a5| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@7f31245a| Electricity:0| Water:0| Money:0
- -Devices.Computer@6d6f6e28| Electricity:40| Water:0| Money:0
- -Devices.Illumination@135fbaa4| Electricity:0| Water:0| Money:0
- -Devices.Blinds@45ee12a7| Electricity:0| Water:0| Money:0
- -Devices.Heater@330bedb4| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@2503dbd3| Electricity:0| Water:0| Money:0
- -Devices.Fridge@4b67cf4d| Electricity:0| Water:0| Money:5000
- -Devices.Microwave@7ea987ac| Electricity:0| Water:0| Money:5000
- -Devices.Plate@12a3a380| Electricity:0| Water:0| Money:0
- -Devices.Teapot@29453f44| Electricity:0| Water:0| Money:0
+ -Devices.Illumination@4554617c| Electricity:0| Water:0| Money:0
+ -Devices.Blinds@74a14482| Electricity:0| Water:0| Money:0
+ -Devices.Heater@1540e19d| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@677327b6| Electricity:210| Water:0| Money:0
+ -Devices.Computer@14ae5a5| Electricity:40| Water:0| Money:0
+ -Devices.Illumination@7f31245a| Electricity:0| Water:0| Money:0
+ -Devices.Blinds@6d6f6e28| Electricity:0| Water:0| Money:0
+ -Devices.Heater@135fbaa4| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@45ee12a7| Electricity:210| Water:0| Money:0
+ -Devices.Computer@330bedb4| Electricity:40| Water:0| Money:0
+ -Devices.Illumination@2503dbd3| Electricity:0| Water:0| Money:0
+ -Devices.Blinds@4b67cf4d| Electricity:0| Water:0| Money:0
+ -Devices.Heater@7ea987ac| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@12a3a380| Electricity:210| Water:0| Money:0
+ -Devices.Computer@29453f44| Electricity:40| Water:0| Money:0
  -Devices.Illumination@5cad8086| Electricity:0| Water:0| Money:0
  -Devices.Blinds@6e0be858| Electricity:0| Water:0| Money:0
- -Devices.Heater@61bbe9ba| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@610455d6| Electricity:0| Water:0| Money:0
- -Devices.Fridge@511d50c0| Electricity:0| Water:0| Money:5000
- -Devices.Microwave@60e53b93| Electricity:0| Water:0| Money:5000
+ -Devices.Heater@61bbe9ba| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@610455d6| Electricity:210| Water:0| Money:0
+ -Devices.Fridge@511d50c0| Electricity:0| Water:0| Money:0
+ -Devices.Microwave@60e53b93| Electricity:0| Water:0| Money:0
  -Devices.Plate@5e2de80c| Electricity:0| Water:0| Money:0
  -Devices.Teapot@1d44bcfa| Electricity:0| Water:0| Money:0
  -Devices.Illumination@266474c2| Electricity:0| Water:0| Money:0
  -Devices.Blinds@6f94fa3e| Electricity:0| Water:0| Money:0
- -Devices.Heater@5e481248| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@66d3c617| Electricity:0| Water:0| Money:0
- -Devices.Fridge@63947c6b| Electricity:0| Water:0| Money:0
- -Devices.Microwave@2b193f2d| Electricity:0| Water:0| Money:0
- -Devices.Plate@355da254| Electricity:0| Water:0| Money:0
- -Devices.Teapot@4dc63996| Electricity:0| Water:0| Money:0
- -Devices.Illumination@d716361| Electricity:0| Water:0| Money:0
- -Devices.Blinds@6ff3c5b5| Electricity:0| Water:0| Money:0
- -Devices.Heater@3764951d| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@4b1210ee| Electricity:0| Water:0| Money:0
- -Devices.Fridge@4d7e1886| Electricity:0| Water:0| Money:0
- -Devices.Microwave@3cd1a2f1| Electricity:0| Water:0| Money:0
- -Devices.Plate@2f0e140b| Electricity:0| Water:0| Money:0
- -Devices.Teapot@7440e464| Electricity:0| Water:0| Money:0
- -Devices.Illumination@49476842| Electricity:0| Water:0| Money:0
- -Devices.Blinds@78308db1| Electricity:0| Water:0| Money:0
- -Devices.Heater@27c170f0| Electricity:270| Water:0| Money:0
- -Devices.Conditioning@5451c3a8| Electricity:0| Water:0| Money:0
- -Devices.Fridge@2626b418| Electricity:0| Water:0| Money:0
- -Devices.Microwave@5a07e868| Electricity:0| Water:0| Money:0
- -Devices.Plate@76ed5528| Electricity:0| Water:0| Money:0
- -Devices.Teapot@2c7b84de| Electricity:0| Water:0| Money:0
+ -Devices.Heater@5e481248| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@66d3c617| Electricity:210| Water:0| Money:0
+ -Devices.Computer@63947c6b| Electricity:40| Water:0| Money:0
+ -Devices.Illumination@2b193f2d| Electricity:0| Water:0| Money:0
+ -Devices.Blinds@355da254| Electricity:0| Water:0| Money:0
+ -Devices.Heater@4dc63996| Electricity:0| Water:0| Money:0
+ -Devices.Conditioning@d716361| Electricity:210| Water:0| Money:0
+ -Devices.Fridge@6ff3c5b5| Electricity:0| Water:0| Money:0
+ -Devices.Microwave@3764951d| Electricity:0| Water:0| Money:0
+ -Devices.Plate@4b1210ee| Electricity:0| Water:0| Money:0
+ -Devices.Teapot@4d7e1886| Electricity:0| Water:0| Money:0
 
-totalElectricity: 1660| totalWater: 0| TotalMoney: 20000
+totalElectricity: 1420| totalWater: 0| TotalMoney: 0

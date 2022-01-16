@@ -11,7 +11,7 @@ public class RoomMaker {
     Random rand = new Random();
     private ArrayList<String> dev = new ArrayList<>();
     public Room newRoom(){
-        Room room = new RoomHouse();
+        Room room = new Room();
 
         FabriceDevice f = new FabriceDevice();
         switch (rand.nextInt(2)) {
@@ -39,7 +39,7 @@ public class RoomMaker {
         ListIterator<String> listIterator = dev.listIterator();
         while (listIterator.hasNext()){
             device = f.createDevice(listIterator.next());
-            ((RoomHouse) room).addDevice(device);
+            room.addDevice(device);
         }
 //        System.out.println(room.name);
 //        System.out.println(room.getHumans());

@@ -86,9 +86,4 @@ public class Plate extends Device {
     public String getDeviceName(){
         return "Plate";
     }
-
-    @Override
-    public int getWater() {
-        return 0;
-    }
 }

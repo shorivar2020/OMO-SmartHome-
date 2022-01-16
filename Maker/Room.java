@@ -7,13 +7,34 @@ import LivingBeing.Human;
 import java.util.ArrayList;
 //import java.util.List;
 //
-public interface Room {
+public class Room {
+    String name;
+    private ArrayList<Device> devices = new ArrayList<>();
+    private ArrayList<Human> humans = new ArrayList<>();
+    private ArrayList<Animal> animals = new ArrayList<>();
 
-    public ArrayList<Human> getHumans();
-    public void addHuman(Human human);
-    public String getName();
+    public void addDevice(Device device){
+        devices.add(device);
+    }
 
-    public void addName(String name);
+    public ArrayList<Device> getDevices() {
+        return devices;
+    }
+
+    public ArrayList<Human> getHumans() {
+        return humans;
+    }
+    public void addHuman(Human human){
+        humans.add(human);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void addName(String name){
+        this.name = name;
+    }
     //    private String name;
 //    private List<Device> devices = new ArrayList<>();
 //    private List<Person> people = new ArrayList<>();

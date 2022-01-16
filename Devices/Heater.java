@@ -69,9 +69,4 @@ public class Heater extends Device {
     public String getDeviceName(){
         return "Heater";
     }
-
-    @Override
-    public int getWater() {
-        return 0;
-    }
 }
