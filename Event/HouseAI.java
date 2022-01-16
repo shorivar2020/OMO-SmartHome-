@@ -8,8 +8,9 @@ import java.util.ArrayList;
 
 public class HouseAI {
     Human HouseAI;
-
+    public ArrayList<String> HouseAIEvent = new ArrayList<>();
     public void Night(ArrayList<Human> Humans, Room room) {
+        HouseAIEvent.add("Night");
         for(Human h: Humans) {
             Illumination i = (Illumination) (room.getDevices().get(0));
             Blinds b = (Blinds) (room.getDevices().get(1));
@@ -22,6 +23,7 @@ public class HouseAI {
     }
 
     public void Day(ArrayList<Human> Humans, Room room){
+            HouseAIEvent.add("Day");
             Illumination i = (Illumination) (room.getDevices().get(0));
             Blinds b = (Blinds) (room.getDevices().get(1));
             i.stop();
@@ -31,6 +33,7 @@ public class HouseAI {
     }
 
     public void DoColder( Room room){
+            HouseAIEvent.add("Hot");
             Conditioning c = (Conditioning) (room.getDevices().get(3));
             Heater heat = (Heater) (room.getDevices().get(2));
             c.work();
@@ -40,6 +43,7 @@ public class HouseAI {
     }
 
     public void DoHotter( Room room){
+            HouseAIEvent.add("Cold");
             Conditioning c = (Conditioning) (room.getDevices().get(3));
             Heater heat = (Heater) (room.getDevices().get(2));
             heat.work();

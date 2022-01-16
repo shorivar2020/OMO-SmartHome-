@@ -94,37 +94,37 @@ public class Main {
                     count_wait = tr.getTransport_Counter() - tr.getHuman_Counter();
                 }
                 //for(int i=0; i<tr.getHuman_Counter(); i++){
-                    //events.add("DO SPORT");
-                    //for(Human human: tr.getHumans()){
+                //events.add("DO SPORT");
+                //for(Human human: tr.getHumans()){
                 int count_tr = 0;
-                        for(Ski s: tr.getSkis()){
-                            //System.out.println(s);
-                            tr.getHumans().get(count_tr).setUseTransport(s);
-                            events.add("Ski");
-                            count_tr +=1;
-                        }
-                        for (Bicycle b: tr.getBicycles()){
-                            //System.out.println(b);
-                            tr.getHumans().get(count_tr).setUseTransport(b);
-                            events.add("Bicycle");
-                            count_tr +=1;
-                        }
-                        for (Car c: tr.getCars()){
-                        //System.out.println("CARS" + tr.getCars().size());
-                        //for (int car=0; car<tr.getCars().size(); car++){
-                            //System.out.println(c);
-                            tr.getHumans().get(count_tr).setUseTransport(c);
-                            count_tr +=1;
-                            //human.setUseTransport(tr.getCars().get(i));
-                            events.add("Car");
-                        }
-                        for(int w=0; w<count_wait; w++){
-                            tr.getHumans().get(count_tr).Waiting();
-                            events.add("Wait");
-                        }
+                for(Ski s: tr.getSkis()){
+                    //System.out.println(s);
+                    tr.getHumans().get(count_tr).setUseTransport(s);
+                    events.add("Ski");
+                    count_tr +=1;
+                }
+                for (Bicycle b: tr.getBicycles()){
+                    //System.out.println(b);
+                    tr.getHumans().get(count_tr).setUseTransport(b);
+                    events.add("Bicycle");
+                    count_tr +=1;
+                }
+                for (Car c: tr.getCars()){
+                    //System.out.println("CARS" + tr.getCars().size());
+                    //for (int car=0; car<tr.getCars().size(); car++){
+                    //System.out.println(c);
+                    tr.getHumans().get(count_tr).setUseTransport(c);
+                    count_tr +=1;
+                    //human.setUseTransport(tr.getCars().get(i));
+                    events.add("Car");
+                }
+                for(int w=0; w<count_wait; w++){
+                    tr.getHumans().get(count_tr).Waiting();
+                    events.add("Wait");
+                }
 
-                    //}
-               // }
+                //}
+                // }
             }
         }
         FileWriter writer = new FileWriter("ConsumptionReport.txt", false);
@@ -213,8 +213,8 @@ public class Main {
         writHome.flush();
 //        System.out.println(totalElectricity);
 //        System.out.println(totalWater);
-  //      System.out.println(totalMoney);
-       System.out.println("Report about Events "+events);
+        //      System.out.println(totalMoney);
+        System.out.println("Report about Events "+events);
 //        for(Human p: r.getHumans()){
 //            human.write("| Human: " + p);
 //            human.append('\n');

@@ -11,7 +11,7 @@ F7+	Hot temperature --> Work Heater /Cold temperature --> Work Conditioning / 23
 ⦁	Fridge have not food --> Human go Shoping.
 F8!	Vygenerování reportů:
 +	HouseConfigurationReport and HouseConfigurationReportDevice
-⦁	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
+-	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
 +	ActivityAndUsageReport(ONLY PEOPLE)
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
@@ -19,23 +19,24 @@ F10+Half of Human go to House and have Events with Device. Half of Human go to P
 
 
 Nefunkční požadavky
-⦁	Není požadována autentizace ani autorizace
-⦁	Aplikace může běžet pouze v jedné JVM
++	Není požadována autentizace ani autorizace
++	Aplikace může běžet pouze v jedné JVM
 ⦁	Aplikaci pište tak, aby byly dobře schované metody a proměnné, které nemají být dostupné ostatním třídám. Vygenerovný javadoc by měl mít co nejméně public metod a proměnných.
-⦁	Reporty jsou generovány do textového souboru
++	Reporty jsou generovány do textového souboru
 ⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
 
 Vhodné design patterny
-⦁	State machine
-⦁	Iterator
-⦁	Factory/Factory method
+A	State machine
++	Iterator
++	Factory/Factory method
 ⦁	Decorator/Composite
-⦁	Singleton
-⦁	Visitor/Observer/Listener
-⦁	Chain of responsibility
++	Singleton - Area can only one
+!	Visitor/Observer/Listener
+!	Chain of responsibility
 ⦁	Partially persistent data structure
 ⦁	Object Pool
 ⦁	Lazy Initialization
+° bilder
 
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat

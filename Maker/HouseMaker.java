@@ -1,6 +1,6 @@
 package Maker;
 
-public class HouseMaker {
+public class HouseMaker{
     public House newHouse(int rooms, int people) {
         House house = new House();
         for (int i = 0; i < rooms; i++) {

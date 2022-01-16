@@ -7,9 +7,18 @@ import Transport.Ski;
 
 import java.util.Random;
 
-public class AreaMaker extends Area {
+public class AreaMaker {
+
+    //    private static Area instance;
+//    private Area(){}
+//    public static Area getInstance(){
+//        if(instance == null){
+//            instance = new Area();
+//        }
+//        return instance;
+//    }
     public Area newHome(int rooms, int people, int animals, int skis, int bicycles, int cars){
-        Area area = new Area();
+        Area area = Area.getInstance();
         HouseMaker newHouse = new HouseMaker();
         Random rand = new Random();
         //DO FLOOR

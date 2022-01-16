@@ -10,6 +10,7 @@ import Transport.Ski;
 import java.util.ArrayList;
 
 public class Parking {
+    private static Parking instance;
     String name;
     private ArrayList<Human> humans = new ArrayList<>();
     private ArrayList<Bicycle> bicycles = new ArrayList<>();
