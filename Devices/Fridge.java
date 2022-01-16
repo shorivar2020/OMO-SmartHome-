@@ -87,4 +87,9 @@ public class Fridge extends Device {
     public String getDeviceName(){
         return "Fridge";
     }
+
+    @Override
+    public int getWater() {
+        return 0;
+    }
 }

@@ -86,4 +86,9 @@ public class Microwave extends Device {
     public String getDeviceName(){
         return "Microwave";
     }
+
+    @Override
+    public int getWater() {
+        return 0;
+    }
 }

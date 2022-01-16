@@ -1,30 +1,30 @@
-LivingBeing.Human@76ed5528
+LivingBeing.Human@2f92e0f4
 Transport:[]
-Devices:[]
-Do:[SLEEPING]
-Animal:[]
-LivingBeing.Human@2c7b84de
-Transport:[]
-Devices:[]
-Do:[SLEEPING]
-Animal:[]
-LivingBeing.Human@3fee733d
-Transport:[]
-Devices:[Devices.Computer@29453f44]
+Devices:[Devices.Computer@6d6f6e28]
 Do:[PLAY_COMPUTER_GAMES]
 Animal:[]
-LivingBeing.Human@5acf9800
-Transport:[Transport.Ski@4617c264]
+LivingBeing.Human@4554617c
+Transport:[]
+Devices:[Devices.Fridge@4b67cf4d, Devices.Microwave@7ea987ac]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, EATING]
+Animal:[]
+LivingBeing.Human@74a14482
+Transport:[]
+Devices:[Devices.Fridge@511d50c0, Devices.Microwave@60e53b93]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, FIND_DOCUMENTATION, NOT_FIND, EATING]
+Animal:[]
+LivingBeing.Human@28a418fc
+Transport:[Transport.Ski@5305068a]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@36baf30c
-Transport:[Transport.Bicycle@7a81197d]
+LivingBeing.Human@1f32e575
+Transport:[Transport.Bicycle@279f2327]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@5ca881b5
-Transport:[Transport.Car@24d46ca6]
+LivingBeing.Human@2ff4acd0
+Transport:[Transport.Car@54bedef2]
 Devices:[]
 Do:[]
 Animal:[]

@@ -17,38 +17,21 @@ public abstract class Device{
     private int cost = 2000;
     private ArrayList<Human> users = new ArrayList<>();
 
-    public void addUsers(Human human){
-        users.add(human);
-    }
+    public abstract void addUsers(Human human);
 
-    public ArrayList<Human> getUsers() {
-        return users;
-    }
+    public abstract ArrayList<Human> getUsers();
 
-    public int getElectricity() {
-        return electricity;
-    }
+    public abstract int getElectricity();
 
-    public String getDeviceName(){
-        return name;
-    }
+    public abstract String getDeviceName();
 
-    public int getWater() {
-        return water;
-    }
+    public abstract int getWater();
 
-    public void fixing(){
-        functionality = 100;
-    }
+    public abstract void fixing();
 
-    public void buyNew(){
-        functionality = 100;
-        buying++;
-    }
+    public abstract void buyNew();
 
-    public int getMoney(){
-        return buying*cost;
-    }
+    public abstract int getMoney();
 
     // private List<User> users = new ArrayList<>();
 

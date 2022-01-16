@@ -69,4 +69,9 @@ public class Computer extends Device {
     public String getDeviceName(){
         return "Computer";
     }
+
+    @Override
+    public int getWater() {
+        return 0;
+    }
 }

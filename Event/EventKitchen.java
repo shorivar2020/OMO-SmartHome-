@@ -3,6 +3,7 @@ package Event;
 import Devices.*;
 import LivingBeing.Human;
 import Maker.Room;
+import Maker.RoomHouse;
 
 import java.util.Random;
 import java.util.ArrayList;
@@ -12,10 +13,10 @@ public class EventKitchen {
     BrokenDevice broken = new BrokenDevice();
     public void Eating(ArrayList<Human> Humans, Room room){
         String meal;
-        Fridge f = (Fridge)(room.getDevices().get(4));
-        Microwave m = (Microwave) (room.getDevices().get(5));
-        Plate p = (Plate) (room.getDevices().get(6));
-        Teapot t = (Teapot) (room.getDevices().get(7));
+        Fridge f = (Fridge)(((RoomHouse) room).getDevices().get(4));
+        Microwave m = (Microwave) (((RoomHouse) room).getDevices().get(5));
+        Plate p = (Plate) (((RoomHouse) room).getDevices().get(6));
+        Teapot t = (Teapot) (((RoomHouse) room).getDevices().get(7));
 
         for(Human h: Humans) {
             System.out.println("Eating:" + h);

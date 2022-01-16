@@ -9,8 +9,7 @@ import Transport.Ski;
 
 import java.util.ArrayList;
 
-public class Parking {
-    private static Parking instance;
+public class Parking implements Room{
     String name;
     private ArrayList<Human> humans = new ArrayList<>();
     private ArrayList<Bicycle> bicycles = new ArrayList<>();
@@ -28,6 +27,16 @@ public class Parking {
     public void addHuman(Human human){
         humans.add(human);
         Human_Counter++;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void addName(String name) {
+        this.name = name;
     }
 
     public void addBicycle(Bicycle bicycle){

@@ -4,6 +4,7 @@ import Devices.Computer;
 import Devices.Fridge;
 import LivingBeing.Human;
 import Maker.Room;
+import Maker.RoomHouse;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -12,7 +13,7 @@ public class EventLivingRoom {
     Random rand = new Random();
     BrokenDevice broken = new BrokenDevice();
     public void Chilling(ArrayList<Human> Humans, Room room){
-        Computer c = (Computer)(room.getDevices().get(4));
+        Computer c = (Computer)(((RoomHouse) room).getDevices().get(4));
         for(Human h: Humans) {
             switch (rand.nextInt(2)) {
                 case 0:

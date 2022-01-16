@@ -69,4 +69,9 @@ public class Illumination extends Device {
     public String getDeviceName(){
         return "Illumination";
     }
+
+    @Override
+    public int getWater() {
+        return 0;
+    }
 }

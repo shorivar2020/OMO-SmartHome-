@@ -69,4 +69,9 @@ public class Blinds extends Device {
     public String getDeviceName(){
         return "Blinds";
     }
+
+    @Override
+    public int getWater() {
+        return 0;
+    }
 }
