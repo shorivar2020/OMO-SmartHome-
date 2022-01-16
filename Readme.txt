@@ -36,7 +36,10 @@ Vhodné design patterny
 -	Partially persistent data structure
 -	Object Pool
 -	Lazy Initialization
-
+-   Strategies
+-   Bilder(for make house)
+-   Prototype(clone)
+-   Facade(part of functionall)
 
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
