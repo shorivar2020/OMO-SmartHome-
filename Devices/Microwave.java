@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class Microwave extends Device {
     static int count = 0;
     int consumptionElectricity = 50;
-    int consumptionFunctionality = 105;//Very bad microwave
+    int consumptionFunctionality = 100;//Very bad microwave
     private int functionality = 0;//Was using where was buying
     private String documentation = "Documentation of Microwave";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 500;
+    private int cost = 5000;
     ArrayList<String> somethingIn = new ArrayList<>();
 
     public String getDocumentation(){
@@ -32,6 +32,7 @@ public class Microwave extends Device {
     public void buyNew(){
         functionality = 100;
         buying++;
+        System.out.println("BUYING");
     }
 
     public int getMoney(){

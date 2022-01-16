@@ -6,7 +6,7 @@ public class Fridge extends Device {
     static int count = 0;
     int consumptionElectricity = 50;
     int consumptionFunctionality = 5;
-    private int functionality = 100;
+    private int functionality = 0;//Was using where was buying
     private String documentation = "Documentation of Fridge";
     boolean deviceState = true;
     private int buying = 0;

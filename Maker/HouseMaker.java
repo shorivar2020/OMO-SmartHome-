@@ -11,7 +11,7 @@ public class HouseMaker {
         house.isTransportRoomHere(true);
         house.setTransportRoom(tr.newTransportRoom());
 
-        System.out.println("Made Maker.House with Rooms");
+        //System.out.println("Made Maker.House with Rooms");
         return house;
     }
 }

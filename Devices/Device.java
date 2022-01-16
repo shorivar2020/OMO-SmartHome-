@@ -5,7 +5,7 @@ import LivingBeing.Human;
 import java.util.ArrayList;
 
 public abstract class Device{
-
+    String name;
     private boolean deviceState; //0-off 1 - on
     private int electricity = 0; //1-...
     private int water = 0; //1-...
@@ -27,6 +27,10 @@ public abstract class Device{
 
     public int getElectricity() {
         return electricity;
+    }
+
+    public String getDeviceName(){
+        return name;
     }
 
     public int getWater() {

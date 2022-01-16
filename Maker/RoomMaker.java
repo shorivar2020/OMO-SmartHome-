@@ -44,7 +44,7 @@ public class RoomMaker {
 //        System.out.println(room.name);
 //        System.out.println(room.getHumans());
 //        System.out.println(room.getDevices());
-        System.out.println("Made Maker.Room");
+        //System.out.println("Made Maker.Room");
         System.out.println(room.name);
         return room;
     }

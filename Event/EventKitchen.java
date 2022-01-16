@@ -40,6 +40,7 @@ public class EventKitchen {
                     if(m.work()){
                         continue;
                     }else{
+                        //System.out.println("fix");
                         broken.fix(m, h);
                     }
                     m.addSomethingIn(meal);

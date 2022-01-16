@@ -87,6 +87,9 @@ public class Human {
             case 2:
                 Doings.add("NOT_FIND");
                 return false;
+            case 3:
+                Doings.add("FORGET_DOCUMENTATION");
+                return false;
         }
         return false;
     }

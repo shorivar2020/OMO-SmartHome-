@@ -8,12 +8,13 @@ import Transport.Bicycle;
 import Transport.Car;
 import Transport.Ski;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
         Random rand = new Random();
         AreaMaker make = new AreaMaker();
         int clock;
@@ -48,14 +49,7 @@ public class Main {
         Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
         //HumanMaker hm = new HumanMaker();
         //NOT NEED
-//        for (House f : home.getArea()){
-//           // f.addHuman(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
-//            for (Room r : f.getRooms()){
-//                for(Device d : r.getDevices()){
-//                    d.addUsers(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
-//                }
-//            }
-//        }
+
         ////////////////////////////////////////////
         //Events
         ArrayList<String> events = new ArrayList<>();
@@ -93,7 +87,7 @@ public class Main {
             }
             int count_wait = 0;
             for(Parking tr: h.getTrRooms()){
-                System.out.println(tr.getHumans());
+                //System.out.println(tr.getHumans());
                 if(tr.getTransport_Counter()< tr.getHuman_Counter()){
                     count_wait = tr.getTransport_Counter() - tr.getHuman_Counter();
                 }
@@ -116,7 +110,7 @@ public class Main {
                         for (Car c: tr.getCars()){
                         //System.out.println("CARS" + tr.getCars().size());
                         //for (int car=0; car<tr.getCars().size(); car++){
-                            System.out.println(c);
+                            //System.out.println(c);
                             tr.getHumans().get(count_tr).setUseTransport(c);
                             count_tr +=1;
                             //human.setUseTransport(tr.getCars().get(i));
@@ -131,21 +125,81 @@ public class Main {
                // }
             }
         }
+        FileWriter writer = new FileWriter("ConsumptionReport.txt", false);
         int totalElectricity = 0;
         int totalWater = 0;
         int totalMoney = 0;
         for(House h: home.getArea()){
             for (Room r: h.getRooms()){
                 for(Device d: r.getDevices()){
+                    writer.write(" -" + String.valueOf(d));
+                    writer.write("| Electricity:" + d.getElectricity());
+                    writer.write("| Water:" + d.getWater());
+                    writer.write("| Money:" + d.getMoney());
+                    writer.append("\n");
                     totalElectricity += d.getElectricity();
                     totalWater += d.getWater();
                     totalMoney += d.getMoney();
                 }
             }
         }
-        System.out.println(totalElectricity);
-        System.out.println(totalWater);
-        System.out.println(totalMoney);
-        System.out.println("Report about Events "+events);
+        writer.append("\n");
+        writer.write("totalElectricity: " + totalElectricity);
+        writer.write("| totalWater: " + totalWater);
+        writer.write("| TotalMoney: " + totalMoney);
+        //writer.write(totalElectricity);
+        //writer.append('\n');
+        //writer.write(totalWater);
+        //writer.append('\n');
+        //writer.write(totalMoney);
+        //writer.write("Report about Events "+events);
+        writer.flush();
+        FileWriter writHome = new FileWriter("HouseConfigurationReport.txt", false);
+        FileWriter writDevices = new FileWriter("HouseConfigurationReportDevice.txt", false);
+        writHome.write("| Home: " + home);
+        writHome.append('\n');
+        writHome.write("| Area: " + home.getArea());
+        writHome.append('\n');
+        for (House f : home.getArea()){
+            writHome.write("| House:" + f);
+            writHome.append('\n');
+            writHome.write("| Transport room:" + f.getTrRooms());
+            writHome.append('\n');
+            writHome.write("| Rooms: " + f.getRooms());
+            writHome.append('\n');
+            //System.out.println(home.getArea());
+            // f.addHuman(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
+            for (Room r : f.getRooms()){
+                writHome.write("| Room: " + r);
+                writHome.append('\n');
+                writHome.write("| Type: " + r.getName());
+                writHome.append('\n');
+                writHome.write("| Devices: " + r.getDevices());
+                writHome.append('\n');
+                writHome.write("| Humans: " + r.getHumans());
+                writHome.append('\n');
+                for(Device d : r.getDevices()){
+                    writDevices.write("| Device: " + d);
+                    writDevices.append('\n');
+                    writDevices.write("| Type: " + d.getDeviceName());
+                    writDevices.append('\n');
+                    writDevices.write("| Users: " + d.getUsers());
+                    writDevices.append('\n');
+                    writDevices.write("| Electricity: " + d.getElectricity());
+                    writDevices.append('\n');
+                    writDevices.write("| Water: " + d.getWater());
+                    writDevices.append('\n');
+                    writDevices.write("| Money: " + d.getMoney());
+                    writDevices.append('\n');
+                    //d.addUsers(home.getArea().get(0).getRooms().get(0).getHumans().get(0));
+                }
+            }
+        }
+        writDevices.flush();
+        writHome.flush();
+//        System.out.println(totalElectricity);
+//        System.out.println(totalWater);
+  //      System.out.println(totalMoney);
+        //System.out.println("Report about Events "+events);
     }
 }
