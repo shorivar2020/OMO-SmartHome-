@@ -1,144 +1,144 @@
-LivingBeing.Human@25f38edc
-Transport:[]
-Devices:[]
-Do:[]
-Animal:[LivingBeing.Animal@4b85612c]
-LivingBeing.Animal@4b85612c
-Humans:[LivingBeing.Human@25f38edc]
 LivingBeing.Human@5caf905d
 Transport:[]
-Devices:[Devices.Fridge@85ede7b, Devices.Plate@63961c42]
-Do:[FIND_DOCUMENTATION, NOT_FIND, SHOPPING, EATING]
+Devices:[Devices.Fridge@7adf9f5f, Devices.Microwave@85ede7b]
+Do:[FIND_DOCUMENTATION, NOT_FIND, GetNotifyAboutFix, FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, EATING]
 Animal:[]
-LivingBeing.Animal@277050dc
+LivingBeing.Animal@69663380
 Humans:[]
 LivingBeing.Human@27716f4
 Transport:[]
-Devices:[Devices.Fridge@5b2133b1, Devices.Microwave@72ea2f77]
-Do:[FIND_DOCUMENTATION, NOT_FIND, FIND_DOCUMENTATION, NOT_FIND, EATING]
+Devices:[Devices.Fridge@77459877, Devices.Plate@72ea2f77]
+Do:[FIND_DOCUMENTATION, NOT_FIND, GetNotifyAboutFix, SHOPPING, EATING]
 Animal:[]
-LivingBeing.Animal@5c29bfd
+LivingBeing.Animal@5b37e0d2
 Humans:[]
-LivingBeing.Human@1a86f2f1
+LivingBeing.Human@5f4da5c3
 Transport:[]
-Devices:[Devices.Computer@31befd9f]
+Devices:[Devices.Computer@2f2c9b19]
 Do:[PLAY_COMPUTER_GAMES]
 Animal:[]
-LivingBeing.Animal@7aec35a
-Humans:[]
-LivingBeing.Human@3eb07fd3
-Transport:[]
-Devices:[]
-Do:[SLEEPING]
-Animal:[]
-LivingBeing.Animal@67424e82
+LivingBeing.Animal@4459eb14
 Humans:[]
 LivingBeing.Human@8efb846
 Transport:[]
-Devices:[Devices.Fridge@e9e54c2, Devices.Plate@1b28cdfa]
-Do:[FIND_DOCUMENTATION, FIND_DOCUMENTATION, SHOPPING, EATING]
+Devices:[Devices.Fridge@1218025c, Devices.Plate@87aac27]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, SHOPPING, EATING]
 Animal:[]
-LivingBeing.Animal@42110406
-Humans:[]
-LivingBeing.Human@506c589e
-Transport:[]
-Devices:[]
-Do:[]
-Animal:[LivingBeing.Animal@531d72ca]
-LivingBeing.Animal@531d72ca
-Humans:[LivingBeing.Human@506c589e]
-LivingBeing.Human@69d0a921
-Transport:[]
-Devices:[]
-Do:[SLEEPING]
-Animal:[]
-LivingBeing.Animal@22d8cfe0
+LivingBeing.Animal@5a2e4553
 Humans:[]
 LivingBeing.Human@2a84aee7
 Transport:[]
-Devices:[Devices.Teapot@58372a00]
-Do:[DRINK_TEA]
+Devices:[Devices.Fridge@1b28cdfa, Devices.Plate@7229724f]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, SHOPPING, EATING]
 Animal:[]
-LivingBeing.Animal@579bb367
-Humans:[]
-LivingBeing.Human@446cdf90
-Transport:[]
-Devices:[]
-Do:[SLEEPING]
-Animal:[]
-LivingBeing.Animal@1de0aca6
+LivingBeing.Animal@28c97a5
 Humans:[]
 LivingBeing.Human@a09ee92
 Transport:[]
-Devices:[Devices.Fridge@4f3f5b24, Devices.Plate@7b23ec81]
-Do:[FIND_DOCUMENTATION, FIND_DOCUMENTATION, SHOPPING, EATING]
+Devices:[Devices.Fridge@41629346, Devices.Plate@6d311334]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, SHOPPING, EATING]
 Animal:[]
-LivingBeing.Animal@255316f2
+LivingBeing.Animal@6659c656
 Humans:[]
-LivingBeing.Human@799f7e29
+LivingBeing.Human@30f39991
+Transport:[]
+Devices:[Devices.Fridge@7ba4f24f, Devices.Microwave@3b9a45b3]
+Do:[FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, FIND_DOCUMENTATION, NOT_FIND_DOCUMENTATION, GetNotifyAboutFix, EATING]
+Animal:[]
+LivingBeing.Animal@6d5380c2
+Humans:[]
+LivingBeing.Human@452b3a41
+Transport:[]
+Devices:[Devices.Teapot@7ef20235]
+Do:[DRINK_TEA]
+Animal:[]
+LivingBeing.Animal@45ff54e6
+Humans:[]
+LivingBeing.Human@443b7951
+Transport:[]
+Devices:[Devices.Computer@6acbcfc0]
+Do:[PLAY_COMPUTER_GAMES]
+Animal:[]
+LivingBeing.Animal@2328c243
+Humans:[]
+LivingBeing.Human@14514713
 Transport:[]
 Devices:[]
 Do:[]
-Animal:[LivingBeing.Animal@41906a77]
-LivingBeing.Animal@41906a77
-Humans:[LivingBeing.Human@799f7e29]
-LivingBeing.Human@4b9af9a9
-Transport:[Transport.Ski@5387f9e0]
+Animal:[LivingBeing.Animal@bebdb06]
+LivingBeing.Animal@bebdb06
+Humans:[LivingBeing.Human@14514713]
+LivingBeing.Human@4a574795
+Transport:[]
+Devices:[Devices.Fridge@1d81eb93, Devices.Plate@34a245ab]
+Do:[FIND_DOCUMENTATION, FIND_DOCUMENTATION, GetNotifyAboutFix, SHOPPING, EATING]
+Animal:[]
+LivingBeing.Animal@7a4f0f29
+Humans:[]
+LivingBeing.Human@f6f4d33
+Transport:[]
+Devices:[Devices.Fridge@5b6f7412, Devices.Plate@312b1dae]
+Do:[FIND_DOCUMENTATION, NOT_FIND, GetNotifyAboutFix, SHOPPING, EATING]
+Animal:[]
+LivingBeing.Animal@45283ce2
+Humans:[]
+LivingBeing.Human@2077d4de
+Transport:[Transport.Ski@7591083d]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@6e5e91e4
-Transport:[Transport.Ski@2cdf8d8a]
+LivingBeing.Human@77a567e1
+Transport:[Transport.Ski@736e9adb]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@30946e09
-Transport:[Transport.Ski@5cb0d902]
+LivingBeing.Human@6d21714c
+Transport:[Transport.Ski@108c4c35]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@46fbb2c1
-Transport:[Transport.Ski@1698c449]
+LivingBeing.Human@4ccabbaa
+Transport:[Transport.Ski@4bf558aa]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@5ef04b5
-Transport:[Transport.Bicycle@5f4da5c3]
+LivingBeing.Human@2d38eb89
+Transport:[Transport.Bicycle@5fa7e7ff]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@443b7951
-Transport:[Transport.Bicycle@14514713]
+LivingBeing.Human@4629104a
+Transport:[Transport.Bicycle@27f8302d]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@69663380
-Transport:[Transport.Bicycle@5b37e0d2]
+LivingBeing.Human@4d76f3f8
+Transport:[Transport.Bicycle@2d8e6db6]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@4459eb14
-Transport:[Transport.Bicycle@5a2e4553]
+LivingBeing.Human@23ab930d
+Transport:[Transport.Bicycle@4534b60d]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@28c97a5
-Transport:[Transport.Car@6659c656]
+LivingBeing.Human@3fa77460
+Transport:[Transport.Car@619a5dff]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@6d5380c2
-Transport:[Transport.Car@45ff54e6]
+LivingBeing.Human@1ed6993a
+Transport:[Transport.Car@7e32c033]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@2328c243
-Transport:[Transport.Car@bebdb06]
+LivingBeing.Human@7ab2bfe1
+Transport:[Transport.Car@497470ed]
 Devices:[]
 Do:[]
 Animal:[]
-LivingBeing.Human@7a4f0f29
-Transport:[Transport.Car@45283ce2]
+LivingBeing.Human@63c12fb0
+Transport:[Transport.Car@b1a58a3]
 Devices:[]
 Do:[]
 Animal:[]

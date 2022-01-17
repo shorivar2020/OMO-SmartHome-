@@ -11,9 +11,9 @@ public class BrokenDevice{
     public void fix(Device device, Human human){
         if(human.Find()){
             device.fixing();
-            //System.out.println("You fix it yeee");
+            System.out.println("You fix it yeee");
         } else{
-            //System.out.println("You broke it");
+            System.out.println("You broke it");
             device.buyNew();
         }
     }

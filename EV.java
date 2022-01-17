@@ -29,11 +29,11 @@ public class EV {
                 //System.out.println(r.getHumans());
                 if((r.getHumans()).size() == 1){
                     if(temperature.equals("HOT")){
-                        doing.DoColder(r);
+                        doing.DoColder(r.getHumans(), r);
                         events.add("HotTemperature");
                     }
                     else{
-                        doing.DoHotter(r);
+                        doing.DoHotter(r.getHumans(), r);
                         events.add("ColdTemperature");
                     }
                     if(9<clock && clock<18) {

@@ -17,6 +17,8 @@ public abstract class Device{
     private int cost = 2000;
     private ArrayList<Human> users = new ArrayList<>();
 
+
+
     public abstract void addUsers(Human human);
 
     public abstract ArrayList<Human> getUsers();
@@ -32,6 +34,8 @@ public abstract class Device{
     public abstract void buyNew();
 
     public abstract int getMoney();
+
+    public abstract boolean work(Device d);
 
     // private List<User> users = new ArrayList<>();
 

@@ -52,14 +52,17 @@ public class Teapot extends Device {
     public int getConsumptionFunctionality() {
         return functionality;
     }
-    public boolean work(){
+    public boolean work(Device d){
         if(this.functionality != 0){
-            deviceState = true;
             count++;
             functionality = functionality - consumptionFunctionality*count;
+            deviceState = true;
             return true;
         }
         else{
+            for (Human h: users){
+                h.getNotify(d, h);
+            }
             deviceState = false;
             return false;
         }

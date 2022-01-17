@@ -49,19 +49,21 @@ public class Plate extends Device {
         return buying*cost;
     }
 
-    public boolean work(){
+    public boolean work(Device d){
         if(this.functionality != 0){
-            deviceState = true;
             count++;
             functionality = functionality - consumptionFunctionality*count;
+            deviceState = true;
             return true;
         }
         else{
+            for (Human h: users){
+                h.getNotify(d, h);
+            }
             deviceState = false;
             return false;
         }
     }
-
     public boolean stop(){
         deviceState = false;
         return false;

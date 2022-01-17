@@ -21,9 +21,13 @@ public class EventKitchen {
             System.out.println("Eating:" + h);
             switch(rand.nextInt(3)){
                 case 0:
-                    if(f.work()){
-                    }else{
-                        broken.fix(f, h);
+                    h.setUse(f);
+                    f.addUsers(h);
+                    h.setUse(m);
+                    m.addUsers(h);
+                    if(f.work(f)){
+//                    }else{
+//                        broken.fix(f, h);
                     }
                     if(f.getSomethingIn().size() != 0){
                         meal = f.removeSomethingIn("Food");
@@ -33,27 +37,29 @@ public class EventKitchen {
                         shop.Shoping(f);
                         meal = f.removeSomethingIn("Food");
                     }
-                    h.setUse(f);
-                    f.addUsers(h);
+
                     // f.addSomethingIn("Food");
-                    if(m.work()){
-                        continue;
-                    }else{
-                        //System.out.println("fix");
-                        broken.fix(m, h);
-                    }
+                    //(m.work(m));
+                    m.work(m);
+//                    }else{
+//                        //System.out.println("fix");
+//                        broken.fix(m, h);
+
                     m.addSomethingIn(meal);
-                    h.setUse(m);
-                    m.addUsers(h);
+
                     m.removeSomethingIn(meal);
                     m.stop();
                     h.Eating();
 
                     break;
                 case 1:
-                    if(f.work()){
-                    }else{
-                        broken.fix(f, h);
+                    h.setUse(f);
+                    f.addUsers(h);
+                    h.setUse(p);
+                    p.addUsers(h);
+                    if(f.work(f)){
+//                    }else{
+//                        broken.fix(f, h);
                     }
                     if(f.getSomethingIn().size() != 0){
                         meal = f.removeSomethingIn("Food");
@@ -64,30 +70,29 @@ public class EventKitchen {
                         h.Shopping();
                         meal = f.removeSomethingIn("Food");
                     }
-                    h.setUse(f);
-                    f.addUsers(h);
+
 //                    System.out.println("QQQQQ" + f.getUsers());
                     // f.addSomethingIn("Food");
-                    if(p.work()){
-                    }else{
-                        broken.fix(p, h);
+                    if(p.work(p)){
+//                    }else{
+//                        broken.fix(p, h);
                     }
                     p.addSomethingOn(meal);
-                    h.setUse(p);
-                    p.addUsers(h);
+
                     p.removeSomethingOn(meal);
                     p.stop();
                     h.Eating();
 //                    System.out.println("QQQQQ" + p.getUsers());
                     break;
                 case 2:
-                    if(t.work()){
-                    }else{
-                        broken.fix(t, h);
-                    }
-                    h.DrinkTea();
                     h.setUse(t);
                     t.addUsers(h);
+                    if(t.work(t)){
+//                    }else{
+//                        broken.fix(t, h);
+                    }
+                    h.DrinkTea();
+
                     //System.out.println("TeaTime");
                     t.stop();
                     break;

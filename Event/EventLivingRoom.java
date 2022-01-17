@@ -17,12 +17,13 @@ public class EventLivingRoom {
         for(Human h: Humans) {
             switch (rand.nextInt(3)) {
                 case 0:
-                    if(c.work()){
-                    }else{
-                        broken.fix(c, h);
-                    }
                     h.setUse(c);
                     c.addUsers(h);
+                    if(c.work(c)){
+//                    }else{
+//                        broken.fix(c, h);
+                    }
+
                     //System.out.println(h);
                     h.PlayComputerGames();
                     //person play computer games

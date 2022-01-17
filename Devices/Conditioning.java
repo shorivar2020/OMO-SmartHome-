@@ -48,7 +48,7 @@ public class Conditioning extends Device {
         return buying*cost;
     }
 
-    public boolean work(){
+    public boolean work(Device d){
         if(this.functionality != 0){
             count++;
             functionality = functionality - consumptionFunctionality*count;
@@ -56,6 +56,9 @@ public class Conditioning extends Device {
             return true;
         }
         else{
+            for (Human h: users){
+                h.getNotify(d, h);
+            }
             deviceState = false;
             return false;
         }

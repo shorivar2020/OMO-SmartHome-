@@ -1,6 +1,7 @@
 package LivingBeing;
 
 import Devices.Device;
+import Event.BrokenDevice;
 import Maker.Room;
 import Transport.Transport;
 
@@ -105,5 +106,10 @@ public class Human {
     public ArrayList<String> getDoings() {
         return Doings;
     }
+
+    public void getNotify(Device d, Human h){
+        BrokenDevice broken = new BrokenDevice();
+        broken.fix(d, h);
+        Doings.add("GetNotifyAboutFix");}
 
 }
