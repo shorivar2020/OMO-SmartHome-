@@ -30,7 +30,7 @@ Vhodné design patterny
 +	Iterator In RoomMaker
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
-+	Singleton - We have 2 configuration, configuration can only one
++	Singleton - AreaMaker, Config can only one
 -	Visitor/Observer/Listener
 -	Chain of responsibility
 -	Partially persistent data structure
