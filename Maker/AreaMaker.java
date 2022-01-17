@@ -18,6 +18,14 @@ public class AreaMaker {
 //        }
 //        return instance;
     //   }
+    private static AreaMaker instance;
+    private AreaMaker(){}
+    public static AreaMaker getInstance(){
+        if(instance == null){
+            instance = new AreaMaker();
+        }
+        return instance;
+    }
     public Area newHome(int rooms, int people, int animals, int skis, int bicycles, int cars){
        // Area area = Area.getInstance();
        Area area = new Area();

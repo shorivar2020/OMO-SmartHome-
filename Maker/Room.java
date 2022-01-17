@@ -39,6 +39,9 @@ public class Room {
     public void addAnimal(Animal animal) {
         animals.add(animal);
     }
+    public ArrayList<Animal> getAnimals(){
+        return animals;
+    }
     //    private String name;
 //    private List<Device> devices = new ArrayList<>();
 //    private List<Person> people = new ArrayList<>();

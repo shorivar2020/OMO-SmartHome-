@@ -14,10 +14,10 @@ public class Human {
     Room WhatRoom;
     String name;
     boolean InArea;
-    private List<Device> Use = new ArrayList<>();
-    private List<Transport> UseTransport = new ArrayList<>();
-    private List<Animal> WithAnimal = new ArrayList<>();
-    private List<String> Doings = new ArrayList<>();
+    private ArrayList<Device> Use = new ArrayList<>();
+    private ArrayList<Transport> UseTransport = new ArrayList<>();
+    private ArrayList<Animal> WithAnimal = new ArrayList<>();
+    private ArrayList<String> Doings = new ArrayList<>();
 
 
     public Room getWhatRoom() {
@@ -36,7 +36,7 @@ public class Human {
         this.InArea = inArea;
     }
 
-    public List<Device> getUse() {
+    public ArrayList<Device> getUse() {
         return Use;
     }
 
@@ -44,7 +44,7 @@ public class Human {
         Use.add(device);
     }
 
-    public List<Transport> getUseTransport() {
+    public ArrayList<Transport> getUseTransport() {
         return UseTransport;
     }
 
@@ -52,7 +52,7 @@ public class Human {
         UseTransport.add(transport);
     }
 
-    public List<Animal> getWithAnimal() {
+    public ArrayList<Animal> getWithAnimal() {
         return WithAnimal;
     }
 
@@ -102,7 +102,8 @@ public class Human {
         Doings.add("SLEEPING");
     }
 
-    public List<String> getDoings() {
+    public ArrayList<String> getDoings() {
         return Doings;
     }
+
 }
