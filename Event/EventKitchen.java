@@ -25,10 +25,7 @@ public class EventKitchen {
                     f.addUsers(h);
                     h.setUse(m);
                     m.addUsers(h);
-                    if(f.work(f)){
-//                    }else{
-//                        broken.fix(f, h);
-                    }
+                    f.work(f);
                     if(f.getSomethingIn().size() != 0){
                         meal = f.removeSomethingIn("Food");
                     }
@@ -57,10 +54,7 @@ public class EventKitchen {
                     f.addUsers(h);
                     h.setUse(p);
                     p.addUsers(h);
-                    if(f.work(f)){
-//                    }else{
-//                        broken.fix(f, h);
-                    }
+                    f.work(f);
                     if(f.getSomethingIn().size() != 0){
                         meal = f.removeSomethingIn("Food");
                     }
@@ -73,10 +67,7 @@ public class EventKitchen {
 
 //                    System.out.println("QQQQQ" + f.getUsers());
                     // f.addSomethingIn("Food");
-                    if(p.work(p)){
-//                    }else{
-//                        broken.fix(p, h);
-                    }
+                    p.work(p);
                     p.addSomethingOn(meal);
 
                     p.removeSomethingOn(meal);
@@ -87,10 +78,10 @@ public class EventKitchen {
                 case 2:
                     h.setUse(t);
                     t.addUsers(h);
-                    if(t.work(t)){
+                    t.work(t);
 //                    }else{
 //                        broken.fix(t, h);
-                    }
+
                     h.DrinkTea();
 
                     //System.out.println("TeaTime");

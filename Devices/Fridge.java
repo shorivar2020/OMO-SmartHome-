@@ -16,6 +16,14 @@ public class Fridge extends Device {
     ArrayList<String> somethingIn = new ArrayList<>();
     private ArrayList<Human> users = new ArrayList<>();
 
+    public void On(){
+        deviceState = true;
+    }
+
+    public void Off(){
+        deviceState = false;
+    }
+
     public void addUsers(Human human){
         users.add(human);
         System.out.println("FFF" + human);
@@ -33,8 +41,13 @@ public class Fridge extends Device {
         return consumptionElectricity*count;
     }
 
-    public int getConsumptionFunctionality() {
+    public int getFunctionality(){
         return functionality;
+    }
+    public void setFunctionality() {
+        count++;
+        functionality = functionality - consumptionFunctionality*count;
+
     }
 
     public void fixing(){
@@ -50,26 +63,6 @@ public class Fridge extends Device {
         return buying*cost;
     }
 
-    public boolean work(Device d){
-        if(this.functionality != 0){
-            count++;
-            functionality = functionality - consumptionFunctionality*count;
-            deviceState = true;
-            return true;
-        }
-        else{
-            for (Human h: users){
-                h.getNotify(d, h);
-            }
-            deviceState = false;
-            return false;
-        }
-    }
-
-    public boolean stop(){
-        deviceState = false;
-        return false;
-    }
 
     public ArrayList<String> getSomethingIn() {
         return somethingIn;

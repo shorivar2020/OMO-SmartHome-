@@ -31,7 +31,7 @@ Vhodné design patterny
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
 +	Singleton - AreaMaker, Config can only one
-+	Visitor/Observer/Listener - Observer - Human get notify by broken device
++	Visitor/Observer/Listener - Observer - Human get notify by broken device and than fix it
 -	Chain of responsibility
 -	Partially persistent data structure
 -	Object Pool

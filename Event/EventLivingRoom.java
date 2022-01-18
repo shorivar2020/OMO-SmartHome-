@@ -19,10 +19,10 @@ public class EventLivingRoom {
                 case 0:
                     h.setUse(c);
                     c.addUsers(h);
-                    if(c.work(c)){
+                    c.work(c);
 //                    }else{
 //                        broken.fix(c, h);
-                    }
+
 
                     //System.out.println(h);
                     h.PlayComputerGames();

@@ -3,6 +3,7 @@ package Devices;
 import LivingBeing.Human;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Computer extends Device {
     static int count = 0;
@@ -15,60 +16,53 @@ public class Computer extends Device {
     private int cost = 4000;
     private ArrayList<Human> users = new ArrayList<>();
 
+    public void On(){
+        deviceState = true;
+    }
+
+    public void Off(){
+        deviceState = false;
+    }
+
+    @Override
     public void addUsers(Human human){
         users.add(human);
     }
-
+    @Override
     public ArrayList<Human> getUsers() {
         return users;
     }
-
+    @Override
     public String getDocumentation(){
         return documentation;
     }
-
+    @Override
     public int getElectricity() {
         return consumptionElectricity*count;
     }
-
-    public int getConsumptionFunctionality() {
+    public int getFunctionality(){
         return functionality;
     }
+    public void setFunctionality() {
+        count++;
+        functionality = functionality - consumptionFunctionality*count;
 
-    public boolean work(Device d){
-        if(this.functionality != 0){
-            count++;
-            functionality = functionality - consumptionFunctionality*count;
-            deviceState = true;
-            return true;
-        }
-        else{
-            for (Human h: users){
-                h.getNotify(d, h);
-            }
-            deviceState = false;
-            return false;
-        }
     }
-
+    @Override
     public void fixing(){
         functionality = 100;
     }
-
+    @Override
     public void buyNew(){
         functionality = 100;
         buying++;
     }
-
+    @Override
     public int getMoney(){
         return buying*cost;
     }
 
-    public boolean stop(){
-        deviceState = false;
-        return false;
-    }
-
+    @Override
     public String getDeviceName(){
         return "Computer";
     }

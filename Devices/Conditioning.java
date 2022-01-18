@@ -15,6 +15,14 @@ public class Conditioning extends Device {
     private int cost = 7000;
     private ArrayList<Human> users = new ArrayList<>();
 
+    public void On(){
+        deviceState = true;
+    }
+
+    public void Off(){
+        deviceState = false;
+    }
+
     public void addUsers(Human human){
         users.add(human);
     }
@@ -31,8 +39,13 @@ public class Conditioning extends Device {
         return consumptionElectricity*count;
     }
 
-    public int getConsumptionFunctionality() {
+    public int getFunctionality(){
         return functionality;
+    }
+    public void setFunctionality() {
+        count++;
+        functionality = functionality - consumptionFunctionality*count;
+
     }
 
     public void fixing(){
@@ -46,27 +59,6 @@ public class Conditioning extends Device {
 
     public int getMoney(){
         return buying*cost;
-    }
-
-    public boolean work(Device d){
-        if(this.functionality != 0){
-            count++;
-            functionality = functionality - consumptionFunctionality*count;
-            deviceState = true;
-            return true;
-        }
-        else{
-            for (Human h: users){
-                h.getNotify(d, h);
-            }
-            deviceState = false;
-            return false;
-        }
-    }
-
-    public boolean stop(){
-        deviceState = false;
-        return false;
     }
 
     public String getDeviceName(){

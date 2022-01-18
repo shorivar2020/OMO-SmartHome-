@@ -16,6 +16,14 @@ public class Teapot extends Device {
     boolean deviceState = false;
     private ArrayList<Human> users = new ArrayList<>();
 
+    public void On(){
+        deviceState = true;
+    }
+
+    public void Off(){
+        deviceState = false;
+    }
+
     public void addUsers(Human human){
         users.add(human);
     }
@@ -49,28 +57,13 @@ public class Teapot extends Device {
         return buying*cost;
     }
 
-    public int getConsumptionFunctionality() {
+    public int getFunctionality(){
         return functionality;
     }
-    public boolean work(Device d){
-        if(this.functionality != 0){
-            count++;
-            functionality = functionality - consumptionFunctionality*count;
-            deviceState = true;
-            return true;
-        }
-        else{
-            for (Human h: users){
-                h.getNotify(d, h);
-            }
-            deviceState = false;
-            return false;
-        }
-    }
+    public void setFunctionality() {
+        count++;
+        functionality = functionality - consumptionFunctionality*count;
 
-    public boolean stop(){
-        deviceState = false;
-        return false;
     }
 
     public String getDeviceName(){

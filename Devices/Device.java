@@ -5,25 +5,18 @@ import LivingBeing.Human;
 import java.util.ArrayList;
 
 public abstract class Device{
-    String name;
-    private boolean deviceState; //0-off 1 - on
-    private int electricity = 0; //1-...
-    private int water = 0; //1-...
-    private int documentation = 0; //??
-    private int emloyed = 0; //was used
-    private int functionality = 100; //0-100%
-    private int somethingIn; //0-no 1-yes
-    private int buying = 0;
-    private int cost = 2000;
-    private ArrayList<Human> users = new ArrayList<>();
 
+    public abstract void On();
 
+    public abstract void Off();
 
     public abstract void addUsers(Human human);
 
     public abstract ArrayList<Human> getUsers();
 
     public abstract int getElectricity();
+
+    public abstract String getDocumentation();
 
     public abstract String getDeviceName();
 
@@ -35,38 +28,21 @@ public abstract class Device{
 
     public abstract int getMoney();
 
-    public abstract boolean work(Device d);
+    public void work(Device d){
+        if (getFunctionality() == 0) {
+            for (Human h : getUsers()) {
+                h.getNotify(d, h);
+            }
+        }
+        setFunctionality();
+        On();
+    }
 
-    // private List<User> users = new ArrayList<>();
+    public void stop(){
+        Off();
+    }
 
-//    public void work();
-//    public void stop();
+    protected abstract void setFunctionality();
 
-//    public int getDeviceState() {
-//        return deviceState;
-//    }
-
-//    public int getDocumentation() {
-//        return documentation;
-//    }
-//
-//    public int getElectricity() {
-//        return electricity;
-//    }
-//
-//    public int getWater() {
-//        return water;
-//    }
-//
-//    public int getFunctionallity() {
-//        return functionallity;
-//    }
-//
-//    public int getSomethingIn() {
-//        return somethingIn;
-//    }
-
-//    public String getDeviceName(){
-//        return device;
-//    }
+    protected abstract int getFunctionality();
 }
