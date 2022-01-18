@@ -15,10 +15,10 @@ public class Config {
         Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
 
         EventManager ev = new EventManager();
-        ev.EventManager(home);
+        ev.eventManager(home);
 
         Report report = new Report();
-        report.report(home);
+        report.report(home, ev);
     }
 
 }

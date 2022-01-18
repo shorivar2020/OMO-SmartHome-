@@ -15,9 +15,6 @@ import Transport.Car;
 import Transport.Ski;
 import Transport.Transport;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class EventManager {
@@ -26,15 +23,14 @@ public class EventManager {
     ArrayList<Human> SourceEvents = new ArrayList<>();
     ArrayList<Animal> animalsInEvents= new ArrayList<>();
     ArrayList<Transport> transportInEvents = new ArrayList<>();
-    public ArrayList<String> EventManager(Area home) throws IOException {
+
+    public void eventManager(Area home){
 
         EventKitchen ek = new EventKitchen();
         EventLivingRoom el = new EventLivingRoom();
-        ArrayList<String> rooms = new ArrayList<>();
         Strategy s = new Strategy();
         DoStrategy doStrategy = new DoStrategy();
         HouseAI doing = new HouseAI();
-        Human HomeAI = new Human();
         int NumberStrategy;
         for(House h: home.getArea()){
             for(Room r: h.getRooms()){
@@ -48,17 +44,10 @@ public class EventManager {
                         SourceEvents.add(null);
                         transportInEvents.add(null);
                     }
-
                     if (r.getName().equals("Kitchen")) {
                         ek.Eating(r.getHumans(), r);
-//                        events.add(food);
-                    //    ek.getAnimalsInEvents.
-
                     } else {
                         el.Chilling(r.getHumans(), r, r.getAnimals());
-//                        events.add(food);
-//                        setEvents("Play_Computer_Games");
-
                     }
                     animalsInEvents.addAll(ek.getAnimalsInEvents());
                     events.addAll(ek.getEvents());
@@ -70,16 +59,9 @@ public class EventManager {
                     SourceEvents.addAll(el.getSourceEvents());
                     deviceInEvents.addAll(el.getDeviceInEvents());
                     transportInEvents.addAll(el.getTransportInEvents());
-                    rooms.add(r.getName());
+
                 }
             }
-            //File file = new File("C://zzz", "tt.txt");
-            File file = new File("C:\\Users\\User\\omo-smart-home\\Reports", "EventReport.txt");
-            FileWriter writEvent = new FileWriter(file, false);
-
-            writEvent.write("Event     | Source     | Device    | Animal    ");
-            writEvent.append('\n');
-
 
             int count_wait = 0;
             for(Parking tr: h.getTrRooms()){
@@ -100,7 +82,6 @@ public class EventManager {
                     tr.getHumans().get(count_tr).setUseTransport(b);
                     events.add("Use_Bicycle");
                     animalsInEvents.add(null);
-
                     SourceEvents.addAll(tr.getHumans());
                     deviceInEvents.add(null);
                     transportInEvents.add(b);
@@ -125,34 +106,11 @@ public class EventManager {
                     events.add("Wait");
                 }
             }
-            int i = 0;
-            int j = 0;
-            int z = 0;
-            int y = 0;
-            for(String event:events){
-                writEvent.write("--------------------------------------------------------------------");
-                writEvent.append('\n');
-                writEvent.write(String.valueOf(event));
-                writEvent.write(" | " + String.valueOf(SourceEvents.get(i++)));
-                writEvent.write(" | " + String.valueOf(deviceInEvents.get(j++)));
-                writEvent.write(" | " + String.valueOf(animalsInEvents.get(z++)));
-                //writEvent.write(String.valueOf(getAnimalsInEvents().get(z)));
-                writEvent.write(" | " + String.valueOf(transportInEvents.get(y++)));
-                writEvent.append('\n');
-            }
-            writEvent.append('\n');
-            writEvent.flush();
-            //
         }
-
-        return events;
     }
+
     public ArrayList<Animal> getAnimalsInEvents() {
         return animalsInEvents;
-    }
-
-    public void setAnimalsInEvents(Animal animals) {
-        animalsInEvents.add(animals);
     }
 
     public ArrayList<String> getEvents(){
@@ -167,23 +125,8 @@ public class EventManager {
         return SourceEvents;
     }
 
-    public void setTransportInEvents(Transport transport) {
-        transportInEvents.add(transport);
-    }
-
     public ArrayList<Transport> getTransportInEvents() {
         return transportInEvents;
     }
 
-    public void setDeviceInEvents(Device d) {
-        deviceInEvents.add(d);
-    }
-
-    public void setEvents(String s) {
-        events.add(s);
-    }
-
-    public void setSourceEvents(Human h) {
-        SourceEvents.add(h);
-    }
 }

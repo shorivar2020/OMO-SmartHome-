@@ -8,7 +8,8 @@ public class Main {
         AreaMaker make = AreaMaker.getInstance();
         Config c = Config.getInstance();
         Random rand = new Random();
-        switch (rand.nextInt(3)){
+        switch (rand.nextInt(3))
+        {
             case 0:
                 System.out.println("Small house");
                 c.config(make, 6, 6, 3, 1, 1, 1);

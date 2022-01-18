@@ -5,13 +5,15 @@ import Maker.Area;
 import Maker.House;
 import Maker.Parking;
 import Maker.Room;
+import Transport.Transport;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Report {
-    public void report(Area home) throws IOException {
+    public void report(Area home, EventManager evm) throws IOException {
         File file = new File("C:\\Users\\User\\omo-smart-home\\Reports", "ConsumptionReport.txt.txt");
         FileWriter writer = new FileWriter(file, false);
         int totalElectricity = 0;
@@ -83,6 +85,14 @@ public class Report {
         }
         writDevices.flush();
         writHome.flush();
+
+
+        ArrayList<String> events = new ArrayList<>(evm.getEvents());
+        ArrayList<Device> deviceInEvents = new ArrayList<>(evm.getDeviceInEvents());
+        ArrayList<Human> SourceEvents = new ArrayList<>(evm.getSourceEvents());
+        ArrayList<Animal> animalsInEvents = new ArrayList<>(evm.getAnimalsInEvents());
+        ArrayList<Transport> transportInEvents = new ArrayList<>(evm.getTransportInEvents());
+
         File file3 = new File("C:\\Users\\User\\omo-smart-home\\Reports", "ActivityAndUsageReport.txt");
         FileWriter writHuman = new FileWriter(file3, false);
         for(House h: home.getArea()) {
@@ -121,6 +131,25 @@ public class Report {
                 }
             }
             writHuman.flush();
+
+
+            File file5 = new File("C:\\Users\\User\\omo-smart-home\\Reports", "EventReport.txt");
+            FileWriter writEvent = new FileWriter(file5, false);
+            writEvent.write("Event     | Source     | Device    | Animal    ");
+            writEvent.append('\n');
+            int i = 0, j = 0, z = 0, y = 0;
+            for(String event:events){
+                writEvent.write("--------------------------------------------------------------------");
+                writEvent.append('\n');
+                writEvent.write(String.valueOf(event));
+                writEvent.write(" | " + SourceEvents.get(i++));
+                writEvent.write(" | " + deviceInEvents.get(j++));
+                writEvent.write(" | " + animalsInEvents.get(z++));
+                writEvent.write(" | " + transportInEvents.get(y++));
+                writEvent.append('\n');
+            }
+            writEvent.append('\n');
+            writEvent.flush();
         }
     }
 }
