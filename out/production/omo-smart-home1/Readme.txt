@@ -26,7 +26,7 @@ Nefunkční požadavky
 ⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
 
 Vhodné design patterny
-!	State machine Devise have state: Computer, Plate... in work
+-	State machine Devise have state: Computer, Plate... in work
 +	Iterator In RoomMaker
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
@@ -36,7 +36,7 @@ Vhodné design patterny
 -	Partially persistent data structure
 -	Object Pool
 -	Lazy Initialization
--   Strategies
++   Strategies - Strategy of time and temperature
 -   Bilder(for make house)
 -   Prototype(clone)
 -   Facade(part of functionall)
