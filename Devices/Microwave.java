@@ -9,10 +9,10 @@ public class Microwave extends Device {
     int consumptionElectricity = 50;
     int consumptionFunctionality = 100;//Very bad microwave
     private int functionality = 0;//Was using where was buying
-    private String documentation = "Documentation of Microwave";
+    private final String documentation = "Documentation of Microwave";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 5000;
+    private final int cost = 5000;
     ArrayList<String> somethingIn = new ArrayList<>();
     private ArrayList<Human> users = new ArrayList<>();
 
@@ -46,7 +46,6 @@ public class Microwave extends Device {
     public void setFunctionality() {
         count++;
         functionality = functionality - consumptionFunctionality*count;
-
     }
 
     public void fixing(){
@@ -56,7 +55,6 @@ public class Microwave extends Device {
     public void buyNew(){
         functionality = 100;
         buying++;
-        System.out.println("BUYING");
     }
 
     public int getMoney(){
@@ -67,15 +65,12 @@ public class Microwave extends Device {
         return somethingIn;
     }
 
-    public String addSomethingIn(String somethingIn) {
+    public void addSomethingIn(String somethingIn) {
         this.somethingIn.add(somethingIn);
-        //System.out.println("In microwave "+somethingIn);
-        return somethingIn;
     }
 
     public String removeSomethingIn(String somethingIn) {
         this.somethingIn.remove(somethingIn);
-        //System.out.println("In out " +somethingIn);
         return somethingIn;
     }
 

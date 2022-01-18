@@ -26,7 +26,7 @@ Nefunkční požadavky
 ⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
 
 Vhodné design patterny
--	State machine Devise have state: Computer, Plate... in work
+-	State machine
 +	Iterator In RoomMaker
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
@@ -37,11 +37,8 @@ Vhodné design patterny
 -	Object Pool
 -	Lazy Initialization
 +   Strategies - Strategy of time and temperature
--   Bilder(for make house)
--   Prototype(clone)
--   Facade(part of functionall)
 
 Požadované výstupy
 ⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
 ⦁	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
-+	Config and Config2
++	Config - big/medium/small

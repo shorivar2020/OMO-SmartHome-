@@ -9,10 +9,10 @@ public class Heater extends Device {
     int consumptionElectricity = 90;
     int consumptionFunctionality = 18;
     private int functionality = 100;
-    private String documentation = "Documentation of Heater";
+    private final String documentation = "Documentation of Heater";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 9000;
+    private final int cost = 9000;
     private ArrayList<Human> users = new ArrayList<>();
 
     public void On(){
@@ -45,7 +45,6 @@ public class Heater extends Device {
     public void setFunctionality() {
         count++;
         functionality = functionality - consumptionFunctionality*count;
-
     }
 
     public void fixing(){

@@ -9,10 +9,10 @@ public class Fridge extends Device {
     int consumptionElectricity = 50;
     int consumptionFunctionality = 5;
     private int functionality = 0;//Was using where was buying
-    private String documentation = "Documentation of Fridge";
+    private final String documentation = "Documentation of Fridge";
     boolean deviceState = true;
     private int buying = 0;
-    private int cost = 5000;
+    private final int cost = 5000;
     ArrayList<String> somethingIn = new ArrayList<>();
     private ArrayList<Human> users = new ArrayList<>();
 
@@ -26,7 +26,6 @@ public class Fridge extends Device {
 
     public void addUsers(Human human){
         users.add(human);
-        System.out.println("FFF" + human);
     }
 
     public ArrayList<Human> getUsers() {
@@ -68,15 +67,12 @@ public class Fridge extends Device {
         return somethingIn;
     }
 
-    public String addSomethingIn(String somethingIn) {
+    public void addSomethingIn(String somethingIn) {
         this.somethingIn.add(somethingIn);
-        //System.out.println("In fridge "+somethingIn);
-        return somethingIn;
     }
 
     public String removeSomethingIn(String somethingIn) {
         this.somethingIn.remove(somethingIn);
-        //System.out.println("In out " +somethingIn);
         return somethingIn;
     }
 

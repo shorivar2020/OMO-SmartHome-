@@ -9,10 +9,10 @@ public class Plate extends Device {
     int consumptionElectricity = 70;
     int consumptionFunctionality = 14;
     private int functionality = 100;
-    private String documentation = "Documentation of Plate";
+    private final String documentation = "Documentation of Plate";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 7000;
+    private final int cost = 7000;
     ArrayList<String> somethingOn = new ArrayList<>();
     private ArrayList<Human> users = new ArrayList<>();
 
@@ -62,19 +62,12 @@ public class Plate extends Device {
         return buying*cost;
     }
 
-    public ArrayList<String> getSomethingIn() {
-        return somethingOn;
-    }
-
-    public String addSomethingOn(String somethingIn) {
+    public void addSomethingOn(String somethingIn) {
         this.somethingOn.add(somethingIn);
-        //System.out.println("On plate "+somethingIn);
-        return somethingIn;
     }
 
     public String removeSomethingOn(String somethingIn) {
         this.somethingOn.remove(somethingIn);
-        //System.out.println("In out " +somethingIn);
         return somethingIn;
     }
 

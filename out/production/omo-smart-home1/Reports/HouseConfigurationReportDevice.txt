@@ -1,307 +1,349 @@
-| Device: Devices.Illumination@135fbaa4
+| Device: Devices.Illumination@4554617c
 | Type: Illumination
-| Users: [LivingBeing.Human@4554617c]
- | Electricity: 120
+| Users: [LivingBeing.Human@66a29884]
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@45ee12a7
+| Device: Devices.Blinds@74a14482
 | Type: Blinds
-| Users: [LivingBeing.Human@4554617c]
- | Electricity: 60
+| Users: [LivingBeing.Human@66a29884]
+ | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Heater@330bedb4
+| Device: Devices.Heater@1540e19d
 | Type: Heater
-| Users: [LivingBeing.Human@4554617c]
- | Electricity: 450
+| Users: [LivingBeing.Human@66a29884]
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@2503dbd3
+| Device: Devices.Conditioning@677327b6
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@4b67cf4d
+| Device: Devices.Fridge@14ae5a5
 | Type: Fridge
-| Users: [LivingBeing.Human@4554617c]
+| Users: [LivingBeing.Human@66a29884]
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@7ea987ac
+| Device: Devices.Microwave@7f31245a
 | Type: Microwave
-| Users: [LivingBeing.Human@4554617c]
+| Users: [LivingBeing.Human@66a29884]
  | Electricity: 100
 | Water: 0
-| Money: 0
-| Device: Devices.Plate@12a3a380
+| Money: 5000
+| Device: Devices.Plate@6d6f6e28
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@29453f44
+| Device: Devices.Teapot@135fbaa4
 | Type: Teapot
 | Users: []
- | Electricity: 60
-| Water: 30
+ | Electricity: 20
+| Water: 10
 | Money: 0
-| Device: Devices.Illumination@5cad8086
+| Device: Devices.Illumination@45ee12a7
 | Type: Illumination
-| Users: [LivingBeing.Human@74a14482]
- | Electricity: 120
+| Users: [LivingBeing.Human@4769b07b]
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@6e0be858
+| Device: Devices.Blinds@330bedb4
 | Type: Blinds
-| Users: [LivingBeing.Human@74a14482]
- | Electricity: 60
+| Users: [LivingBeing.Human@4769b07b]
+ | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Heater@61bbe9ba
+| Device: Devices.Heater@2503dbd3
 | Type: Heater
-| Users: [LivingBeing.Human@74a14482]
- | Electricity: 450
+| Users: [LivingBeing.Human@4769b07b]
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@610455d6
+| Device: Devices.Conditioning@4b67cf4d
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@511d50c0
+| Device: Devices.Fridge@7ea987ac
 | Type: Fridge
-| Users: [LivingBeing.Human@74a14482]
+| Users: [LivingBeing.Human@4769b07b]
  | Electricity: 200
 | Water: 0
 | Money: 5000
-| Device: Devices.Microwave@60e53b93
+| Device: Devices.Microwave@12a3a380
 | Type: Microwave
-| Users: []
+| Users: [LivingBeing.Human@4769b07b]
  | Electricity: 100
 | Water: 0
-| Money: 0
-| Device: Devices.Plate@5e2de80c
-| Type: Plate
-| Users: [LivingBeing.Human@74a14482]
- | Electricity: 140
-| Water: 0
-| Money: 0
-| Device: Devices.Teapot@1d44bcfa
-| Type: Teapot
-| Users: []
- | Electricity: 60
-| Water: 30
-| Money: 0
-| Device: Devices.Illumination@266474c2
-| Type: Illumination
-| Users: [LivingBeing.Human@7c3df479]
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@6f94fa3e
-| Type: Blinds
-| Users: [LivingBeing.Human@7c3df479]
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@5e481248
-| Type: Heater
-| Users: [LivingBeing.Human@7c3df479]
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@66d3c617
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@63947c6b
-| Type: Computer
-| Users: [LivingBeing.Human@7c3df479]
- | Electricity: 80
-| Water: 0
-| Money: 0
-| Device: Devices.Illumination@2b193f2d
-| Type: Illumination
-| Users: [LivingBeing.Human@7106e68e]
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@355da254
-| Type: Blinds
-| Users: [LivingBeing.Human@7106e68e]
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@4dc63996
-| Type: Heater
-| Users: [LivingBeing.Human@7106e68e]
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@d716361
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@6ff3c5b5
-| Type: Computer
-| Users: []
- | Electricity: 80
-| Water: 0
-| Money: 0
-| Device: Devices.Illumination@3764951d
-| Type: Illumination
-| Users: [LivingBeing.Human@1540e19d]
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@4b1210ee
-| Type: Blinds
-| Users: [LivingBeing.Human@1540e19d]
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@4d7e1886
-| Type: Heater
-| Users: [LivingBeing.Human@1540e19d]
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@3cd1a2f1
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Fridge@2f0e140b
-| Type: Fridge
-| Users: []
- | Electricity: 200
-| Water: 0
-| Money: 0
-| Device: Devices.Microwave@7440e464
-| Type: Microwave
-| Users: []
- | Electricity: 100
-| Water: 0
-| Money: 0
-| Device: Devices.Plate@49476842
+| Money: 5000
+| Device: Devices.Plate@29453f44
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@78308db1
+| Device: Devices.Teapot@5cad8086
 | Type: Teapot
-| Users: [LivingBeing.Human@1540e19d]
- | Electricity: 60
-| Water: 30
+| Users: []
+ | Electricity: 20
+| Water: 10
+| Money: 0
+| Device: Devices.Illumination@6e0be858
+| Type: Illumination
+| Users: [LivingBeing.Human@cc34f4d]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@61bbe9ba
+| Type: Blinds
+| Users: [LivingBeing.Human@cc34f4d]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@610455d6
+| Type: Heater
+| Users: [LivingBeing.Human@cc34f4d]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@511d50c0
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@60e53b93
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@5e2de80c
+| Type: Illumination
+| Users: [LivingBeing.Human@17a7cec2]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@1d44bcfa
+| Type: Blinds
+| Users: [LivingBeing.Human@17a7cec2]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@266474c2
+| Type: Heater
+| Users: [LivingBeing.Human@17a7cec2]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@6f94fa3e
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@5e481248
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@66d3c617
+| Type: Illumination
+| Users: [LivingBeing.Human@65b3120a]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@63947c6b
+| Type: Blinds
+| Users: [LivingBeing.Human@65b3120a]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@2b193f2d
+| Type: Heater
+| Users: [LivingBeing.Human@65b3120a]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@355da254
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@4dc63996
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@d716361
+| Type: Illumination
+| Users: [LivingBeing.Human@6f539caf]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@6ff3c5b5
+| Type: Blinds
+| Users: [LivingBeing.Human@6f539caf]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@3764951d
+| Type: Heater
+| Users: [LivingBeing.Human@6f539caf]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@4b1210ee
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@4d7e1886
+| Type: Computer
+| Users: [LivingBeing.Human@6f539caf]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@3cd1a2f1
+| Type: Illumination
+| Users: [LivingBeing.Human@79fc0f2f]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@2f0e140b
+| Type: Blinds
+| Users: [LivingBeing.Human@79fc0f2f]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@7440e464
+| Type: Heater
+| Users: [LivingBeing.Human@79fc0f2f]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@49476842
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@78308db1
+| Type: Computer
+| Users: [LivingBeing.Human@79fc0f2f]
+ | Electricity: 80
+| Water: 0
 | Money: 0
 | Device: Devices.Illumination@27c170f0
 | Type: Illumination
-| Users: [LivingBeing.Human@7eda2dbb]
- | Electricity: 120
+| Users: [LivingBeing.Human@50040f0c]
+ | Electricity: 160
 | Water: 0
 | Money: 0
 | Device: Devices.Blinds@5451c3a8
 | Type: Blinds
-| Users: [LivingBeing.Human@7eda2dbb]
- | Electricity: 60
+| Users: [LivingBeing.Human@50040f0c]
+ | Electricity: 80
 | Water: 0
 | Money: 0
 | Device: Devices.Heater@2626b418
 | Type: Heater
-| Users: [LivingBeing.Human@7eda2dbb]
- | Electricity: 450
+| Users: [LivingBeing.Human@50040f0c]
+ | Electricity: 630
 | Water: 0
 | Money: 0
 | Device: Devices.Conditioning@5a07e868
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Computer@76ed5528
-| Type: Computer
-| Users: []
- | Electricity: 80
-| Water: 0
-| Money: 0
-| Device: Devices.Illumination@2c7b84de
-| Type: Illumination
-| Users: [LivingBeing.Human@677327b6]
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@3fee733d
-| Type: Blinds
-| Users: [LivingBeing.Human@677327b6]
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@5acf9800
-| Type: Heater
-| Users: [LivingBeing.Human@677327b6]
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@4617c264
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Fridge@36baf30c
+| Device: Devices.Fridge@76ed5528
 | Type: Fridge
-| Users: []
+| Users: [LivingBeing.Human@50040f0c]
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@7a81197d
+| Device: Devices.Microwave@2c7b84de
 | Type: Microwave
 | Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
-| Device: Devices.Plate@5ca881b5
+| Device: Devices.Plate@3fee733d
 | Type: Plate
-| Users: []
+| Users: [LivingBeing.Human@50040f0c]
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@24d46ca6
+| Device: Devices.Teapot@5acf9800
 | Type: Teapot
-| Users: [LivingBeing.Human@677327b6]
- | Electricity: 60
-| Water: 30
+| Users: []
+ | Electricity: 20
+| Water: 10
+| Money: 0
+| Device: Devices.Illumination@4617c264
+| Type: Illumination
+| Users: [LivingBeing.Human@2dda6444]
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@36baf30c
+| Type: Blinds
+| Users: [LivingBeing.Human@2dda6444]
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@7a81197d
+| Type: Heater
+| Users: [LivingBeing.Human@2dda6444]
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@5ca881b5
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@24d46ca6
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
 | Money: 0
 | Device: Devices.Illumination@4517d9a3
 | Type: Illumination
-| Users: [LivingBeing.Human@6576fe71]
- | Electricity: 120
+| Users: [LivingBeing.Human@5e9f23b4]
+ | Electricity: 160
 | Water: 0
 | Money: 0
 | Device: Devices.Blinds@372f7a8d
 | Type: Blinds
-| Users: [LivingBeing.Human@6576fe71]
- | Electricity: 60
+| Users: [LivingBeing.Human@5e9f23b4]
+ | Electricity: 80
 | Water: 0
 | Money: 0
 | Device: Devices.Heater@2f92e0f4
 | Type: Heater
-| Users: [LivingBeing.Human@6576fe71]
- | Electricity: 450
+| Users: [LivingBeing.Human@5e9f23b4]
+ | Electricity: 630
 | Water: 0
 | Money: 0
 | Device: Devices.Conditioning@28a418fc
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
 | Device: Devices.Computer@5305068a
@@ -312,31 +354,31 @@
 | Money: 0
 | Device: Devices.Illumination@1f32e575
 | Type: Illumination
-| Users: [LivingBeing.Human@14ae5a5]
- | Electricity: 120
+| Users: [LivingBeing.Human@4783da3f]
+ | Electricity: 160
 | Water: 0
 | Money: 0
 | Device: Devices.Blinds@279f2327
 | Type: Blinds
-| Users: [LivingBeing.Human@14ae5a5]
- | Electricity: 60
+| Users: [LivingBeing.Human@4783da3f]
+ | Electricity: 80
 | Water: 0
 | Money: 0
 | Device: Devices.Heater@2ff4acd0
 | Type: Heater
-| Users: [LivingBeing.Human@14ae5a5]
- | Electricity: 450
+| Users: [LivingBeing.Human@4783da3f]
+ | Electricity: 630
 | Water: 0
 | Money: 0
 | Device: Devices.Conditioning@54bedef2
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
 | Device: Devices.Fridge@5caf905d
 | Type: Fridge
-| Users: [LivingBeing.Human@14ae5a5]
+| Users: []
  | Electricity: 200
 | Water: 0
 | Money: 0
@@ -348,587 +390,491 @@
 | Money: 0
 | Device: Devices.Plate@8efb846
 | Type: Plate
-| Users: [LivingBeing.Human@14ae5a5]
+| Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
 | Device: Devices.Teapot@2a84aee7
 | Type: Teapot
-| Users: []
- | Electricity: 60
-| Water: 30
+| Users: [LivingBeing.Human@4783da3f]
+ | Electricity: 20
+| Water: 10
 | Money: 0
 | Device: Devices.Illumination@a09ee92
 | Type: Illumination
-| Users: [LivingBeing.Human@7f31245a]
- | Electricity: 120
+| Users: [LivingBeing.Human@378fd1ac]
+ | Electricity: 160
 | Water: 0
 | Money: 0
 | Device: Devices.Blinds@30f39991
 | Type: Blinds
-| Users: [LivingBeing.Human@7f31245a]
- | Electricity: 60
+| Users: [LivingBeing.Human@378fd1ac]
+ | Electricity: 80
 | Water: 0
 | Money: 0
 | Device: Devices.Heater@452b3a41
 | Type: Heater
-| Users: [LivingBeing.Human@7f31245a]
- | Electricity: 450
+| Users: [LivingBeing.Human@378fd1ac]
+ | Electricity: 630
 | Water: 0
 | Money: 0
 | Device: Devices.Conditioning@4a574795
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
 | Device: Devices.Fridge@f6f4d33
 | Type: Fridge
-| Users: [LivingBeing.Human@7f31245a]
+| Users: [LivingBeing.Human@378fd1ac]
  | Electricity: 200
 | Water: 0
 | Money: 5000
 | Device: Devices.Microwave@23fc625e
 | Type: Microwave
-| Users: [LivingBeing.Human@7f31245a]
+| Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
 | Device: Devices.Plate@3f99bd52
 | Type: Plate
-| Users: []
+| Users: [LivingBeing.Human@378fd1ac]
  | Electricity: 140
 | Water: 0
 | Money: 0
 | Device: Devices.Teapot@4f023edb
 | Type: Teapot
 | Users: []
- | Electricity: 60
-| Water: 30
+ | Electricity: 20
+| Water: 10
 | Money: 0
 | Device: Devices.Illumination@3a71f4dd
 | Type: Illumination
-| Users: [LivingBeing.Human@6d6f6e28]
- | Electricity: 120
+| Users: []
+ | Electricity: 160
 | Water: 0
 | Money: 0
 | Device: Devices.Blinds@7adf9f5f
 | Type: Blinds
-| Users: [LivingBeing.Human@6d6f6e28]
- | Electricity: 60
+| Users: []
+ | Electricity: 80
 | Water: 0
 | Money: 0
 | Device: Devices.Heater@85ede7b
 | Type: Heater
-| Users: [LivingBeing.Human@6d6f6e28]
- | Electricity: 450
+| Users: []
+ | Electricity: 630
 | Water: 0
 | Money: 0
 | Device: Devices.Conditioning@5674cd4d
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@63961c42
+| Device: Devices.Computer@63961c42
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@65b54208
+| Type: Illumination
+| Users: []
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@1be6f5c3
+| Type: Blinds
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@6b884d57
+| Type: Heater
+| Users: []
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@38af3868
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@77459877
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@5b2133b1
+| Type: Illumination
+| Users: []
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@72ea2f77
+| Type: Blinds
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@33c7353a
+| Type: Heater
+| Users: []
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@681a9515
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@3af49f1c
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@19469ea2
+| Type: Illumination
+| Users: []
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@13221655
+| Type: Blinds
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@2f2c9b19
+| Type: Heater
+| Users: []
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@31befd9f
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Fridge@1c20c684
 | Type: Fridge
 | Users: []
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@65b54208
+| Device: Devices.Microwave@1fb3ebeb
 | Type: Microwave
 | Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
-| Device: Devices.Plate@1be6f5c3
+| Device: Devices.Plate@548c4f57
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@6b884d57
+| Device: Devices.Teapot@1218025c
 | Type: Teapot
-| Users: [LivingBeing.Human@6d6f6e28]
- | Electricity: 60
-| Water: 30
-| Money: 0
-| Device: Devices.Illumination@38af3868
-| Type: Illumination
-| Users: [LivingBeing.Human@76fb509a]
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@77459877
-| Type: Blinds
-| Users: [LivingBeing.Human@76fb509a]
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@5b2133b1
-| Type: Heater
-| Users: [LivingBeing.Human@76fb509a]
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@72ea2f77
-| Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 20
+| Water: 10
+| Money: 0
+| Device: Devices.Illumination@816f27d
+| Type: Illumination
+| Users: []
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Computer@33c7353a
-| Type: Computer
-| Users: [LivingBeing.Human@76fb509a]
+| Device: Devices.Blinds@87aac27
+| Type: Blinds
+| Users: []
  | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Illumination@681a9515
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@3af49f1c
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@19469ea2
+| Device: Devices.Heater@3e3abc88
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@13221655
+| Device: Devices.Conditioning@6ce253f1
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Computer@2f2c9b19
+| Device: Devices.Computer@53d8d10a
 | Type: Computer
 | Users: []
  | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Illumination@31befd9f
+| Device: Devices.Illumination@e9e54c2
 | Type: Illumination
 | Users: []
- | Electricity: 120
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@1c20c684
+| Device: Devices.Blinds@65ab7765
 | Type: Blinds
 | Users: []
- | Electricity: 60
+ | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Heater@1fb3ebeb
+| Device: Devices.Heater@1b28cdfa
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@548c4f57
+| Device: Devices.Conditioning@eed1f14
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@1218025c
+| Device: Devices.Computer@7229724f
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@4c873330
+| Type: Illumination
+| Users: []
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@119d7047
+| Type: Blinds
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@776ec8df
+| Type: Heater
+| Users: []
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@4eec7777
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Computer@3b07d329
+| Type: Computer
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Illumination@41629346
+| Type: Illumination
+| Users: []
+ | Electricity: 160
+| Water: 0
+| Money: 0
+| Device: Devices.Blinds@404b9385
+| Type: Blinds
+| Users: []
+ | Electricity: 80
+| Water: 0
+| Money: 0
+| Device: Devices.Heater@6d311334
+| Type: Heater
+| Users: []
+ | Electricity: 630
+| Water: 0
+| Money: 0
+| Device: Devices.Conditioning@682a0b20
+| Type: Conditioning
+| Users: []
+ | Electricity: 350
+| Water: 0
+| Money: 0
+| Device: Devices.Fridge@3d075dc0
 | Type: Fridge
 | Users: []
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@816f27d
+| Device: Devices.Microwave@214c265e
 | Type: Microwave
 | Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
-| Device: Devices.Plate@87aac27
+| Device: Devices.Plate@448139f0
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@3e3abc88
+| Device: Devices.Teapot@7cca494b
 | Type: Teapot
 | Users: []
- | Electricity: 60
-| Water: 30
+ | Electricity: 20
+| Water: 10
 | Money: 0
-| Device: Devices.Illumination@6ce253f1
+| Device: Devices.Illumination@7ba4f24f
 | Type: Illumination
 | Users: []
- | Electricity: 120
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@53d8d10a
+| Device: Devices.Blinds@3b9a45b3
 | Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@e9e54c2
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@65ab7765
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@1b28cdfa
-| Type: Computer
 | Users: []
  | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Illumination@eed1f14
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@7229724f
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@4c873330
+| Device: Devices.Heater@7699a589
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@119d7047
+| Device: Devices.Conditioning@58372a00
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Computer@776ec8df
-| Type: Computer
-| Users: []
- | Electricity: 80
-| Water: 0
-| Money: 0
-| Device: Devices.Illumination@4eec7777
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@3b07d329
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@41629346
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@404b9385
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Fridge@6d311334
+| Device: Devices.Fridge@4dd8dc3
 | Type: Fridge
 | Users: []
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@682a0b20
+| Device: Devices.Microwave@6d03e736
 | Type: Microwave
 | Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
-| Device: Devices.Plate@3d075dc0
+| Device: Devices.Plate@568db2f2
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@214c265e
+| Device: Devices.Teapot@378bf509
 | Type: Teapot
 | Users: []
- | Electricity: 60
-| Water: 30
+ | Electricity: 20
+| Water: 10
 | Money: 0
-| Device: Devices.Illumination@448139f0
+| Device: Devices.Illumination@5fd0d5ae
 | Type: Illumination
 | Users: []
- | Electricity: 120
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@7cca494b
+| Device: Devices.Blinds@2d98a335
 | Type: Blinds
 | Users: []
- | Electricity: 60
+ | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Heater@7ba4f24f
+| Device: Devices.Heater@16b98e56
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@3b9a45b3
+| Device: Devices.Conditioning@7ef20235
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@7699a589
-| Type: Fridge
-| Users: []
- | Electricity: 200
-| Water: 0
-| Money: 0
-| Device: Devices.Microwave@58372a00
-| Type: Microwave
-| Users: []
- | Electricity: 100
-| Water: 0
-| Money: 0
-| Device: Devices.Plate@4dd8dc3
-| Type: Plate
-| Users: []
- | Electricity: 140
-| Water: 0
-| Money: 0
-| Device: Devices.Teapot@6d03e736
-| Type: Teapot
-| Users: []
- | Electricity: 60
-| Water: 30
-| Money: 0
-| Device: Devices.Illumination@568db2f2
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@378bf509
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@5fd0d5ae
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@2d98a335
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Fridge@16b98e56
-| Type: Fridge
-| Users: []
- | Electricity: 200
-| Water: 0
-| Money: 0
-| Device: Devices.Microwave@7ef20235
-| Type: Microwave
-| Users: []
- | Electricity: 100
-| Water: 0
-| Money: 0
-| Device: Devices.Plate@27d6c5e0
-| Type: Plate
-| Users: []
- | Electricity: 140
-| Water: 0
-| Money: 0
-| Device: Devices.Teapot@4f3f5b24
-| Type: Teapot
-| Users: []
- | Electricity: 60
-| Water: 30
-| Money: 0
-| Device: Devices.Illumination@15aeb7ab
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@7b23ec81
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@6acbcfc0
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@5f184fc6
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@3feba861
+| Device: Devices.Computer@27d6c5e0
 | Type: Computer
 | Users: []
  | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Illumination@5b480cf9
+| Device: Devices.Illumination@4f3f5b24
 | Type: Illumination
 | Users: []
- | Electricity: 120
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@6f496d9f
+| Device: Devices.Blinds@15aeb7ab
 | Type: Blinds
 | Users: []
- | Electricity: 60
+ | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Heater@723279cf
+| Device: Devices.Heater@7b23ec81
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@10f87f48
+| Device: Devices.Conditioning@6acbcfc0
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Fridge@b4c966a
+| Device: Devices.Fridge@5f184fc6
 | Type: Fridge
 | Users: []
  | Electricity: 200
 | Water: 0
 | Money: 0
-| Device: Devices.Microwave@2f4d3709
+| Device: Devices.Microwave@3feba861
 | Type: Microwave
 | Users: []
  | Electricity: 100
 | Water: 0
 | Money: 0
-| Device: Devices.Plate@4e50df2e
+| Device: Devices.Plate@5b480cf9
 | Type: Plate
 | Users: []
  | Electricity: 140
 | Water: 0
 | Money: 0
-| Device: Devices.Teapot@1d81eb93
+| Device: Devices.Teapot@6f496d9f
 | Type: Teapot
 | Users: []
- | Electricity: 60
-| Water: 30
+ | Electricity: 20
+| Water: 10
 | Money: 0
-| Device: Devices.Illumination@7291c18f
+| Device: Devices.Illumination@723279cf
 | Type: Illumination
 | Users: []
- | Electricity: 120
+ | Electricity: 160
 | Water: 0
 | Money: 0
-| Device: Devices.Blinds@34a245ab
+| Device: Devices.Blinds@10f87f48
 | Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@7cc355be
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@6e8cf4c6
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@12edcd21
-| Type: Computer
 | Users: []
  | Electricity: 80
 | Water: 0
 | Money: 0
-| Device: Devices.Illumination@34c45dca
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@52cc8049
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@5b6f7412
+| Device: Devices.Heater@b4c966a
 | Type: Heater
 | Users: []
- | Electricity: 450
+ | Electricity: 630
 | Water: 0
 | Money: 0
-| Device: Devices.Conditioning@27973e9b
+| Device: Devices.Conditioning@2f4d3709
 | Type: Conditioning
 | Users: []
- | Electricity: 490
+ | Electricity: 350
 | Water: 0
 | Money: 0
-| Device: Devices.Computer@312b1dae
-| Type: Computer
-| Users: []
- | Electricity: 80
-| Water: 0
-| Money: 0
-| Device: Devices.Illumination@7530d0a
-| Type: Illumination
-| Users: []
- | Electricity: 120
-| Water: 0
-| Money: 0
-| Device: Devices.Blinds@27bc2616
-| Type: Blinds
-| Users: []
- | Electricity: 60
-| Water: 0
-| Money: 0
-| Device: Devices.Heater@3941a79c
-| Type: Heater
-| Users: []
- | Electricity: 450
-| Water: 0
-| Money: 0
-| Device: Devices.Conditioning@506e1b77
-| Type: Conditioning
-| Users: []
- | Electricity: 490
-| Water: 0
-| Money: 0
-| Device: Devices.Computer@4fca772d
+| Device: Devices.Computer@4e50df2e
 | Type: Computer
 | Users: []
  | Electricity: 80

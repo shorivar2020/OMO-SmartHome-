@@ -7,11 +7,11 @@ import java.util.ArrayList;
 public class Blinds extends Device {
     static int count = 0;
     private int buying = 0;
-    private int cost = 2000;
+    private final int cost = 2000;
     int consumptionElectricity = 20;
     int consumptionFunctionality = 4;
     private int functionality = 100;
-    private String documentation = "Documentation of Blinds";
+    private final String documentation = "Documentation of Blinds";
     boolean deviceState = false;
     private ArrayList<Human> users = new ArrayList<>();
 
@@ -42,10 +42,10 @@ public class Blinds extends Device {
     public int getFunctionality(){
         return functionality;
     }
+
     public void setFunctionality() {
         count++;
         functionality = functionality - consumptionFunctionality*count;
-
     }
 
     public void fixing(){
@@ -61,14 +61,10 @@ public class Blinds extends Device {
         return buying*cost;
     }
 
-
-
-
     public String getDeviceName(){
         return "Blinds";
     }
 
-    @Override
     public int getWater() {
         return 0;
     }

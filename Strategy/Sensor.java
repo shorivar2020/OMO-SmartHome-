@@ -1,6 +1,6 @@
 package Strategy;
 
-class Sensor  {
+class Sensor{
     String temperature;
     int clock;
     public void HotDay(){
@@ -22,5 +22,4 @@ class Sensor  {
         temperature = "COLD";
         clock =  0;
     }
-
 }

@@ -9,10 +9,10 @@ public class Conditioning extends Device {
     int consumptionElectricity = 70;
     int consumptionFunctionality = 14;
     private int functionality = 100;
-    private String documentation = "Documentation of Conditioning";
+    private final String documentation = "Documentation of Conditioning";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 7000;
+    private final int cost = 7000;
     private ArrayList<Human> users = new ArrayList<>();
 
     public void On(){

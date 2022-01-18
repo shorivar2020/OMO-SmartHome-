@@ -9,10 +9,10 @@ public class Illumination extends Device {
     int consumptionElectricity = 40;
     int consumptionFunctionality = 8;
     private int functionality = 100;
-    private String documentation = "Documentation of Illumination";
+    private final String documentation = "Documentation of Illumination";
     boolean deviceState = false;
     private int buying = 0;
-    private int cost = 4000;
+    private final int cost = 4000;
     private ArrayList<Human> users = new ArrayList<>();
 
     public void On(){

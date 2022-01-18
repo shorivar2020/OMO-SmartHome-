@@ -2,7 +2,6 @@ package Event;
 
 import Devices.Computer;
 import Devices.Device;
-import Devices.Fridge;
 import LivingBeing.Animal;
 import LivingBeing.Human;
 import Maker.Room;
@@ -13,7 +12,6 @@ import java.util.Random;
 
 public class EventLivingRoom{
     Random rand = new Random();
-    BrokenDevice broken = new BrokenDevice();
     ArrayList<String> events = new ArrayList<>();
     ArrayList<Device> deviceInEvents = new ArrayList<>();
     ArrayList<Human> SourceEvents = new ArrayList<>();
@@ -95,7 +93,4 @@ public class EventLivingRoom{
         return transportInEvents;
     }
 
-    public void setTransportInEvents(Transport tran) {
-        transportInEvents.add(tran);
-    }
 }

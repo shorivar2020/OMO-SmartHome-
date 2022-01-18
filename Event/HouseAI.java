@@ -7,7 +7,6 @@ import Maker.Room;
 import java.util.ArrayList;
 
 public class HouseAI {
-    Human HouseAI;
     public ArrayList<String> HouseAIEvent = new ArrayList<>();
     ArrayList<Device> deviceInEvents = new ArrayList<>();
     public void Night(ArrayList<Human> Humans, Room room) {
@@ -66,7 +65,6 @@ public class HouseAI {
         }
 
     }
-
     public ArrayList<Device> getDeviceInEvents(){
         return deviceInEvents;
     }

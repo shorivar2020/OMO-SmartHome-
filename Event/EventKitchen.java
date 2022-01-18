@@ -11,21 +11,19 @@ import java.util.ArrayList;
 
 public class EventKitchen {
     Random rand = new Random();
-    BrokenDevice broken = new BrokenDevice();
     ArrayList<String> events = new ArrayList<>();
     ArrayList<Device> deviceInEvents = new ArrayList<>();
     ArrayList<Human> SourceEvents = new ArrayList<>();
     ArrayList<Animal> animalsInEvents= new ArrayList<>();
     ArrayList<Transport> transportInEvents = new ArrayList<>();
     public void Eating(ArrayList<Human> Humans, Room room){
-        String meal;
+        String food;
         Fridge f = (Fridge)(room.getDevices().get(4));
         Microwave m = (Microwave) (room.getDevices().get(5));
         Plate p = (Plate) (room.getDevices().get(6));
         Teapot t = (Teapot) (room.getDevices().get(7));
 
         for(Human h: Humans) {
-            System.out.println("Eating:" + h);
             switch(rand.nextInt(3))
             {
                 case 0:
@@ -40,17 +38,14 @@ public class EventKitchen {
                     h.setUse(m);
                     m.addUsers(h);
                     f.work(f);
-                    if(f.getSomethingIn().size() != 0){
-                        meal = f.removeSomethingIn("Food");
+                    if (f.getSomethingIn().size() == 0) {
+                        Shopping shop = new Shopping();
+                        shop.shopping(f);
                     }
-                    else{
-                        Shoping shop = new Shoping();
-                        shop.Shoping(f);
-                        meal = f.removeSomethingIn("Food");
-                    }
+                    food = f.removeSomethingIn("Food");
                     m.work(m);
-                    m.addSomethingIn(meal);
-                    m.removeSomethingIn(meal);
+                    m.addSomethingIn(food);
+                    m.removeSomethingIn(food);
                     m.stop();
                     h.Eating();
                     break;
@@ -66,19 +61,16 @@ public class EventKitchen {
                     h.setUse(p);
                     p.addUsers(h);
                     f.work(f);
-                    if(f.getSomethingIn().size() != 0){
-                        meal = f.removeSomethingIn("Food");
-                    }
-                    else{
-                        Shoping shop = new Shoping();
-                        shop.Shoping(f);
+                    if (f.getSomethingIn().size() == 0) {
+                        Shopping shop = new Shopping();
+                        shop.shopping(f);
                         h.Shopping();
-                        meal = f.removeSomethingIn("Food");
                     }
+                    food = f.removeSomethingIn("Food");
                     p.work(p);
-                    p.addSomethingOn(meal);
+                    p.addSomethingOn(food);
 
-                    p.removeSomethingOn(meal);
+                    p.removeSomethingOn(food);
                     p.stop();
                     h.Eating();
                     break;
@@ -132,9 +124,5 @@ public class EventKitchen {
 
     public ArrayList<Transport> getTransportInEvents() {
         return transportInEvents;
-    }
-
-    public void setTransportInEvents(Transport tran) {
-        transportInEvents.add(tran);
     }
 }

@@ -13,7 +13,7 @@ import java.util.Random;
 public class Human {
     Random rand = new Random();
     Room WhatRoom;
-    String name;
+//    String name;
     boolean InArea;
     private ArrayList<Device> Use = new ArrayList<>();
     private ArrayList<Transport> UseTransport = new ArrayList<>();
@@ -21,21 +21,21 @@ public class Human {
     private ArrayList<String> Doings = new ArrayList<>();
 
 
-    public Room getWhatRoom() {
-        return WhatRoom;
-    }
-
-    public void setWhatRoom(Room whatRoom) {
-        this.WhatRoom = whatRoom;
-    }
-
-    public boolean getInArea() {
-        return InArea;
-    }
-
-    public void setInArea(boolean inArea) {
-        this.InArea = inArea;
-    }
+//    public Room getWhatRoom() {
+//        return WhatRoom;
+//    }
+//
+//    public void setWhatRoom(Room whatRoom) {
+//        this.WhatRoom = whatRoom;
+//    }
+//
+//    public boolean getInArea() {
+//        return InArea;
+//    }
+//
+//    public void setInArea(boolean inArea) {
+//        this.InArea = inArea;
+//    }
 
     public ArrayList<Device> getUse() {
         return Use;

@@ -11,8 +11,8 @@ public class Teapot extends Device {
     int consumptionFunctionality = 4;
     private int functionality = 100;
     private int buying = 0;
-    private int cost = 2000;
-    private String documentation = "Documentation of Teapot";
+    private final int cost = 2000;
+    private final String documentation = "Documentation of Teapot";
     boolean deviceState = false;
     private ArrayList<Human> users = new ArrayList<>();
 
@@ -63,7 +63,6 @@ public class Teapot extends Device {
     public void setFunctionality() {
         count++;
         functionality = functionality - consumptionFunctionality*count;
-
     }
 
     public String getDeviceName(){

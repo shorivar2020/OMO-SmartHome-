@@ -1,7 +1,5 @@
 package Maker;
 
-import Devices.Device;
-import LivingBeing.Animal;
 import LivingBeing.Human;
 import Transport.Bicycle;
 import Transport.Car;
@@ -10,8 +8,6 @@ import Transport.Ski;
 import java.util.ArrayList;
 
 public class Parking {
-    private static Parking instance;
-    String name;
     private ArrayList<Human> humans = new ArrayList<>();
     private ArrayList<Bicycle> bicycles = new ArrayList<>();
     private ArrayList<Car> cars = new ArrayList<>();
