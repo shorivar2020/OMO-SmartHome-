@@ -15,17 +15,18 @@ import Transport.Car;
 import Transport.Ski;
 import Transport.Transport;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class EV {
+public class EventManager {
     ArrayList<String> events = new ArrayList<>();
     ArrayList<Device> deviceInEvents = new ArrayList<>();
     ArrayList<Human> SourceEvents = new ArrayList<>();
     ArrayList<Animal> animalsInEvents= new ArrayList<>();
     ArrayList<Transport> transportInEvents = new ArrayList<>();
-    public ArrayList<String> EV(Area home) throws IOException {
+    public ArrayList<String> EventManager(Area home) throws IOException {
 
         EventKitchen ek = new EventKitchen();
         EventLivingRoom el = new EventLivingRoom();
@@ -72,7 +73,9 @@ public class EV {
                     rooms.add(r.getName());
                 }
             }
-            FileWriter writEvent = new FileWriter("Event.txt", false);
+            //File file = new File("C://zzz", "tt.txt");
+            File file = new File("C:\\Users\\User\\omo-smart-home\\Reports", "EventReport.txt");
+            FileWriter writEvent = new FileWriter(file, false);
 
             writEvent.write("Event     | Source     | Device    | Animal    ");
             writEvent.append('\n');
