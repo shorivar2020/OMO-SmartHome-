@@ -18,7 +18,9 @@ public class Config {
         EV ev = new EV();
         ArrayList<String> events = new ArrayList<>();
         events = ev.EV(home);
+        EventReport eventReport  = new EventReport();
 
+        eventReport.EventReport(events);
         Report report = new Report();
         report.report(home);
     }

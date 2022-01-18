@@ -1,8 +1,10 @@
 package Event;
 
 import Devices.*;
+import LivingBeing.Animal;
 import LivingBeing.Human;
 import Maker.Room;
+import Transport.Transport;
 
 import java.util.Random;
 import java.util.ArrayList;
@@ -10,6 +12,11 @@ import java.util.ArrayList;
 public class EventKitchen {
     Random rand = new Random();
     BrokenDevice broken = new BrokenDevice();
+    ArrayList<String> events = new ArrayList<>();
+    ArrayList<Device> deviceInEvents = new ArrayList<>();
+    ArrayList<Human> SourceEvents = new ArrayList<>();
+    ArrayList<Animal> animalsInEvents= new ArrayList<>();
+    ArrayList<Transport> transportInEvents = new ArrayList<>();
     public void Eating(ArrayList<Human> Humans, Room room){
         String meal;
         Fridge f = (Fridge)(room.getDevices().get(4));
@@ -19,8 +26,15 @@ public class EventKitchen {
 
         for(Human h: Humans) {
             System.out.println("Eating:" + h);
-            switch(rand.nextInt(3)){
+            switch(rand.nextInt(3))
+            {
                 case 0:
+                    setAnimalsInEvents(null);
+                    setDeviceInEvents(f);
+                    setDeviceInEvents(m);
+                    setEvents("Fast_Eating_With_Microwave");
+                    setSourceEvents(h);
+                    transportInEvents.add(null);
                     h.setUse(f);
                     f.addUsers(h);
                     h.setUse(m);
@@ -34,22 +48,19 @@ public class EventKitchen {
                         shop.Shoping(f);
                         meal = f.removeSomethingIn("Food");
                     }
-
-                    // f.addSomethingIn("Food");
-                    //(m.work(m));
                     m.work(m);
-//                    }else{
-//                        //System.out.println("fix");
-//                        broken.fix(m, h);
-
                     m.addSomethingIn(meal);
-
                     m.removeSomethingIn(meal);
                     m.stop();
                     h.Eating();
-
                     break;
                 case 1:
+                    setAnimalsInEvents(null);
+                    setDeviceInEvents(f);
+                    setDeviceInEvents(p);
+                    setEvents("Slow_Eating_With_Plate");
+                    setSourceEvents(h);
+                    transportInEvents.add(null);
                     h.setUse(f);
                     f.addUsers(h);
                     h.setUse(p);
@@ -64,30 +75,66 @@ public class EventKitchen {
                         h.Shopping();
                         meal = f.removeSomethingIn("Food");
                     }
-
-//                    System.out.println("QQQQQ" + f.getUsers());
-                    // f.addSomethingIn("Food");
                     p.work(p);
                     p.addSomethingOn(meal);
 
                     p.removeSomethingOn(meal);
                     p.stop();
                     h.Eating();
-//                    System.out.println("QQQQQ" + p.getUsers());
                     break;
                 case 2:
+                    setAnimalsInEvents(null);
+                    setDeviceInEvents(t);
+                    setEvents("Drink_Tea");
+                    setSourceEvents(h);
+                    transportInEvents.add(null);
                     h.setUse(t);
                     t.addUsers(h);
                     t.work(t);
-//                    }else{
-//                        broken.fix(t, h);
-
                     h.DrinkTea();
-
-                    //System.out.println("TeaTime");
                     t.stop();
                     break;
             }
         }
+    }
+
+    public ArrayList<String> getEvents(){
+        return events;
+    }
+
+    public ArrayList<Device> getDeviceInEvents() {
+        return deviceInEvents;
+    }
+
+    public ArrayList<Human> getSourceEvents() {
+        return SourceEvents;
+    }
+
+    public ArrayList<Animal> getAnimalsInEvents() {
+        return animalsInEvents;
+    }
+
+    public void setAnimalsInEvents(Animal animals) {
+        animalsInEvents.add(animals);
+    }
+
+    public void setDeviceInEvents(Device d) {
+        deviceInEvents.add(d);
+    }
+
+    public void setEvents(String s) {
+        events.add(s);
+    }
+
+    public void setSourceEvents(Human h) {
+        SourceEvents.add(h);
+    }
+
+    public ArrayList<Transport> getTransportInEvents() {
+        return transportInEvents;
+    }
+
+    public void setTransportInEvents(Transport tran) {
+        transportInEvents.add(tran);
     }
 }

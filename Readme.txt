@@ -9,9 +9,9 @@ F6+	If Human in Kitchen -->Eating / If Human in Living Room --> Chilling/ If Hum
 F7+	Hot temperature --> Work Heater /Cold temperature --> Work Conditioning / 23:00 clock --> Sleeping/Illumination on
 ⦁	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus money and fix
 ⦁	Fridge have not food --> Human go Shoping.
-F8!	Vygenerování reportů:
+F8+	Vygenerování reportů:
 +	HouseConfigurationReport and HouseConfigurationReportDevice
--	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
++	EventReport: report eventů, kde grupujeme eventy podle typu, zdroje eventů a jejich cíle (jaká entita event odbavila)
 +	ActivityAndUsageReport(ONLY PEOPLE)
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
