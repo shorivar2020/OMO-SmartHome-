@@ -36,7 +36,7 @@ Vhodné design patterny
 -	Partially persistent data structure
 -	Object Pool
 -	Lazy Initialization
-+Strategies - Strategy of time and temperature in home
++       Strategies - Strategy of time and temperature in home
 
 Požadované výstupy
 +	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
