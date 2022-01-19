@@ -15,7 +15,7 @@ F8+	Vygenerování reportů:
 +	ActivityAndUsageReport(ONLY PEOPLE)
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
-F10+ Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait
+F10+   Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait
 
 
 Nefunkční požadavky
