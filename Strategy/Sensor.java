@@ -1,5 +1,8 @@
 package Strategy;
 
+/**
+ * Sensor have methods with different temperature and clock
+ */
 class Sensor{
     String temperature;
     int clock;

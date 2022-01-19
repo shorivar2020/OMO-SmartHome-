@@ -15,10 +15,11 @@ public class Computer extends Device {
     private final int cost = 4000;
     private ArrayList<Human> users = new ArrayList<>();
 
+    @Override
     public void On(){
         deviceState = true;
     }
-
+    @Override
     public void Off(){
         deviceState = false;
     }
@@ -39,9 +40,11 @@ public class Computer extends Device {
     public int getElectricity() {
         return consumptionElectricity*count;
     }
+    @Override
     public int getFunctionality(){
         return functionality;
     }
+    @Override
     public void setFunctionality() {
         count++;
         functionality = functionality - consumptionFunctionality*count;

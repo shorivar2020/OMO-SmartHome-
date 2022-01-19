@@ -1,7 +1,9 @@
 package Maker;
 
 public class ParkingMaker {
-    //private ArrayList<String> dev = new ArrayList<>();
+    /**
+     * @return Parking for transport
+     */
     public Parking newTransportRoom(){
         return new Parking();
     }

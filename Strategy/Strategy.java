@@ -3,6 +3,11 @@ package Strategy;
 import java.util.Random;
 
 public class Strategy {
+    /**
+     *  Strategy of work - clock and temperature, choose by random
+     *
+     * @return type of strategy in this day
+     */
     public int Strategy(){
         Random rand = new Random();
         Sensor s = new Sensor();

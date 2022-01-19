@@ -16,6 +16,18 @@ public class EventKitchen {
     ArrayList<Human> SourceEvents = new ArrayList<>();
     ArrayList<Animal> animalsInEvents= new ArrayList<>();
     ArrayList<Transport> transportInEvents = new ArrayList<>();
+
+    /**
+     * Represent Event eating. By random exist 3 types of eating Event.
+     * 1) Fast eating - use microwave and fridge. If in fridge no food -> Shopping.
+     * In microwave add food and then return. (On/off microwave). Then human eating.
+     * 2) Slow eating - use plate and fridge. If in fridge no food -> Shopping.
+     * On plate add food and then return. (On/off plate). Then human eating.
+     * 3) Drink tea - use teapot. (On/off). Then human drink tea.
+     *
+     * @param Humans who eat or dink
+     * @param room in what room where even
+     */
     public void Eating(ArrayList<Human> Humans, Room room){
         String food;
         Fridge f = (Fridge)(room.getDevices().get(4));
@@ -90,38 +102,65 @@ public class EventKitchen {
         }
     }
 
+    /**
+     * @return all event that be in room
+     */
     public ArrayList<String> getEvents(){
         return events;
     }
 
+    /**
+     * @return all device that be in event room
+     */
     public ArrayList<Device> getDeviceInEvents() {
         return deviceInEvents;
     }
 
+    /**
+     * @return all human that be in event room
+     */
     public ArrayList<Human> getSourceEvents() {
         return SourceEvents;
     }
 
+    /**
+     * @return all animal that be in event room
+     */
     public ArrayList<Animal> getAnimalsInEvents() {
         return animalsInEvents;
     }
 
+    /**
+     * @param animals add animal who be in event
+     */
     public void setAnimalsInEvents(Animal animals) {
         animalsInEvents.add(animals);
     }
 
+    /**
+     * @param d add device who be in event
+     */
     public void setDeviceInEvents(Device d) {
         deviceInEvents.add(d);
     }
 
+    /**
+     * @param s add events who be in event
+     */
     public void setEvents(String s) {
         events.add(s);
     }
 
+    /**
+     * @param h add human who be in event
+     */
     public void setSourceEvents(Human h) {
         SourceEvents.add(h);
     }
 
+    /**
+     * @return all transport that be in event room
+     */
     public ArrayList<Transport> getTransportInEvents() {
         return transportInEvents;
     }

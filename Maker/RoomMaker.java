@@ -7,9 +7,18 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Random;
 
+/**
+ * Create new rooms.
+ */
 public class RoomMaker {
     Random rand = new Random();
     private ArrayList<String> device = new ArrayList<>();
+
+    /**
+     * Rooms can be Kitchen or Living room. And then make device in room by Fabrice.
+     *
+     * @return room with device in it
+     */
     public Room newRoom(){
         Room room = new Room();
         FabriceDevice f = new FabriceDevice();

@@ -13,7 +13,20 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Report {
+    /**
+     * DO ALL Reports
+     * -ConsumptionReport - counter of Electricity/Water/Money of Device
+     * -HouseConfigurationReport - what house was created
+     * -HouseConfigurationReportDevice - what device was created and who use it
+     * -ActivityAndUsageReport - what human do in home
+     * -EventReport - what events be in house
+     *
+     * @param home this created Area
+     * @param evm this event that was in Area
+     * @throws IOException
+     */
     public void report(Area home, EventManager evm) throws IOException {
+        //ConsumptionReport
         File file = new File("C:\\Users\\User\\omo-smart-home\\Reports", "ConsumptionReport.txt.txt");
         FileWriter writer = new FileWriter(file, false);
         int totalElectricity = 0;
@@ -38,6 +51,8 @@ public class Report {
         writer.write("| totalWater: " + totalWater);
         writer.write("| TotalMoney: " + totalMoney);
         writer.flush();
+
+        //HouseConfigurationReport
         File file1 = new File("C:\\Users\\User\\omo-smart-home\\Reports", "HouseConfigurationReport.txt");
         File file2 = new File("C:\\Users\\User\\omo-smart-home\\Reports", "HouseConfigurationReportDevice.txt");
         FileWriter writHome = new FileWriter(file1, false);
@@ -86,7 +101,7 @@ public class Report {
         writDevices.flush();
         writHome.flush();
 
-
+        //ActivityAndUsageReport
         ArrayList<String> events = new ArrayList<>(evm.getEvents());
         ArrayList<Device> deviceInEvents = new ArrayList<>(evm.getDeviceInEvents());
         ArrayList<Human> SourceEvents = new ArrayList<>(evm.getSourceEvents());
@@ -132,7 +147,7 @@ public class Report {
             }
             writHuman.flush();
 
-
+            //Event Report
             File file5 = new File("C:\\Users\\User\\omo-smart-home\\Reports", "EventReport.txt");
             FileWriter writEvent = new FileWriter(file5, false);
             writEvent.write("Event     | Source     | Device    | Animal    ");

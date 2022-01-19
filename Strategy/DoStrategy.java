@@ -8,6 +8,14 @@ import java.util.ArrayList;
 
 public class DoStrategy {
     ArrayList<Device> deviceInEvents = new ArrayList<>();
+
+    /**
+     * Do Home AI events depends on number Strategy
+     *
+     * @param r in what room it
+     * @param doing events
+     * @param NumberStrategy who have rulers for chosen strategy
+     */
     public void DoStrategy(Room r, HouseAI doing, int NumberStrategy){
         switch (NumberStrategy){
             case 1:
@@ -34,6 +42,10 @@ public class DoStrategy {
                 break;
         }
     }
+
+    /**
+     * @return all device that be in HomeAI events
+     */
     public ArrayList<Device> getDeviceInEvents(){
         return deviceInEvents;
     }

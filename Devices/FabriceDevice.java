@@ -1,6 +1,13 @@
 package Devices;
 
+/**
+ * Pattern of Factory
+ */
 public class FabriceDevice {
+    /**
+     * @param type of device
+     * @return created device
+     */
     public Device createDevice(String type){
         switch (type){
             case "BLINDS":

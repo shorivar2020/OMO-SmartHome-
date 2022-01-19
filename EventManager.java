@@ -24,6 +24,13 @@ public class EventManager {
     ArrayList<Animal> animalsInEvents= new ArrayList<>();
     ArrayList<Transport> transportInEvents = new ArrayList<>();
 
+    /**
+     * Choose strategy and then do HomeAI events for settings home
+     * Then by type of room do room events with human - Chilling/Eating
+     * Then in transport room all human use transport. If count of human bigger than count of transport -> Wait
+     *
+     * @param home that we have
+     */
     public void eventManager(Area home){
 
         EventKitchen ek = new EventKitchen();
@@ -109,22 +116,37 @@ public class EventManager {
         }
     }
 
+    /**
+     * @return all animals in all events
+     */
     public ArrayList<Animal> getAnimalsInEvents() {
         return animalsInEvents;
     }
 
+    /**
+     * @return all events that be
+     */
     public ArrayList<String> getEvents(){
         return events;
     }
 
+    /**
+     * @return all device in all events
+     */
     public ArrayList<Device> getDeviceInEvents() {
         return deviceInEvents;
     }
 
+    /**
+     * @return all human who be in events
+     */
     public ArrayList<Human> getSourceEvents() {
         return SourceEvents;
     }
 
+    /**
+     * @return all transport in all events
+     */
     public ArrayList<Transport> getTransportInEvents() {
         return transportInEvents;
     }
