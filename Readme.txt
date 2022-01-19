@@ -15,30 +15,30 @@ F8+	Vygenerování reportů:
 +	ActivityAndUsageReport(ONLY PEOPLE)
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
-F10+Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait
+F10+ Half of Human go to House and have Events with Device. Half of Human go to Parking and Use Transport. If human > transports --> Event Wait
 
 
 Nefunkční požadavky
 +	Není požadována autentizace ani autorizace
 +	Aplikace může běžet pouze v jedné JVM
-⦁	Aplikaci pište tak, aby byly dobře schované metody a proměnné, které nemají být dostupné ostatním třídám. Vygenerovný javadoc by měl mít co nejméně public metod a proměnných.
++	Aplikaci pište tak, aby byly dobře schované metody a proměnné, které nemají být dostupné ostatním třídám. Vygenerovný javadoc by měl mít co nejméně public metod a proměnných.
 +	Reporty jsou generovány do textového souboru
-⦁	Konfigurace domu, zařízení a obyvatel domu může být nahrávána přímo z třídy nebo externího souboru (preferován je json)
++	Konfigurace domu nahrávána přímo z třídy
 
 Vhodné design patterny
 -	State machine
-+	Iterator In RoomMaker
++	Iterator In RoomMaker for create device
 +	Factory/Factory method - For make new device
 +	Decorator/Composite - Composite - Home have struct of tree
 +	Singleton - AreaMaker, Config can only one
-+	Visitor/Observer/Listener - Observer - Human get notify by broken device and than fix it
++	Visitor/Observer/Listener - Observer - Human get notify by broken device and then fix it
 -	Chain of responsibility
 -	Partially persistent data structure
 -	Object Pool
 -	Lazy Initialization
-+   Strategies - Strategy of time and temperature
++   Strategies - Strategy of time and temperature in home
 
 Požadované výstupy
-⦁	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
-⦁	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
++	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
++	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
 +	Config - big/medium/small
