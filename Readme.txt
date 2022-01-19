@@ -1,6 +1,6 @@
 
 Funkční požadavky
-F1+	Area, Home, Rooms, Parking, Device, Human, Animal, Car, Bicycle
+F1+	Area, Home, Rooms, Parking, Device, Human, Animal, Car, Bicycle, Ski
 F2+	work/stop(Devices) | SomethingIn(Microwave)(Fridge)/SomethingOn(Plate) | On/Off(Devices) | functionality!=0 --> work. | addSomethingIn/removeSomethingIn(Fridge)
 F3+	boolean deviceState: false-off/ true-on
 F4+	Electricity/Functionality/Water/Cost
