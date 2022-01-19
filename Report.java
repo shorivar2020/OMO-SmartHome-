@@ -23,7 +23,7 @@ public class Report {
      *
      * @param home this created Area
      * @param evm this event that was in Area
-     * @throws IOException
+     * @throws IOException if write in file was false
      */
     public void report(Area home, EventManager evm) throws IOException {
         //ConsumptionReport
