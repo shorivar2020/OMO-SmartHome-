@@ -30,7 +30,7 @@ public class Config {
      * @param Ski_count - count of skis in home by config
      * @param Bicycle_count - count of bicycles in home by config
      * @param Car_count - count of cars in home by config
-     * @throws IOException
+     * @throws IOException - if write in file was false
      */
     public void config(AreaMaker make, int Rooms_Count, int Humans_Count, int Animals_Count, int Ski_count, int Bicycle_count, int Car_count) throws IOException {
         Area home = make.newHome(Rooms_Count, Humans_Count, Animals_Count, Ski_count, Bicycle_count, Car_count);
