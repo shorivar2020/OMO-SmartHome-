@@ -39,6 +39,6 @@ Vhodné design patterny
 +       Strategies - Strategy of time and temperature in home
 
 Požadované výstupy
-+	Design ve formě use case diagramů, class diagramů a stručného popisu jak chcete úlohu realizovat
++   V wiki
 +	Veřejné API - Javadoc vygenerovaný pro funkce, kterými uživatel pracuje s vaším software
 +	Config - big/medium/small
