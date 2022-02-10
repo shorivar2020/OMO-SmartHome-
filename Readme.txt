@@ -37,7 +37,7 @@ F8+	Vygenerování reportů:
 +	ConsumptionReport
 F9+	Functionality = 0 --> Event Broken Device --> Find Documentaton --> If find - fix/ If not find minus + fix (String documentation)
 F10+  Lidé jsou náhodně přidělováni do místností. Polovina lidí je přidělena do místností pro akce. Polovina lidí je rozdělena do vozidel. Pokud počet osob převyšuje počet vozidel, osoba čeká.
- If human > transports --> Event Wait
+    If human > transports --> Event Wait
 
 
 Nefunkční požadavky
